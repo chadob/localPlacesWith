@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Local Places With - BETA</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./add-a-place.css">
+  <!-- Custom styles for this template -->
+  <style>
+    body {
+      padding-top: 54px;
+    }
+    @media (min-width: 992px) {
+      body {
+        padding-top: 56px;
+      }
+    }
+
+  </style>
+
+<link rel="shortcut icon" href="images/map-pin5-blue.png"></head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img width="65%" height="65%" src="images/LPW_LOGO_Test3.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a title="Places with pool, darts, ping-pong, and more." class="nav-link" href="index.html">Bar Sports</a>
+          </li>
+          <li class="nav-item">
+              <a title="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
+            </li>
+            <li class="nav-item">
+              <a title="Places with trivia, arcades, board games, and more." class="nav-link" href="games.html">Games
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active"><!--ACTIVE TAG HERE-->
+              <a title="Add a place!" class="nav-link" href="add-a-place.html">+</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page CONTENT -->
+  <div class="mt-5 container">
+    <div class="row">
+      <button type="button" class="btn btn-outline-primary btn-lg add-button">
+        Add a Location
+      </button>
+      <button type="button" class="btn btn-outline-success btn-lg update-button">
+        Update a Location
+      </button>
+    </div>
+    <form class="add-form" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyK6OSAq52tJJRu54a-JuOsHLlX-hzm2oXg-LG7Fg/exec">
+      Email: <input type="text" name="Email"> <br>
+      Your Name: <input type="text" name="Name"> <br>
+      Venue Name: <input type="text" name="Venue Name"><br>
+      Venue Address: <input type="text" name="Street Address"><br>
+      Venue City: <input type="text" name="City"><br>
+      Venue State: <input type="text" name="State"><br>
+      Venue Zip: <input type="text" name="Zip"><br>
+
+      <h6> Activities: </h6><br>
+      Bar Sports <input type="checkbox" id="bar-sports" name="Bar Sports"><br>
+      Live Entertainment <input type="checkbox" id="live-entertainment" name="Live Entertainment"><br>
+      Games <input type="checkbox" id="games" name="Games"><br>
+
+
+      <!-- Bar sports section of form -->
+      <div class="bar-sports">
+        <div class="types">
+          <h6> What types of Bar Sports? </h6>
+          <input id="pool-checkbox" type="checkbox" name="Pool"> Pool<br>
+          <input id="ping-pong-checkbox" type="checkbox" name="Ping Pong"> Ping Pong<br>
+          <input id="darts-checkbox" type="checkbox" name="Darts"> Darts <br>
+          <input id="cornhole-checkbox" type="checkbox" name="Cornhole"> Cornhole <br>
+          <input id="foosball-checkbox" type="checkbox" name="Foosball"> Foosball <br>
+          <input id="shuffleboard-checkbox" type="checkbox" name="Shuffleboard"> Shuffleboard <br>
+          Other: <input type="text" name="Bar Sports Type">
+        </div>
+        <div class="pool-number-tables">
+          <h6> How many Pool Tables </h6>
+          <input type="radio" name="Pool Tables" value="1"> 1<br>
+          <input type="radio" name="Pool Tables" value="2-3"> 2-3<br>
+          <input type="radio" name="Pool Tables" value="4-7"> 4-7<br>
+          <input type="radio" name="Pool Tables" value="8+"> 8+<br>
+          <input type="radio" name="Pool Tables" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="ping-pong-number-tables">
+          <h6> How many Ping Pong Tables </h6>
+          <input type="radio" name="Ping Pong Tables" value="1"> 1<br>
+          <input type="radio" name="Ping Pong Tables" value="2-3"> 2-3<br>
+          <input type="radio" name="Ping Pong Tables" value="4-7"> 4-7<br>
+          <input type="radio" name="Ping Pong Tables" value="8+"> 8+<br>
+          <input type="radio" name="Ping Pong Tables" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="darts-number-tables">
+          <h6> How many Darts Tables </h6>
+          <input type="radio" name="Darts Boards" value="1"> 1<br>
+          <input type="radio" name="Darts Boards" value="2-3"> 2-3<br>
+          <input type="radio" name="Darts Boards" value="4-7"> 4-7<br>
+          <input type="radio" name="Darts Boards" value="8+"> 8+<br>
+          <input type="radio" name="Darts Boards" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="cornhole-number-tables">
+          <h6> How many Cornhole Tables </h6>
+          <input type="radio" name="Cornhole Setups" value="1"> 1<br>
+          <input type="radio" name="Cornhole Setups" value="2-3"> 2-3<br>
+          <input type="radio" name="Cornhole Setups" value="4-7"> 4-7<br>
+          <input type="radio" name="Cornhole Setups" value="8+"> 8+<br>
+          <input type="radio" name="Cornhole Setups" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="foosball-number-tables">
+          <h6> How many Foosball Tables </h6>
+          <input type="radio" name="Foosball Tables" value="1"> 1<br>
+          <input type="radio" name="Foosball Tables" value="2-3"> 2-3<br>
+          <input type="radio" name="Foosball Tables" value="4-7"> 4-7<br>
+          <input type="radio" name="Foosball Tables" value="8+"> 8+<br>
+          <input type="radio" name="Foosball Tables" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="shuffleboard-number-tables">
+          <h6> How many Shuffleboard Tables </h6>
+          <input type="radio" name="Shuffleboard Tables" value="1"> 1<br>
+          <input type="radio" name="Shuffleboard Tables" value="2-3"> 2-3<br>
+          <input type="radio" name="Shuffleboard Tables" value="4-7"> 4-7<br>
+          <input type="radio" name="Shuffleboard Tables" value="8+"> 8+<br>
+          <input type="radio" name="Shuffleboard Tables" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <!--bar games price-->
+        <div class="darts-cost">
+          <h6> Darts Priced by? </h6>
+          <input type="radio" name="Darts Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Darts Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Darts Cost" value="Free"> Free<br>
+          <input type="radio" name="Darts Cost" value="Varies"> Varies<br>
+        </div>
+        <div class="pool-cost">
+          <h6> Pool Priced by? </h6>
+          <input type="radio" name="Pool Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Pool Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Pool Cost" value="Free"> Free<br>
+          <input type="radio" name="Pool Cost" value="Varies"> Varies<br>
+        </div>
+        <div class="ping-pong-cost">
+          <h6> Ping Pong Priced by? </h6>
+          <input type="radio" name="Ping Pong Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Ping Pong Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Ping Pong Cost" value="Free"> Free<br>
+          <input type="radio" name="Ping Pong Cost" value="Varies"> Varies<br>
+        </div>
+        <div class="cornhole-cost">
+          <h6> Cornhole Priced by? </h6>
+          <input type="radio" name="Cornhole Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Cornhole Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Cornhole Cost" value="Free"> Free<br>
+          <input type="radio" name="Cornhole Cost" value="Varies"> Varies<br>
+        </div>
+        <div class="foosball-cost">
+          <h6> Foosball Priced by? </h6>
+          <input type="radio" name="Foosball Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Foosball Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Foosball Cost" value="Free"> Free<br>
+          <input type="radio" name="Foosball Cost" value="Varies"> Varies<br>
+        </div>
+        <div class="shuffleboard-cost">
+          <h6> Shuffleboard Priced by? </h6>
+          <input type="radio" name="Shuffleboard Cost" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Shuffleboard Cost" value="Per Game"> Per Game<br>
+          <input type="radio" name="Shuffleboard Cost" value="Free"> Free<br>
+          <input type="radio" name="Shuffleboard Cost" value="Varies"> Varies<br>
+        </div>
+        <h6>Sports TV: </h6><br>
+        <input type="radio" name="Sports TV" value="Yes"> Yes<br>
+        <input type="radio" name="Sports TV" value="No"> No<br>
+      </div>
+
+
+      <div class="live-entertainment">
+        Cost: <input type="text" name="Live Cost"><br>
+        Attire: <input type="text" name="Live Attire"><br>
+        <div class="types">
+          <h6> What types of live entertainment? </h6>
+          <input type="checkbox" name="Live Music"> Live Music<br>
+          <input type="checkbox" name="Karaoke"> Karaoke <br>
+          <input type="checkbox" name="Dancing"> Dancing <br>
+          <input type="checkbox" name="Piano"> Piano <br>
+          <input type="checkbox" name="Open Mic"> Open Mic <br>
+          <input type="checkbox" name="Comedy"> Comedy <br>
+          Other: <input type="text" name="Live Entertainment Other">
+        </div>
+      </div>
+
+
+      <div class="games">
+        <div class="types">
+          <h6> What types of live entertainment? </h6>
+          <input type="checkbox" name="Skeeball"> Skeeball<br>
+          <input type="checkbox" name="Jenga"> Jenga <br>
+          <input type="checkbox" name="Trivia"> Trivia <br>
+          <input type="checkbox" name="Board Games"> Board Games <br>
+          <input type="checkbox" name="Video Games"> Video Games <br>
+          <input type="checkbox" name="Arcades"> Arcades <br>
+          Other: <input type="text" name="Games Other">
+        </div>
+        <div class="number-tables">
+          <h6> How many Tables </h6>
+          <input type="radio" name="Number of Tables" value="1"> 1<br>
+          <input type="radio" name="Number of Tables" value="2-3"> 2-3<br>
+          <input type="radio" name="Number of Tables" value="4-7"> 4-7<br>
+          <input type="radio" name="Number of Tables" value="8+"> 8+<br>
+          <input type="radio" name="Number of Tables" value="More than one bar sport"> More than one bar sport <br>
+        </div>
+        <div class="price">
+          <h6> Priced by? </h6>
+          <input type="radio" name="Price" value="Per Hour"> Per Hour<br>
+          <input type="radio" name="Price" value="Per Game"> Per Game<br>
+          <input type="radio" name="Price" value="Free"> Free<br>
+          <input type="radio" name="Price" value="Varies"> Varies<br>
+        </div>
+      </div>
+      Website: <input type="text" name="Website"><br>
+      <input type="submit">
+    </form>
+
+    <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&amp;layout=button_count&amp;size=small&amp;mobile_iframe=true&amp;width=69&amp;height=20&amp;appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./form-script.js"></script>
+
+
+</font></body></html>
