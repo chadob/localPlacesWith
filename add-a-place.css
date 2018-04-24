@@ -1,3 +1,6 @@
+.thank-you-message {
+  display: none;
+}
 .update-form {
   display: none;
 }
@@ -10,40 +13,9 @@
 .games {
   display: none;
 }
-.pool-number-tables {
+.bar-sports-type-section {
   display: none;
 }
-.ping-pong-number-tables {
-  display: none;
-}
-.darts-number-tables {
-  display: none;
-}
-.cornhole-number-tables {
-  display: none;
-}
-.foosball-number-tables {
-  display: none;
-}
-.shuffleboard-number-tables {
-  display: none;
-}
-/*Cost Divs*/
-.pool-cost {
-  display: none;
-}
-.ping-pong-cost {
-  display: none;
-}
-.darts-cost {
-  display: none;
-}
-.cornhole-cost {
-  display: none;
-}
-.foosball-cost {
-  display: none;
-}
-.shuffleboard-cost {
+.games-type-section {
   display: none;
 }

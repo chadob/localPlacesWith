@@ -36,8 +36,7 @@ function getFormData() {
                   // it to be appended to for each item in the loop
     if(elements[k].type === "checkbox"){ // special case for Edge's html collection
       str = str + elements[k].checked + ", "; // take the string and append
-                                              // the current checked value to
-                                              // the end of it, along with
+                                    // the end of it, along with
                                               // a comma and a space
       data[k] = str.slice(0, -2); // remove the last comma and space
                                   // from the  string to make the output
@@ -56,15 +55,40 @@ function getFormData() {
   data.formDataNameOrder = JSON.stringify(fields);
   data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
   data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-  console.log(data);
+  var sectionsObject = {
+    "Bar Sports": ["Pool", "Ping Pong", "Darts", "Cornhole", "Foosball", "Shuffleboard", data["Bar Sports Other"]],
+    "Live Entertainment": ["Live Music", "Karaoke", "Dancing", "Piano", "Open Mic", "Comedy", data["Live Entertainment Other"]],
+    "Games": ["Skeeball", "Jenga", "Trivia", "Board Games", "Video Games", "Arcades", data["Games Other"]]
+  }
+  var plusObject = {};
+  //ulObject will have to be updated if other pages are to be added
+  for (var prop in sectionsObject) {
+    if (sectionsObject.hasOwnProperty(prop)) {
+      plusObject[prop + " array"] = []
+      sectionsObject[prop].forEach(function(ele) {
+        if (data[ele] !== "false" || data[ele !== ""]) {
+          plusObject[prop + " array"].push(ele);
+        }
+      });
+    }
+  }
+  for (var prop in sectionsObject) {
+    if (sectionsObject.hasOwnProperty(prop) && data[prop] == "true") {
+      data[prop + " +"] = [];
+      for (var property in sectionsObject) {
+        if (property !== prop) {
+          data[prop + " +"].push(plusObject[property + " array"].join(', '));
+        }
+      }
+      data[prop + " +"] = data[prop + " +"].join("");
+    }
+  }
   return data;
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
-
   /* OPTION: Remove this comment to enable SPAM prevention, see README.md
   if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
     return false;
@@ -78,6 +102,22 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       return false;
     }
   } else {
+    var urlObject = {
+      barSports: "https://script.google.com/macros/s/AKfycbwiVfddD7-VBToBeFo-REEVPkDZ5Ij1nRTLy7Ur/exec",
+      liveEntertainment: "https://script.google.com/macros/s/AKfycbyspZtfkg9kxo2HnG4qwV2tnfJbk_JWJDgxRxDnnA/exec",
+      games: "https://script.google.com/macros/s/AKfycbwQmnXJCcQfHkFBqEhf1y-VG00LWm_3pAYUkvaQoQ/exec"
+    };
+    //posts to each individual spreadsheet
+    for (var sect in urlObject) {
+      console.log(sect);
+      if(data[sect + " +"]) {
+        console.log("true");
+        $.post( sect, function( data ) {
+          console.log(sect + " ran");
+        });
+      }
+    }
+//posts to all data spreadsheet
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
@@ -87,9 +127,9 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
         document.getElementById("gform").style.display = "none"; // hide form
-        var thankYouMessage = document.getElementById("thankyou_message");
+        var thankYouMessage = $('#thank-you-message');
         if (thankYouMessage) {
-          thankYouMessage.style.display = "block";
+          thankYouMessage.css("display", "block");
         }
         return;
     };
