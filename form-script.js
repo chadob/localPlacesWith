@@ -30,19 +30,16 @@ $(document).ready(function(){
         $('.' + sectionsArray[sect]).find('.type:checkbox').click(function() {
           if ($(this).is(':checked')) {
             $('.' + sectionsArray[sect]).find('.type').removeAttr('required');
-          } else if ($('.' + sectionsArray[sect]).find('.type').is('checked') || ($('.' + sectionsArray[sect]).find('.type:text').val() !== undefined && $('.' + sectionsArray[sect]).find('.type:text').val() !== "")) {
+          } else if ($('.' + sectionsArray[sect]).find('.type:checkbox:checked').length > 0 || ($('.' + sectionsArray[sect]).find('.type:text').val() !== undefined && $('.' + sectionsArray[sect]).find('.type:text').val() !== "")) {
           } else {
             $('.' + sectionsArray[sect]).find('.type').attr('required', 'required');
           }
         });
         // check if things are checked or if text input has chars in it
         $('.' + sectionsArray[sect]).find('.type:text').on('blur', function() {
-          if ($('.' + sectionsArray[sect]).find('.type:checkbox').is('checked') || ($('.' + sectionsArray[sect]).find('.type:text').val() !== undefined && $('.' + sectionsArray[sect]).find('.type:text').val() !== "")) {
-            console.log('blurred');
+          if ($('.' + sectionsArray[sect]).find('.type:checkbox:checked').length > 0 || ($('.' + sectionsArray[sect]).find('.type:text').val() !== undefined && $('.' + sectionsArray[sect]).find('.type:text').val() !== "")) {
             $('.' + sectionsArray[sect]).find('.type').removeAttr('required');
           } else {
-            console.log($('.' + sectionsArray[sect]).find('.type:checkbox').attr('name'));
-            console.log($('.' + sectionsArray[sect]).find('.type:checkbox').is('checked'));
             $('.' + sectionsArray[sect]).find('.type').attr('required', 'required');
           }
         });

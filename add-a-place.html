@@ -81,6 +81,7 @@
       * Venue City: <input required type="text" name="City"><br>
       * Venue State: <input required type="text" name="State"><br>
       * Venue Zip: <input required type="text" name="Zip"><br>
+        Venue Website: <input type="text" name="Website" value=""><br>
 
       <h5> * Activities: </h5><br>
       Bar Sports <input required type="checkbox" class="category-checkbox" id="bar-sports" name="Bar Sports"><br>
@@ -90,9 +91,10 @@
 
       <!-- Bar sports section of form -->
       <div class="bar-sports">
+        <h6> Bar Sports</h6>
         <p class="font-weight-bold">Sports TV: </p><br>
-        <input type="radio" name="Sports TV" value="Yes"> Yes<br>
-        <input type="radio" name="Sports TV" value="No"> No<br>
+        <input type="radio" name="Sports TV" value="True"> Yes<br>
+        <input type="radio" name="Sports TV" value="False"> No<br>
         <div class="types">
           <p class="font-weight-bold"> * What types of Bar Sports? </p>
           <input class="type bar-type" id="pool-checkbox" type="checkbox" name="Pool"> Pool<br>
@@ -215,6 +217,7 @@
 
 
       <div class="live-entertainment">
+        <h6> Live Entertainment </h6>
         Cost: <input type="text" name="Live Cost"><br>
         Attire: <input type="text" name="Live Attire"><br>
         <div class="types">
@@ -231,6 +234,7 @@
 
 
       <div class="games">
+        <h6> Games </h6>
         <div class="types">
           <p class="font-weight-bold"> * What types of games? </p>
           <input class="type" type="checkbox" name="Skeeball"> Skeeball<br>
@@ -245,18 +249,18 @@
           <div class="skeeball-number-tables">
             <h5> Skeeball</h5>
             <p class="font-weight-bold"> How many Tables </p>
-            <input type="radio" name="Number of Tables" value="1"> 1<br>
-            <input type="radio" name="Number of Tables" value="2-3"> 2-3<br>
-            <input type="radio" name="Number of Tables" value="4-7"> 4-7<br>
-            <input type="radio" name="Number of Tables" value="8+"> 8+<br>
-            <input type="radio" name="Number of Tables" value="More than one bar sport"> More than one bar sport <br>
+            <input type="radio" name="Skeeball Tables" value="1"> 1<br>
+            <input type="radio" name="Skeeball Tables" value="2-3"> 2-3<br>
+            <input type="radio" name="Skeeball Tables" value="4-7"> 4-7<br>
+            <input type="radio" name="Skeeball Tables" value="8+"> 8+<br>
+            <input type="radio" name="Skeeball Tables" value="More than one bar sport"> More than one bar sport <br>
           </div>
           <div class="skeeball-cost">
             <p class="font-weight-bold"> Priced by? </p>
-            <input type="radio" name="Price" value="Per Hour"> Per Hour<br>
-            <input type="radio" name="Price" value="Per Game"> Per Game<br>
-            <input type="radio" name="Price" value="Free"> Free<br>
-            <input type="radio" name="Price" value="Varies"> Varies<br>
+            <input type="radio" name="Skeeball Cost" value="Per Hour"> Per Hour<br>
+            <input type="radio" name="Skeeball Cost" value="Per Game"> Per Game<br>
+            <input type="radio" name="Skeeball Cost" value="Free"> Free<br>
+            <input type="radio" name="Skeeball Cost" value="Varies"> Varies<br>
           </div>
         </div>
         <div class="games-type-section jenga">
@@ -289,10 +293,10 @@
           </div>
           <div class="trivia-cost">
             <p class="font-weight-bold"> Priced by? </p>
-            <input type="radio" name="Trivia" value="Per Hour"> Per Hour<br>
-            <input type="radio" name="Trivia" value="Per Game"> Per Game<br>
-            <input type="radio" name="Trivia" value="Free"> Free<br>
-            <input type="radio" name="Trivia" value="Varies"> Varies<br>
+            <input type="radio" name="Trivia Cost" value="Per Hour"> Per Hour<br>
+            <input type="radio" name="Trivia Cost" value="Per Game"> Per Game<br>
+            <input type="radio" name="Trivia Cost" value="Free"> Free<br>
+            <input type="radio" name="Trivia Cost" value="Varies"> Varies<br>
           </div>
         </div>
         <div class="games-type-section board-games">
@@ -350,7 +354,6 @@
           </div>
         </div>
       </div>
-      Website: <input type="text" name="Website"><br>
       <input type="submit">
     </form>
 

@@ -80,7 +80,7 @@ function getFormData() {
           data[prop + " +"].push(plusObject[property + " array"].join(', '));
         }
       }
-      data[prop + " +"] = data[prop + " +"].join("");
+      data[prop + " +"] = data[prop + " +"].join(", ");
     }
   }
   return data;
@@ -94,7 +94,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     return false;
   }
   */
-
+  console.log(data);
   if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
     var invalidEmail = document.getElementById("email-invalid");
     if (invalidEmail) {
@@ -103,18 +103,31 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     }
   } else {
     var urlObject = {
-      barSports: "https://script.google.com/macros/s/AKfycbwiVfddD7-VBToBeFo-REEVPkDZ5Ij1nRTLy7Ur/exec",
-      liveEntertainment: "https://script.google.com/macros/s/AKfycbyspZtfkg9kxo2HnG4qwV2tnfJbk_JWJDgxRxDnnA/exec",
-      games: "https://script.google.com/macros/s/AKfycbwQmnXJCcQfHkFBqEhf1y-VG00LWm_3pAYUkvaQoQ/exec"
+      "Bar Sports": "https://script.google.com/macros/s/AKfycbwWmTVJ2FIvgs2dW3j9wuJxusd4IvsLMgvcrlEgjWVkX40512Y/exec",
+      "Live Entertainment": "https://script.google.com/macros/s/AKfycbw110UMntSIAcMqh0dBPUVtHn6hpzYmtijT-Wl5p1OnR-7HFsxx/exec",
+      "Games": "https://script.google.com/macros/s/AKfycbx1z7_ZxpLu0uv1Cm9w7wq_pyaS4dZVPo8raSxodNCqe_0AFAVn/exec"
     };
     //posts to each individual spreadsheet
     for (var sect in urlObject) {
-      console.log(sect);
-      if(data[sect + " +"]) {
-        console.log("true");
-        $.post( sect, function( data ) {
-          console.log(sect + " ran");
-        });
+      if(data[sect] === "true") {
+        var url = urlObject[sect];  //
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', url);
+        // xhr.withCredentials = true;
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            document.getElementById("gform").style.display = "none"; // hide form
+            var thankYouMessage = $('#thank-you-message');
+            if (thankYouMessage) {
+              thankYouMessage.css("display", "block");
+            }
+            return;
+        };
+        // url encode form data for sending as post data
+        var encoded = Object.keys(data).map(function(k) {
+            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+        }).join('&')
+        xhr.send(encoded);
       }
     }
 //posts to all data spreadsheet
@@ -124,8 +137,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
-        console.log( xhr.status, xhr.statusText )
-        console.log(xhr.responseText);
         document.getElementById("gform").style.display = "none"; // hide form
         var thankYouMessage = $('#thank-you-message');
         if (thankYouMessage) {
@@ -141,7 +152,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
   }
 }
 function loaded() {
-  console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
   var form = document.getElementById("gform");
   form.addEventListener("submit", handleFormSubmit, false);
