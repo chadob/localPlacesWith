@@ -1,4 +1,27 @@
 $(document).ready(function(){
+  var currentWidth = $(window).width();
+  function checkWidth(init) {
+    if (init && $(window).width() < 500) {
+      $('.number-tables').removeClass('form-check-inline');
+      $('.number-tables').find('input').removeClass('ml-3');
+      $('.number-tables').find('label').after('<br>');
+    } else if (currentWidth > 500 && $(window).width() < 500) {
+      $('.number-tables').removeClass('form-check-inline');
+      $('.number-tables').find('input').removeClass('ml-3');
+      $('.number-tables').find('label').after('<br>');
+    } else {
+      if (!init && $(window).width() > 500) {
+        $('.number-tables').addClass('form-check-inline');
+        $('.number-tables').find('input:not(:first)').addClass('ml-3');
+        $('.number-tables').find('br').remove();
+      }
+    }
+    currentWidth = $(window).width();
+  }
+  checkWidth(true);
+  $(window).resize(function() {
+    checkWidth(false);
+  });
   var sectionsArray = ["bar-sports", "live-entertainment", "games"];
   $('.add-button').click(function() {
     $('.add-form').toggle();

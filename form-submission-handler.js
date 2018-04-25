@@ -107,48 +107,69 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       "Live Entertainment": "https://script.google.com/macros/s/AKfycbw110UMntSIAcMqh0dBPUVtHn6hpzYmtijT-Wl5p1OnR-7HFsxx/exec",
       "Games": "https://script.google.com/macros/s/AKfycbx1z7_ZxpLu0uv1Cm9w7wq_pyaS4dZVPo8raSxodNCqe_0AFAVn/exec"
     };
-    //posts to each individual spreadsheet
-    for (var sect in urlObject) {
-      if(data[sect] === "true") {
-        var url = urlObject[sect];  //
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', url);
-        // xhr.withCredentials = true;
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-            document.getElementById("gform").style.display = "none"; // hide form
-            var thankYouMessage = $('#thank-you-message');
-            if (thankYouMessage) {
-              thankYouMessage.css("display", "block");
-            }
-            return;
-        };
-        // url encode form data for sending as post data
-        var encoded = Object.keys(data).map(function(k) {
-            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-        }).join('&')
-        xhr.send(encoded);
-      }
-    }
-//posts to all data spreadsheet
-    var url = event.target.action;  //
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', url);
-    // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.onreadystatechange = function() {
+    if (data.whichForm === "Update") {
+      var url = "https://script.google.com/macros/s/AKfycbxKX9N-ZoERF_Sx_GgGxe0wFmsnmSGw6koFXJDA/exec";  //
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // xhr.withCredentials = true;
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
         document.getElementById("gform").style.display = "none"; // hide form
         var thankYouMessage = $('#thank-you-message');
         if (thankYouMessage) {
           thankYouMessage.css("display", "block");
         }
         return;
-    };
-    // url encode form data for sending as post data
-    var encoded = Object.keys(data).map(function(k) {
+      };
+      // url encode form data for sending as post data
+      var encoded = Object.keys(data).map(function(k) {
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-    }).join('&')
-    xhr.send(encoded);
+      }).join('&')
+      xhr.send(encoded);
+    } else {
+      //posts to each individual spreadsheet
+      for (var sect in urlObject) {
+        if(data[sect] === "true") {
+          var url = urlObject[sect];  //
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          // xhr.withCredentials = true;
+          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function() {
+            document.getElementById("gform").style.display = "none"; // hide form
+            var thankYouMessage = $('#thank-you-message');
+            if (thankYouMessage) {
+              thankYouMessage.css("display", "block");
+            }
+            return;
+          };
+          // url encode form data for sending as post data
+          var encoded = Object.keys(data).map(function(k) {
+            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+          }).join('&')
+          xhr.send(encoded);
+        }
+      }
+      //posts to all data spreadsheet
+      var url = event.target.action;  //
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // xhr.withCredentials = true;
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+        document.getElementById("gform").style.display = "none"; // hide form
+        var thankYouMessage = $('#thank-you-message');
+        if (thankYouMessage) {
+          thankYouMessage.css("display", "block");
+        }
+        return;
+      };
+      // url encode form data for sending as post data
+      var encoded = Object.keys(data).map(function(k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+      }).join('&')
+      xhr.send(encoded);
+    }
   }
 }
 function loaded() {

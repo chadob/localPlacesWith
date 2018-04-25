@@ -19,3 +19,6 @@
 .games-type-section {
   display: none;
 }
+form {
+  max-width: 500px;
+}
