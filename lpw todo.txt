@@ -1,0 +1,10 @@
+Todo:
+1. search submission against existing coords	DOne
+2. make it look up coords			Done
+3. change recipient email addresses             DOnE
+4. Throttle timeout for loop
+5. place markers
+6. design cards
+7. sort function
+7. new table
+9. search function
