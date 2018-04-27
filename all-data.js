@@ -1,7 +1,7 @@
 var allData =
 [
     {
-        "coords": "61.195628,-149.8996879",
+        "coords": "61.1969774302915, -149.90103743029147",
         "venueName": "Anchorage Billiard Palace & Bar",
         "streetAddress": "903 West Northern Lights Boulevard ",
         "city": "Anchorage",

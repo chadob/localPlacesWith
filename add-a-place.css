@@ -1,6 +1,9 @@
 #thank-you-message {
   display: none;
 }
+#alreadyExists {
+  display: none;
+}
 .update-form {
   display: none;
 }

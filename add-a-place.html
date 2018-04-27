@@ -6,11 +6,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Local Places With - BETA</title>
+  <title>Local Places With</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./add-a-place.css">
+  <link href="vendor/bootstrap/css/custom.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <style>
     body {
@@ -31,25 +33,25 @@
   <!-- NAVIGATION BAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img width="65%" height="65%" src="images/LPW_LOGO_Test3.png"></a>
+      <a class="navbar-brand" href="http://www.localplaceswith.com"><img width="65%" height="65%" src="images/LPW_LOGO_Test3.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a title="Places with pool, darts, ping-pong, and more." class="nav-link" href="index.html">Bar Sports</a>
+            <a title="Places with pool tables, darts, ping-pong, and more." class="nav-link" href="http://www.localplaceswith.com">Bar Sports</a>
           </li>
           <li class="nav-item">
-              <a title="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
-            </li>
-            <li class="nav-item">
-              <a title="Places with trivia, arcades, board games, and more." class="nav-link" href="games.html">Games
-                  <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item active"><!--ACTIVE TAG HERE-->
-              <a title="Add a place!" class="nav-link" href="add-a-place.html">+</a>
+            <a title="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a title="Places with trivia nights, arcades, board games, and more." class="nav-link" href="games.html">Games</a>
+          </li>
+          <li class="nav-item active"><!--ACTIVE TAG HERE-->
+            <a title="Add a place!" class="nav-link" href="add-a-place.html">+
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -61,37 +63,41 @@
     <div id="thank-you-message">
       <h4 class="mx-auto text-center"> Thank you for your submission! </h4>
     </div>
+    <div id="alreadyExists">
+      <h4 class="mx-auto text-center"> Thank you for your submission, but your location already exists. </h4>
+    </div>
     <form class="add-form mx-auto" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzHKs35fTSezh5Yd2S3kgpKdg0IY4mxKosL3f_UPNkEQd1Rhuo/exec">
       <h1 class="mx-auto text-center"> Add/Update a Location </h1>
       <p class="mx-auto text-center text-danger"> * is required </p>
 
       <div class="form-group">
-        <label for="inputState">* Adding or Updating?</label>
+        <label for="inputState"><font class="text-danger">*</font> Adding or Updating?</label>
         <select id="formSelector" class="form-control" name="whichForm">
           <option value="Add" selected>Add a location</option>
           <option value="Update">Update a location</option>
         </select>
       </div>
+      <Br>
       <div class="form-group">
-        <label> * Email: </label>
+        <label> <font class="text-danger">*</font> Your Email: </label>
         <input class="form-control" required type="text" name="Email">
-        <label> * Your Name:</label>
+        <label> <font class="text-danger">*</font> Your Name:</label>
         <input class="form-control" required type="text" name="Name">
-        <label> * Venue Name:</label>
+        <label> <font class="text-danger">*</font> Venue Name:</label>
         <input class="form-control" required type="text" name="Venue Name">
-        <label> * Venue Address:</label>
+        <label> <font class="text-danger">*</font> Venue Address:</label>
         <input class="form-control" required type="text" name="Street Address">
-        <label> * Venue City:</label>
+        <label> <font class="text-danger">*</font> Venue City:</label>
         <input class="form-control" required type="text" name="City">
-        <label> * Venue State:</label>
+        <label> <font class="text-danger">*</font> Venue State:</label>
         <input class="form-control" required type="text" name="State">
-        <label> * Venue Zip:</label>
+        <label> <font class="text-danger">*</font> Venue Zip:</label>
         <input class="form-control" required type="text" name="Zip">
         <label> Venue Website: </label>
         <input class="form-control" type="text" name="Website" value="">
       </div>
 
-      <h6> * Activities: </h6>
+      <h6> <font class="text-danger">*</font> Activities: </h6>
       <div class="activities form-check form-check-inline">
         <input class="form-check-input category-checkbox" required type="checkbox" id="bar-sports" name="Bar Sports">
         <label class="form-check-label text-center" for="bar-sports"> Bar Sports </label>
@@ -105,7 +111,7 @@
       <!-- Bar sports section of form -->
       <div class="bar-sports mt-4">
         <h4 class="mt-5 mb-4"> Bar Sports</h4>
-        <h6 class="">Sports TV: </h6>
+        <h6 class="">Sports on TV: </h6>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="Sports TV" value="True">
           <label class="form-check-label"> Yes </label>
@@ -113,7 +119,7 @@
           <label class="form-check-label"> No </label>
         </div>
 
-        <h6 class="mt-3"> * What types of Bar Sports? </h6>
+        <h6 class="mt-3"> <font class="text-danger">*</font> What types of Bar Sports? </h6>
         <div class="types ">
           <input class="type bar-type" id="pool-checkbox" type="checkbox" name="Pool">
           <label class=""> Pool </label> <br>
@@ -294,7 +300,7 @@
           <label>Attire: </label>
           <input class="form-control" type="text" name="Live Attire">
         </div>
-        <h6> * What types of live entertainment? </h6>
+        <h6> <font class="text-danger">*</font> What types of live entertainment? </h6>
         <div class="types ">
           <input class="type" type="checkbox" name="Live Music">
           <label class=""> Live Music </label> <br>
@@ -316,7 +322,7 @@
 
       <div class="games">
         <h4 class="mt-5 mb-4"> Games </h4>
-        <h6> * What types of games? </h6>
+        <h6> <font class="text-danger">*</font> What types of games? </h6>
         <div class="types">
           <input class="type" type="checkbox" name="Skeeball">
           <label class=""> Skeeball </label> <br>
@@ -335,7 +341,7 @@
         </div>
         <div class="games-type-section skeeball">
           <h5 class="mt-4 mb-3"> Skeeball</h5>
-          <h6> How many Tables </h6>
+          <h6> How many </h6>
           <div class="skeeball-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Skeeball Tables" value="1">
             <label class="form-check-label"> 1 </label>
@@ -360,7 +366,7 @@
         </div>
         <div class="games-type-section jenga">
           <h5 class="mt-4 mb-3"> Jenga </h5>
-          <h6> How many Boxes </h6>
+          <h6> How many </h6>
           <div class="jenga-boxes number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Jenga Boxes" value="1">
             <label class="form-check-label"> 1 </label>
@@ -384,8 +390,8 @@
           </div>
         </div>
         <div class="games-type-section trivia">
-          <h5 class="mt-4 mb-3"> Trivia </h5>
-          <h6> How many Tables </h6>
+          <h5 class="mt-4 mb-3"> Trivia Nights</h5>
+          <h6> How many a week </h6>
           <div class="trivia-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Trivia Tables" value="1">
             <label class="form-check-label"> 1 </label>
@@ -435,7 +441,7 @@
         </div>
         <div class="games-type-section video-games">
           <h5 class="mt-4 mb-3"> Video Games</h5>
-          <h6> How many Consoles </h6>
+          <h6> How many can play </h6>
           <div class="video-games-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Video Games Consoles" value="1">
             <label class="form-check-label"> 1 </label>
@@ -460,7 +466,7 @@
         </div>
         <div class="games-type-section arcades">
           <h5 class="mt-4 mb-3"> Arcades</h5>
-          <h6> How many Machines </h6>
+          <h6> How many </h6>
           <div class="arcades-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Arcade Machines" value="1">
             <label class="form-check-label"> 1 </label>
@@ -487,15 +493,22 @@
       <input class="btn btn-primary mt-3" type="submit">
     </form>
 
-    <iframe class="mx-auto d-block mt-3 mb-5" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&amp;layout=button_count&amp;size=small&amp;mobile_iframe=true&amp;width=69&amp;height=20&amp;appId" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
 
   </div>
+
+<!--FOOTER CONTENT -->
+<br>
+<center><p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+  <br>
+  <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="credits.html" class="customlink1">Credits</a> - <font class="text-muted">Donate</font></font></p></center>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./forms-script.js"></script>
+  <script src="./all-data.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0"></script>
   <script data-cfasync="false" type="text/javascript" src="./form-submission-handler.js"></script>
-
 
 </font></body></html>

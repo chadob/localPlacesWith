@@ -55,6 +55,10 @@ function getFormData() {
   data.formDataNameOrder = JSON.stringify(fields);
   data.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
   data.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+
+
+//For adding the Plus section to the data
   var sectionsObject = {
     "Bar Sports": ["Pool", "Ping Pong", "Darts", "Cornhole", "Foosball", "Shuffleboard", data["Bar Sports Other"]],
     "Live Entertainment": ["Live Music", "Karaoke", "Dancing", "Piano", "Open Mic", "Comedy", data["Live Entertainment Other"]],
@@ -102,35 +106,73 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
       return false;
     }
   } else {
-    var urlObject = {
-      "Bar Sports": "https://script.google.com/macros/s/AKfycbwWmTVJ2FIvgs2dW3j9wuJxusd4IvsLMgvcrlEgjWVkX40512Y/exec",
-      "Live Entertainment": "https://script.google.com/macros/s/AKfycbw110UMntSIAcMqh0dBPUVtHn6hpzYmtijT-Wl5p1OnR-7HFsxx/exec",
-      "Games": "https://script.google.com/macros/s/AKfycbx1z7_ZxpLu0uv1Cm9w7wq_pyaS4dZVPo8raSxodNCqe_0AFAVn/exec"
-    };
-    if (data.whichForm === "Update") {
-      var url = "https://script.google.com/macros/s/AKfycbxKX9N-ZoERF_Sx_GgGxe0wFmsnmSGw6koFXJDA/exec";  //
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.onreadystatechange = function() {
-        document.getElementById("gform").style.display = "none"; // hide form
-        var thankYouMessage = $('#thank-you-message');
-        if (thankYouMessage) {
-          thankYouMessage.css("display", "block");
-        }
-        return;
-      };
-      // url encode form data for sending as post data
-      var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-      }).join('&')
-      xhr.send(encoded);
-    } else {
-      //posts to each individual spreadsheet
-      for (var sect in urlObject) {
-        if(data[sect] === "true") {
-          var url = urlObject[sect];  //
+    //Code for getting the coordinates of the location through gmaps geocoding
+    var geocoder = new google.maps.Geocoder();
+    geocoder.geocode( { 'address': data["Street Address"] + ' ' + data["City"] + ' ' + data["State"]}, function(results, status) {
+      if (status == 'OK') {
+        data.Coords = results[0].geometry.viewport.f.f + ', ' + results[0].geometry.viewport.b.b;
+        var urlObject = {
+          "Bar Sports": "https://script.google.com/macros/s/AKfycbwWmTVJ2FIvgs2dW3j9wuJxusd4IvsLMgvcrlEgjWVkX40512Y/exec",
+          "Live Entertainment": "https://script.google.com/macros/s/AKfycbw110UMntSIAcMqh0dBPUVtHn6hpzYmtijT-Wl5p1OnR-7HFsxx/exec",
+          "Games": "https://script.google.com/macros/s/AKfycbx1z7_ZxpLu0uv1Cm9w7wq_pyaS4dZVPo8raSxodNCqe_0AFAVn/exec"
+        };
+        if (data.whichForm === "Update") {
+          var url = "https://script.google.com/macros/s/AKfycbxKX9N-ZoERF_Sx_GgGxe0wFmsnmSGw6koFXJDA/exec";  //
+          var xhr = new XMLHttpRequest();
+          xhr.open('POST', url);
+          // xhr.withCredentials = true;
+          xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+          xhr.onreadystatechange = function() {
+            document.getElementById("gform").style.display = "none"; // hide form
+            var thankYouMessage = $('#thank-you-message');
+            if (thankYouMessage) {
+              thankYouMessage.css("display", "block");
+            }
+            return;
+          };
+          // url encode form data for sending as post data
+          var encoded = Object.keys(data).map(function(k) {
+            return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+          }).join('&')
+          xhr.send(encoded);
+        } else {
+          //check coords against all locations coords
+          for (var loc in allData) {
+            if (allData[loc].coords === data.Coords) {
+              console.log('Matched coordinates');
+              document.getElementById("gform").style.display = "none"; // hide form
+              var alreadyExists = $('#alreadyExists');
+              if (alreadyExists) {
+                alreadyExists.css("display", "block");
+              }
+              return false;
+            }
+          }
+          //posts to each individual spreadsheet
+          for (var sect in urlObject) {
+            if(data[sect] === "true") {
+              var url = urlObject[sect];  //
+              var xhr = new XMLHttpRequest();
+              xhr.open('POST', url);
+              // xhr.withCredentials = true;
+              xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              xhr.onreadystatechange = function() {
+                document.getElementById("gform").style.display = "none"; // hide form
+                var thankYouMessage = $('#thank-you-message');
+                if (thankYouMessage) {
+                  thankYouMessage.css("display", "block");
+                }
+                return;
+              };
+              // url encode form data for sending as post data
+              var encoded = Object.keys(data).map(function(k) {
+                return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+              }).join('&')
+              xhr.send(encoded);
+            }
+          }
+          //posts to all data spreadsheet
+          var url = event.target.action;  //
           var xhr = new XMLHttpRequest();
           xhr.open('POST', url);
           // xhr.withCredentials = true;
@@ -150,26 +192,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
           xhr.send(encoded);
         }
       }
-      //posts to all data spreadsheet
-      var url = event.target.action;  //
-      var xhr = new XMLHttpRequest();
-      xhr.open('POST', url);
-      // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.onreadystatechange = function() {
-        document.getElementById("gform").style.display = "none"; // hide form
-        var thankYouMessage = $('#thank-you-message');
-        if (thankYouMessage) {
-          thankYouMessage.css("display", "block");
-        }
-        return;
-      };
-      // url encode form data for sending as post data
-      var encoded = Object.keys(data).map(function(k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
-      }).join('&')
-      xhr.send(encoded);
-    }
+    });
   }
 }
 function loaded() {
