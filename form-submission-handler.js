@@ -74,13 +74,13 @@ function getFormData() {
   }
   for (var prop in sectionsObject) {
     if (sectionsObject.hasOwnProperty(prop) && data[prop] == "true") {
-      data[prop + " +"] = [];
+      data[prop + " Plus"] = [];
       for (var property in sectionsObject) {
         if (property !== prop) {
-          data[prop + " +"].push(plusObject[property + " array"].join(', '));
+          data[prop + " Plus"].push(plusObject[property + " array"].join(', '));
         }
       }
-      data[prop + " +"] = data[prop + " +"].join(", ");
+      data[prop + " Plus"] = data[prop + " Plus"].join(", ");
     }
   }
   return data;

@@ -5,7 +5,7 @@ const path = require('path');
 app.use(express.static('./'));
 app.get('/', function(request, response) {
   console.log('New request:', request.url);
-  response.sendFile('add-a-place.html', { root: './' });
+  response.sendFile('chad-map.html', { root: './' });
 });
 
 app.listen(port, (err) => {
