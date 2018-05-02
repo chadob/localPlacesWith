@@ -1,0 +1,17 @@
+#map {
+  height: 650px;
+  width: 100%;
+}
+.mapNav {
+  height: 50px;
+  padding: 0px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.card-cat {
+  font-weight: bold;
+}
+.gm-style-iw div {
+  border: none;
+}

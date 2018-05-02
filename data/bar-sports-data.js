@@ -1,620 +1,685 @@
+barSportsData =
 [
     {
-        "coords": "61.195628,-149.8996879",
+        "coords": "61.1969774302915, -149.90103743029147",
         "venueName": "Anchorage Billiard Palace & Bar",
-        "streetAddress": "903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard 903 West Northern Lights Boulevard",
+        "streetAddress": "903 West Northern Lights Boulevard",
         "city": "Anchorage",
         "state": "AK",
         "zip": 99503,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "61.1831019802915, -149.81621848029147",
         "venueName": "Blue Fox",
         "streetAddress": "3461 E Tudor Rd",
         "city": "Anchorage",
         "state": "AK",
         "zip": 99507,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "61.1960809802915, -149.90624698029148",
         "venueName": "Buckaroo Club",
         "streetAddress": "2811 Spenard Rd",
         "city": "Anchorage",
         "state": "AK",
         "zip": 99503,
-        "pool": "Pool",
-        "barSports": "Shuffleboard"
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard"
     },
     {
+        "coords": "61.21782398029151, -149.8951480802915",
         "venueName": "Flattop Pizza & Pool",
         "streetAddress": "600 W 6th Ave",
         "city": "Anchorage",
         "state": "AK",
         "zip": 99501,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "61.2200714802915, -149.89837808029154",
         "venueName": "Pioneer Bar",
         "streetAddress": "739 W 4th Ave",
         "city": "Anchorage",
         "state": "AK",
         "zip": 99501,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Shuffleboard, Arcades",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard, Arcades",
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.5032608302915, -86.7981206802915",
         "venueName": "Break",
         "streetAddress": "1001 20th St S",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35205,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+"
     },
     {
+        "coords": "33.3936599802915, -86.79485328029153",
         "venueName": "Bumper's Billiards",
         "streetAddress": "2132 Lornaridge Ln",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35216,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+"
     },
     {
+        "coords": "33.4249845802915, -86.70313538029154",
         "venueName": "Courtyard Oyster Bar",
         "streetAddress": "4683 US-280",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35242,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 3,
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.43970068029149, -86.8672833802915",
         "venueName": "Overtime Grill & Bar",
         "streetAddress": "100 Frankfurt Cir",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35211,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 1,
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.4734069302915, -86.82115858029147",
         "venueName": "The Upper Deck",
         "streetAddress": "449 Valley Ave",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35209,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 4,
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.5119296302915, -86.79081458029151",
         "venueName": "Tin Roof",
         "streetAddress": "2709 7th Ave S",
         "city": "Birmingham",
         "state": "AL",
         "zip": 35233,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 1,
-        "barSports": "Live music"
+        "barSportsPlus": "Live music"
     },
     {
+        "coords": "34.7468975802915, -92.27181483029153",
         "venueName": "Brewski's Pub & Grub",
         "streetAddress": "315 Main St STE. 100",
         "city": "Little Rock",
         "state": "AR",
         "zip": 72201,
-        "pool": "Pool",
-        "barSports": "Arcades",
+        "pool": "Yes",
+        "barSportsPlus": "Arcades",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.7813798802915, -92.28248038029153",
         "venueName": "Krome Billiards",
         "streetAddress": "2657 Pike Ave",
         "city": "Little Rock",
         "state": "AR",
         "zip": 72114,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.73718728029149, -92.2743630802915",
         "venueName": "Midtown Billiards",
         "streetAddress": "1316 S Main St",
         "city": "Little Rock",
         "state": "AR",
         "zip": 72202,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.7610571302915, -92.3097446302915",
         "venueName": "Rack Um",
         "streetAddress": "2817 Cantrell Rd",
         "city": "Little Rock",
         "state": "AR",
         "zip": 72202,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.75651098029149, -92.39446998029149",
         "venueName": "West End Smokehouse & Tavern",
         "streetAddress": "215 N Shackleford Rd",
         "city": "Little Rock",
         "state": "AR",
         "zip": 72211,
-        "pool": "Pool",
-        "barSports": "Live music",
+        "pool": "Yes",
+        "barSportsPlus": "Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.5819604802915, -112.13436068029148",
         "venueName": "Bull Shooters",
         "streetAddress": "3337 W Peoria Ave",
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85029,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": "8+",
-        "barSports": "Poker",
+        "barSportsPlus": "Poker",
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.5249726802915, -112.11563648029153",
         "venueName": "Bullock's Country Attitudes",
         "streetAddress": "2601 W Bethany Home Rd",
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85017,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Live music, karaoke, dance floor",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Live music, karaoke, dance floor",
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.5986520802915, -112.01600118029148",
         "venueName": "Dodey's North",
         "streetAddress": "3114 E Cactus Rd",
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85032,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "33.5813879802915, -112.11947188029148",
         "venueName": "Metro Sportz Bar & Billiards",
         "streetAddress": "10402 N Black Canyon Hwy",
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85051,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "33.4959765802915, -112.00379578029151",
         "venueName": "Zipps Sports Grill",
         "streetAddress": "3647 E Indian School Rd",
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85018,
-        "shuffleboard": true,
+        "shuffleboard": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.10746708029149, -117.86847928029147",
         "venueName": "Cue-Time Family Billiards",
         "streetAddress": "19706 E Arrow Hwy",
         "city": "Covina",
         "state": "CA",
         "zip": 91724,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "36.83274993029151, -119.79090343029151",
         "venueName": "Diamond Billiards",
         "streetAddress": "6460 N Blackstone Ave # 114",
         "city": "Fresno",
         "state": "CA",
         "zip": 93710,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "33.7752005802915, -117.9630626802915",
         "venueName": "2000 Points Billiards",
         "streetAddress": "9786 Garden Grove Blvd",
         "city": "Garden Grove",
         "state": "CA",
         "zip": 92844,
-        "pingPong": true,
-        "pool": "Pool",
+        "pingPong": "Yes",
+        "pool": "Yes",
         "poolTables": "8+"
     },
     {
+        "coords": "32.7650145802915, -117.02484088029149",
         "venueName": "Jolt N Joes",
         "streetAddress": "8076 La Mesa Boulevard",
         "city": "La Mesa",
         "state": "CA",
         "zip": 91942,
-        "pingPong": true,
-        "pool": "Pool",
+        "pingPong": "Yes",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr, varies by time of day"
     },
     {
+        "coords": "33.71675198029151, -116.2980364802915",
         "venueName": "The Beer Hunter",
         "streetAddress": "78483 Hwy 111",
         "city": "La Quinta",
         "state": "CA",
         "zip": 92253,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.05346128029151, -118.2933945302915",
         "venueName": "1000 Billiards",
         "streetAddress": "1001 S Vermont Ave # 205",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90006,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.10407608029149, -118.2934262802915",
         "venueName": "1739 Public House",
         "streetAddress": "1739 North Vermont",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90027,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "33.98686178029149, -118.42598803029148",
         "venueName": "90 West Lounge",
         "streetAddress": "12740 Culver Blvd",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90066,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.0107995802915, -118.41441608029152",
         "venueName": "Cozy Inn",
         "streetAddress": "11155 Washington Pl",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90232,
-        "pool": "Pool",
-        "barSports": "Shuffleboard"
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard"
     },
     {
+        "coords": "34.08593258029151, -118.2224938802915",
         "venueName": "Footsies",
         "streetAddress": "2640 N Figueroa St",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90065,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.06607638029151, -118.31025248029152",
         "venueName": "Frank N Hank",
         "streetAddress": "518 S Western Ave",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.12152183029149, -118.25285433029148",
         "venueName": "Green Room",
         "streetAddress": "3458 N San Fernando Rd",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90065,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.0309545802915, -118.41264528029149",
         "venueName": "Irish Times Pub & Restaurant",
         "streetAddress": "3267 Motor Ave",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90034,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.0683151302915, -118.29354528029148",
         "venueName": "Ko Ray Billiard",
         "streetAddress": "401 S Vermont Ave",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.0234822802915, -118.44020718029151",
         "venueName": "Lost & Found",
         "streetAddress": "11700 National Blvd",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90064,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.04837648029151, -118.25728258029153",
         "venueName": "Seven Grand",
         "streetAddress": "515 W 7th St #200",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90014,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.1054621802915, -118.33208258029151",
         "venueName": "The Brickyard Pub",
         "streetAddress": "1810 Wilcox Ave",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90028,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.04860438029149, -118.25138178029147",
         "venueName": "The Down and Out",
         "streetAddress": "501 S Spring St",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90013,
-        "pool": "Pool",
-        "barSports": "Beer Pong",
+        "pool": "Yes",
+        "barSportsPlus": "Beer Pong",
         "sportsTv": "Yes"
     },
     {
+        "coords": "34.0767026802915, -118.25487543029152",
         "venueName": "The Short Stop",
         "streetAddress": "1455 Sunset Blvd",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90026,
-        "pool": "Pool",
-        "barSports": "Beer Pong, Dance Floor"
+        "pool": "Yes",
+        "barSportsPlus": "Beer Pong, Dance Floor"
     },
     {
+        "coords": "34.0515143302915, -118.25831213029153",
         "venueName": "The Standard",
         "streetAddress": "550 S Flower St",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90017,
-        "pingPong": true,
-        "pool": "Pool"
+        "pingPong": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "35.2133607802915, -80.81842098029153",
         "venueName": "Tony's Saloon",
-        "streetAddress": "2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St 2017 E 7th St",
+        "streetAddress": "2017 E 7th St ",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90021,
-        "pingPong": true,
-        "pool": "Pool"
+        "pingPong": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "34.0645486802915, -118.29637508029151",
         "venueName": "Xando Inc",
         "streetAddress": "3324 W 6th St",
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "34.0934370802915, -117.68930198029148",
         "venueName": "The Sand Bar",
         "streetAddress": "5363 E Arrow Hwy",
         "city": "Montclair",
         "state": "CA",
         "zip": 91763,
-        "pool": "Pool",
-        "barSports": "Shuffleboard"
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard"
     },
     {
+        "coords": "38.57502108029149, -121.47082128029149",
         "venueName": "Blue Cue",
         "streetAddress": "1004 28th St",
         "city": "Sacramento",
         "state": "CA",
         "zip": 95816,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "38.6139344802915, -121.3832539802915",
         "venueName": "Candlerock Lounge & Billiards",
         "streetAddress": "2600 Watt Ave",
         "city": "Sacramento",
         "state": "CA",
         "zip": 95821,
-        "pool": "Pool",
-        "barSports": "Bowling"
+        "pool": "Yes",
+        "barSportsPlus": "Bowling"
     },
     {
+        "coords": "32.7105531302915, -117.1620671802915",
         "venueName": "Jolt N Joes",
         "streetAddress": "379 4th Avenue",
         "city": "San Diego",
         "state": "CA",
         "zip": 92101,
-        "pingPong": true,
-        "pool": "Pool",
+        "pingPong": "Yes",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr, varies by time of day"
     },
     {
+        "coords": "37.74146193029149, -122.4103839802915",
         "venueName": "Barebottle Brewing Company",
         "streetAddress": "1525 Cortland Ave",
         "city": "San Francisco",
         "state": "CA",
         "zip": 94110,
-        "pingPong": true,
-        "cornhole": true,
-        "foosball": true,
-        "shuffleboard": true
+        "pingPong": "Yes",
+        "cornhole": "Yes",
+        "foosball": "Yes",
+        "shuffleboard": "Yes"
     },
     {
+        "coords": "37.2629680802915, -121.87634218029149",
         "venueName": "Cuetopia Billiard Café",
         "streetAddress": "4700 Almaden Expy",
         "city": "San Jose",
         "state": "CA",
         "zip": 95118,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "37.3247887802915, -121.9094235802915",
         "venueName": "Westside Billiards",
         "streetAddress": "1050 W San Carlos St",
         "city": "San Jose",
         "state": "CA",
         "zip": 95126,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "37.64451418029149, -122.4272320802915",
         "venueName": "Brentwood Bowl",
         "streetAddress": "237 El Camino Real,",
         "city": "South San Francisco",
         "state": "CA",
         "zip": 94080,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "39.1712710802915, -120.1445263802915",
         "venueName": "Pete N Pete's",
         "streetAddress": "395 N Lake Blvd",
         "city": "Tahoe City",
         "state": "CA",
         "zip": 96145,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Shuffleboard"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard"
     },
     {
+        "coords": "39.6829604802915, -104.86885718029151",
         "venueName": "Rack'Em Pool and Sports Bar",
         "streetAddress": "1919 S Havana St",
         "city": "Aurora",
         "state": "CO",
         "zip": 80014,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.6736763802915, -104.86667328029148",
         "venueName": "Stampede",
         "streetAddress": "2430 S Havana St",
         "city": "Aurora",
         "state": "CO",
         "zip": 80014,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 2,
         "poolCost": "$/game",
-        "barSports": "Dancing, Mechanical Bull"
+        "barSportsPlus": "Dancing, Mechanical Bull"
     },
     {
+        "coords": "39.7165109802915, -104.98854468029151",
         "venueName": "Badgers Pub",
         "streetAddress": "76 S Broadway",
         "city": "Denver",
         "state": "CO",
         "zip": 80209,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": 1,
         "poolCost": "$/game",
-        "barSports": "Arcades, Skeeball"
+        "barSportsPlus": "Arcades, Skeeball"
     },
     {
+        "coords": "39.79659513029149, -104.98804538029151",
         "venueName": "Grizzly Rose",
         "streetAddress": "5450 N Valley Hwy",
         "city": "Denver",
         "state": "CO",
         "zip": 80216,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 4,
         "poolCost": "$/game",
-        "barSports": "Dancing, Mechanical Bull"
+        "barSportsPlus": "Dancing, Mechanical Bull"
     },
     {
+        "coords": "39.7558695802915, -104.99064423029148",
         "venueName": "Mile High Spirits",
         "streetAddress": "2201 Lawrence St",
         "city": "Denver",
         "state": "CO",
         "zip": 80205,
-        "cornhole": true
+        "cornhole": "Yes"
     },
     {
+        "coords": "39.6996065302915, -104.96354788029151",
         "venueName": "Homegrown Tap & Dough",
         "streetAddress": "1001 S Gaylord St",
         "city": "Denver",
         "state": "CO",
         "zip": 80209,
-        "cornhole": true,
-        "barSports": "Games (Video Games)",
+        "cornhole": "Yes",
+        "barSportsPlus": "Video Games",
         "sportsTv": "Yes",
         "website": "https://www.yelp.com/biz/homegrown-tap-and-dough-wash-park-denver"
     },
     {
+        "coords": "39.6984759802915, -104.96287053029153",
         "venueName": "The Tavern (Wash Park)",
         "streetAddress": "1066 S Gaylord St",
         "city": "Denver",
         "state": "CO",
         "zip": 80209,
-        "cornhole": true,
+        "cornhole": "Yes",
         "poolCost": "FREE",
-        "barSports": "Games (Jenga)",
+        "barSportsPlus": "Games (Jenga)",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.71927758029151, -104.9893295802915",
         "venueName": "Punchbowl Social",
         "streetAddress": "65 Broadway",
         "city": "Denver",
         "state": "CO",
         "zip": 80203,
-        "darts": true,
-        "pingPong": true,
-        "cornhole": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "cornhole": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "dartsBoards": 3,
         "pingPongTables": 2,
         "foosballTables": 1,
         "poolTables": 1,
         "poolCost": "$/hr",
-        "barSports": "Shuffleboard, Arcades, Skeeball"
+        "barSportsPlus": "Shuffleboard, Arcades, Skeeball"
     },
     {
+        "coords": "39.75032798029149, -105.00203498029151",
         "venueName": "Society Sports & Spirits",
         "streetAddress": "1434 Blake St",
         "city": "Denver",
         "state": "CO",
         "zip": 80202,
-        "shuffleboard": true,
-        "barSports": "Video games"
+        "shuffleboard": "Yes",
+        "barSportsPlus": "Video games"
     },
     {
+        "coords": "39.74637998029149, -104.99496488029149",
         "venueName": "Tarantula Billiard & Bar",
         "streetAddress": "1520 Stout St",
         "city": "Denver",
         "state": "CO",
         "zip": 80202,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr"
     },
     {
+        "coords": "39.7547324302915, -104.99988283029148",
         "venueName": "Wynkoop Brewery",
         "streetAddress": "1634 18th St",
         "city": "Denver",
         "state": "CO",
         "zip": 80202,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr"
     },
     {
+        "coords": "39.6980111802915, -104.93992418029148",
         "venueName": "Dr. Proctor's Lounge",
         "streetAddress": "4201 E Mississippi Ave",
         "city": "Glendale",
         "state": "CO",
         "zip": 80246,
-        "darts": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "dartsBoards": 5,
         "foosballTables": 5,
         "poolTables": 5,
         "poolCost": "$.75, Free at times",
-        "barSports": "Jenga",
+        "barSportsPlus": "Jenga",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.59619668029149, -104.87840898029151",
         "venueName": "Sportsbook Bar & Grill",
         "streetAddress": "9660 E Arapahoe Rd",
         "city": "Greenwood Village",
         "state": "CO",
         "zip": 80112,
-        "darts": true,
-        "shuffleboard": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
         "dartsCost": "$/game",
@@ -622,1627 +687,1799 @@
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.31486258029149, -81.69654553029147",
         "venueName": "Dahlia's Pour House",
         "streetAddress": "2695 Post St",
         "city": "Jacksonville",
         "state": "FL",
         "zip": 32204,
-        "darts": true,
-        "pingPong": true,
-        "shuffleboard": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.3096809802915, -81.71541748029153",
         "venueName": "Perfect Rack",
         "streetAddress": "1186 Edgewood Ave S",
         "city": "Jacksonville",
         "state": "FL",
         "zip": 32205,
-        "shuffleboard": true,
-        "pool": "Pool",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
         "poolTables": 8,
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.28737778029149, -81.55086178029148",
         "venueName": "Q Ball",
-        "streetAddress": "10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd 10150 Beach Blvd",
+        "streetAddress": "10150 Beach Blvd ",
         "city": "Jacksonville",
         "state": "FL",
         "zip": 32246,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": 8,
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.1668118802915, -81.6043201802915",
         "venueName": "Rack'em Up Sports Bar & Billiards",
         "streetAddress": "4268 Oldfield Crossing Dr #205",
         "city": "Jacksonville",
         "state": "FL",
         "zip": 32223,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": 8
     },
     {
+        "coords": "28.0701898802915, -80.55971328029148",
         "venueName": "Oasis Bar",
         "streetAddress": "300 Ocean Ave Ste #1",
         "city": "Melbourne Beach",
         "state": "FL",
         "zip": 32951,
-        "pingPong": true,
-        "pool": "Pool"
+        "pingPong": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "25.72909798029151, -80.24452598029154",
         "venueName": "Barracuda Taphouse & Grill",
         "streetAddress": "3035 Fuller St",
         "city": "Miami",
         "state": "FL",
         "zip": 33133,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 1,
         "poolTables": 1,
-        "barSports": "Beer Pong, Trivia Night"
+        "barSportsPlus": "Beer Pong, Trivia Night"
     },
     {
+        "coords": "25.8492037802915, -80.17556818029152",
         "venueName": "K&K Billiards Miami",
         "streetAddress": "1090 NE 79th St",
         "city": "Miami",
         "state": "FL",
         "zip": 33138,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 8,
         "sportsTv": "Yes"
     },
     {
+        "coords": "27.8158167802915, -82.67233678029152",
         "venueName": "Mad Hatter's Ethnobotanical Tea Bar",
         "streetAddress": "4685 28th St N, St",
         "city": "Petersburg",
         "state": "FL",
         "zip": 33714,
-        "pool": "Pool",
-        "barSports": "Board Games, Hookah"
+        "pool": "Yes",
+        "barSportsPlus": "Board Games, Hookah"
     },
     {
+        "coords": "33.68054788029149, -84.44196298029152",
         "venueName": "Pyramids Lounge Bar",
         "streetAddress": "2787 Main St",
         "city": "Atlanta",
         "state": "GA",
         "zip": 30344,
-        "pool": "Pool",
-        "barSports": "Hookah"
+        "pool": "Yes",
+        "barSportsPlus": "Hookah"
     },
     {
+        "coords": "32.52164243029149, -84.9676861302915",
         "venueName": "Player's",
         "streetAddress": "1500 54th St",
         "city": "Columbus",
         "state": "GA",
         "zip": 31904,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 8,
         "poolTables": "8+",
-        "barSports": "Mini Bowling"
+        "barSportsPlus": "Mini Bowling"
     },
     {
+        "coords": "33.6806239802915, -84.44180198029147",
         "venueName": "Chairs",
         "streetAddress": "2783 MAIN STREET",
         "city": "East Point",
         "state": "GA",
         "zip": 30344,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Arcades, Piano, Karaoke",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Arcades, Piano, Karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "21.3018319802915, -157.8419189802915",
         "venueName": "8 Fat Fat 8 Bar & Grill",
         "streetAddress": "1327 S Beretania St",
         "city": "Honolulu",
         "state": "HI",
         "zip": 96814,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "21.2839780802915, -157.80074718029152",
         "venueName": "Top of the Hill",
         "streetAddress": "3579 Waialae Ave,",
         "city": "Honolulu",
         "state": "HI",
         "zip": 96816,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "21.2856228802915, -157.81474418029154",
         "venueName": "Karaoke Hut Sports Bar & Grill",
         "streetAddress": "909 Kapahulu Ave # E",
         "city": "Honolulu",
         "state": "HI",
         "zip": 96816,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "21.3078821302915, -157.86694593029154",
         "venueName": "Nashville Waikiki",
         "streetAddress": "1 Aloha Tower Dr",
         "city": "Honolulu",
         "state": "HI",
         "zip": 96813,
-        "pool": "Pool",
-        "barSports": "Entertainment (Live music, dancing)"
+        "pool": "Yes",
+        "barSportsPlus": "Live music, dancing"
     },
     {
+        "coords": "43.61211578029149, -116.39196603029148",
         "venueName": "127 Club",
         "streetAddress": "127 E Idaho Ave",
         "city": "Boise",
         "state": "ID",
         "zip": 83642,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "43.5920552802915, -116.3174497802915",
         "venueName": "Hooligan's Pub",
         "streetAddress": "10704 W Overland Rd",
         "city": "Boise",
         "state": "ID",
         "zip": 83709,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "43.5790216302915, -116.19467213029151",
         "venueName": "Jim's Alibi",
         "streetAddress": "2710 S Broadway Ave",
         "city": "Boise",
         "state": "ID",
         "zip": 83706,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "43.6182324302915, -116.20790193029148",
         "venueName": "Mulligans' Pub & Eatery",
         "streetAddress": "1009 W Main",
         "city": "Boise",
         "state": "ID",
         "zip": 83702,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "43.6193011802915, -116.25573898029148",
         "venueName": "The Pocket",
         "streetAddress": "1487 N Curtis Rd",
         "city": "Boise",
         "state": "ID",
         "zip": 83706,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "41.90435123029151, -87.67338668029151",
         "venueName": "Gold Star Bar",
         "streetAddress": "1755 W Division St",
         "city": "Chicago",
         "state": "IL",
         "zip": 60622,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "41.9983914302915, -87.67203748029152",
         "venueName": "Pleasure Billiards & Café",
         "streetAddress": "6318 N Clark St",
         "city": "Chicago",
         "state": "IL",
         "zip": 60660,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "41.9547620802915, -87.67008408029147",
         "venueName": "Ten Cat Tavern",
-        "streetAddress": "3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave 3931 N Ashland Ave",
+        "streetAddress": "3931 N Ashland Ave ",
         "city": "Chicago",
         "state": "IL",
         "zip": 60613,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.9482356802915, -90.37076868029152",
         "venueName": "Cherry Street Restaurant and Bar",
         "streetAddress": "57 S Cherry St",
         "city": "Galesburg",
         "state": "IL",
         "zip": 61401,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9818179802915, -90.10998098029154",
         "venueName": "Beachcorner Bar & Grill",
-        "streetAddress": "4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St 4905 Canal St",
+        "streetAddress": "4905 Canal St ",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70119,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9423129302915, -90.13000988029148",
         "venueName": "Bruno's Tavern",
         "streetAddress": "7538 Maple St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70118,
-        "pool": "Pool",
-        "barSports": "Shuffleboard",
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard",
         "sportsTv": "Yes"
     },
     {
+        "coords": "29.9437417302915, -90.1356320302915",
         "venueName": "Cooter Brown's Tavern",
         "streetAddress": "509 S Carrollton Ave",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70118,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "29.9653369802915, -90.0652417802915",
         "venueName": "Cosimo's Bar",
         "streetAddress": "1201 Burgundy St,",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70116,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9602759802915, -90.06950118029152",
         "venueName": "Fahy's Irish Pub",
         "streetAddress": "540 Burgundy St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70112,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "29.9186780302915, -90.10846343029152",
         "venueName": "Grit's Bar",
         "streetAddress": "530 Lyons St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9520804802915, -90.07599293029148",
         "venueName": "Happy's Irish Pub",
         "streetAddress": "1009 Poydras St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70112,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9359041302915, -90.08188023029152",
         "venueName": "Igor's",
         "streetAddress": "2133 St Charles Ave",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70130,
-        "foosball": true,
-        "pool": "Pool",
-        "barSports": "Laundromat"
+        "foosball": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Laundromat"
     },
     {
+        "coords": "29.9218750802915, -90.10759048029149",
         "venueName": "Le Bon Temps Roule",
         "streetAddress": "4801 Magazine St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9394554302915, -90.07806068029151",
         "venueName": "Lucky's Bar",
         "streetAddress": "1625 St Charles Ave",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70130,
-        "pool": "Pool",
-        "barSports": "Laundromat, Open 24HRs"
+        "pool": "Yes",
+        "barSportsPlus": "Laundromat, Open 24HRs"
     },
     {
+        "coords": "29.9271934802915, -90.0957588802915",
         "venueName": "Mayfair Lounge",
         "streetAddress": "1505 Amelia St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "29.9590249802915, -90.06752398029153",
         "venueName": "Molly's Irish Pub & Restaurant",
-        "streetAddress": "732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St 732 Toulouse St",
+        "streetAddress": "732 Toulouse St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70130,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "29.9563482802915, -90.0515327802915",
         "venueName": "Old Point Bar",
         "streetAddress": "545 Patterson Rd",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70114,
-        "pool": "Pool",
-        "barSports": "Live performances"
+        "pool": "Yes",
+        "barSportsPlus": "Live performances"
     },
     {
+        "coords": "29.9712793802915, -90.1078081802915",
         "venueName": "Shamrock",
         "streetAddress": "4133 S Carrollton Ave",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70119,
-        "darts": true,
-        "pingPong": true,
-        "pool": "Pool",
-        "barSports": "Dancing",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Dancing",
         "sportsTv": "Yes"
     },
     {
+        "coords": "29.9265081802915, -90.11645608029153",
         "venueName": "St. Joe's Bar",
-        "streetAddress": "5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St 5535 Magazine St",
+        "streetAddress": "5535 Magazine St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "29.9525820802915, -90.07263318029152",
         "venueName": "Voodoo Two",
         "streetAddress": "330 Carondelet St",
         "city": "New Orleans",
         "state": "LA",
         "zip": 70130,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "42.3584639802915, -71.06222208029152",
         "venueName": "Beantown Pub",
         "streetAddress": "100 Tremont St",
         "city": "Boston",
         "state": "MA",
         "zip": 2108,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "42.3506735802915, -71.09727328029146",
         "venueName": "Cornwall's",
         "streetAddress": "654 Beacon St",
         "city": "Boston",
         "state": "MA",
         "zip": 2215,
-        "pool": "Pool",
-        "barSports": "Board Games"
+        "pool": "Yes",
+        "barSportsPlus": "Board Games"
     },
     {
+        "coords": "42.3590285802915, -71.06041148029152",
         "venueName": "Scholar's American Bistro and Cocktail Lounge",
         "streetAddress": "25 School St",
         "city": "Boston",
         "state": "MA",
         "zip": 2108,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "42.3681281802915, -71.09227878029151",
         "venueName": "Flat Top Johnny's",
         "streetAddress": "1 Kendall Sq",
         "city": "Cambridge",
         "state": "MA",
         "zip": 2139,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "42.3876236802915, -71.00878568029151",
         "venueName": "Pockets Billiard Club",
         "streetAddress": "981 Bennington St",
         "city": "East Boston",
         "state": "MA",
         "zip": 2128,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "39.4993923802915, -76.32808948029151",
         "venueName": "Route 24 Ale House",
         "streetAddress": "2 Bel Air S Pkwy",
         "city": "Bel Air",
         "state": "MD",
         "zip": 21015,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "39.5768589302915, -76.99707813029147",
         "venueName": "Down Under Bar",
         "streetAddress": "4 W Main St",
         "city": "Westminster",
         "state": "MD",
         "zip": 21157,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolCost": "Free at times"
     },
     {
+        "coords": "44.98221738029151, -93.2749215802915",
         "venueName": "Brothers Bar & Grill",
         "streetAddress": "430 N 1st Ave",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55401,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
         "sportsTv": "Yes"
     },
     {
+        "coords": "44.9763425302915, -93.25423153029152",
         "venueName": "Grumpy's Bar & Grill",
         "streetAddress": "1111 S Washington Ave",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55415,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 2,
-        "barSports": "Live music, jukebox",
+        "barSportsPlus": "Live music, jukebox",
         "sportsTv": "Yes"
     },
     {
+        "coords": "44.95136898029149, -93.2342003802915",
         "venueName": "Schooner Tavern",
         "streetAddress": "2901 27th Ave S",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55406,
-        "pool": "Pool",
-        "barSports": "Karaoke, Live music",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "44.9890485302915, -93.2231721802915",
         "venueName": "Sporty's Pub & Grill",
         "streetAddress": "2124 Como Ave SE",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55414,
-        "pool": "Pool",
-        "barSports": "Pinball",
+        "pool": "Yes",
+        "barSportsPlus": "Pinball",
         "sportsTv": "Yes"
     },
     {
+        "coords": "44.9890485302915, -93.2231721802915",
         "venueName": "Sporty's Pub & Grill",
         "streetAddress": "2124 Como Ave SE",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55414,
-        "darts": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "poolTables": 5,
-        "barSports": "Pinball",
+        "barSportsPlus": "Pinball",
         "sportsTv": "Yes"
     },
     {
+        "coords": "44.9508997302915, -93.29936468029149",
         "venueName": "William's Uptown Pub & Peanut Bar",
         "streetAddress": "2911 Hennepin Ave",
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55408,
-        "darts": true,
-        "foosball": true,
+        "darts": "Yes",
+        "foosball": "Yes",
         "dartsBoards": 5,
         "foosballTables": 5,
         "sportsTv": "Yes"
     },
     {
+        "coords": "38.6434971802915, -90.1902073802915",
         "venueName": "Llywelyn's Pub",
         "streetAddress": "1732 S 9th St",
         "city": "St Louis",
         "state": "MO",
         "zip": 63104,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "38.6241326802915, -90.28787053029151",
         "venueName": "Nick's Pub",
         "streetAddress": "6001 Manchester Ave",
         "city": "St Louis",
         "state": "MO",
         "zip": 63110,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "38.6025357802915, -90.32681158029152",
         "venueName": "The Cue",
         "streetAddress": "3632 S Big Bend Blvd",
         "city": "St Louis",
         "state": "MO",
         "zip": 63143,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "38.5934784802915, -90.28118718029151",
         "venueName": "The Famous Bar",
         "streetAddress": "5213 Chippewa St",
         "city": "St Louis",
         "state": "MO",
         "zip": 63109,
-        "pool": "Pool",
-        "barSports": "Arcades",
+        "pool": "Yes",
+        "barSportsPlus": "Arcades",
         "sportsTv": "Yes"
     },
     {
+        "coords": "38.6010909802915, -90.26301973029149",
         "venueName": "Tower Pub",
         "streetAddress": "3234 Morganford Rd",
         "city": "St Louis",
         "state": "MO",
         "zip": 63116,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "38.6071732802915, -90.27708438029151",
         "venueName": "Trophy Room",
         "streetAddress": "5099 Arsenal St",
         "city": "St Louis",
         "state": "MO",
         "zip": 63139,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "38.7018572802915, -90.4484928802915",
         "venueName": "Westport Social",
         "streetAddress": "910 W Port Plaza Dr",
         "city": "St Louis",
         "state": "MO",
         "zip": 63146,
-        "darts": true,
-        "pingPong": true,
-        "foosball": true,
-        "shuffleboard": true,
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "foosball": "Yes",
+        "shuffleboard": "Yes",
         "poolCost": "FREE",
-        "barSports": "Other Sports, Music, Games",
+        "barSportsPlus": "Other Sports, Music, Games",
         "sportsTv": "Yes",
         "website": "http://westportsocial-stl.com/games/"
     },
     {
+        "coords": "45.7881954802915, -108.55782648029151",
         "venueName": "Shooters Casino & Sports Bar",
         "streetAddress": "1600 Avenue D,",
         "city": "Billings",
         "state": "MT",
         "zip": 59102,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "45.83171033029149, -108.47385488029147",
         "venueName": "F.O.E of Billings",
         "streetAddress": "526 Laurie Ln",
         "city": "Billings",
         "state": "MT",
         "zip": 59105,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "45.76792698029149, -108.53247983029149",
         "venueName": "The Reno Club",
         "streetAddress": "150 Calhoun Ln",
         "city": "Billings",
         "state": "MT",
         "zip": 59101,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "41.0428752802915, -73.77057668029147",
         "venueName": "Hooligan's FC Sports Bar",
-        "streetAddress": "2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway 2043, 109 N Broadway",
+        "streetAddress": "2043, 109 N Broadway",
         "city": "Billings",
         "state": "MT",
         "zip": 59101,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "45.7786884302915, -108.55356298029153",
         "venueName": "Bones Arcade",
         "streetAddress": "1425 Broadwater Ave",
         "city": "Billings",
         "state": "MT",
         "zip": 59102,
-        "pool": "Pool",
-        "barSports": "Games (Arcades)"
+        "pool": "Yes",
+        "barSportsPlus": "Arcades"
     },
     {
+        "coords": "45.78585563029149, -108.5401574802915",
         "venueName": "Grandstand Sports Bar & Casino",
         "streetAddress": "905 Grand Ave",
         "city": "Billings",
         "state": "MT",
         "zip": 59102,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.2180829802915, -80.85575698029152",
         "venueName": "Slate Charlotte",
         "streetAddress": "200 E Bland St",
         "city": "Charlotte",
         "state": "NC",
         "zip": 28203,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Karaoke, Jenga"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, Jenga"
     },
     {
+        "coords": "35.12968498029151, -80.94010698029149",
         "venueName": "The Trap Bar",
         "streetAddress": "1923 Westinghouse Blvd",
         "city": "Charlotte",
         "state": "NC",
         "zip": 28273,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 4,
         "sportsTv": "Yes"
     },
     {
+        "coords": "46.8326728802915, -96.85762478029153",
         "venueName": "Fargo Billiards & Gastropub",
-        "streetAddress": "3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S, 3234 43rd St S,",
+        "streetAddress": "3234 43rd St S",
         "city": "Fargo",
         "state": "ND",
         "zip": 58104,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "46.87755118029149, -96.82214788029148",
         "venueName": "Speck's Bar",
         "streetAddress": "2611 Main Ave",
         "city": "Fargo",
         "state": "ND",
         "zip": 58103,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "46.8405910302915, -96.7994055302915",
         "venueName": "The Bowler Inc.",
         "streetAddress": "2630 S University Dr",
         "city": "Fargo",
         "state": "ND",
         "zip": 58103,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Karaoke, casino games, bowling"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, casino games, bowling"
     },
     {
+        "coords": "40.83196278029149, -74.08504938029148",
         "venueName": "Mr. G's",
         "streetAddress": "335 Paterson Plank Rd",
         "city": "Carlstadt",
         "state": "NJ",
         "zip": 7072,
-        "pool": "Pool",
-        "barSports": "Hookah",
+        "pool": "Yes",
+        "barSportsPlus": "Hookah",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.82536828029151, -74.0995949802915",
         "venueName": "Castle Billiards",
         "streetAddress": "349 NJ-17",
         "city": "East Rutherford",
         "state": "NJ",
         "zip": 7073,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+"
     },
     {
+        "coords": "35.0862509802915, -106.65328498029152",
         "venueName": "Anodyne",
         "streetAddress": "409 Central Ave NW",
         "city": "Albuquerque",
         "state": "NM",
         "zip": 87102,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.0815729302915, -106.61553583029149",
         "venueName": "Carraro's & Joe's Place",
         "streetAddress": "108 Vassar Dr SE",
         "city": "Albuquerque",
         "state": "NM",
         "zip": 87106,
-        "pingPong": true,
-        "pool": "Pool",
-        "barSports": "Air Hockey, Pinball",
+        "pingPong": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Air Hockey, Pinball",
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.11075428029149, -106.58302378029151",
         "venueName": "Louie's Pub & Grill",
         "streetAddress": "5603 Menaul Blvd NE",
         "city": "Albuquerque",
         "state": "NM",
         "zip": 87110,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 3,
-        "barSports": "Karaoke",
+        "barSportsPlus": "Karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.16972558029151, -115.14072398029151",
         "venueName": "Backstage Bar & Billiards",
         "streetAddress": "601 Fremont St",
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89101,
-        "pool": "Pool",
-        "barSports": "Music",
+        "pool": "Yes",
+        "barSportsPlus": "Music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.1249174802915, -115.20890468029148",
         "venueName": "Griff's Las Vegas",
         "streetAddress": "3650 S Decatur Blvd",
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89103,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "36.14638868029149, -115.20628498029151",
         "venueName": "PT's Pub",
-        "streetAddress": "4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10 4604 W Sahara Ave #10",
+        "streetAddress": "4604 W Sahara Ave #10",
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89102,
-        "pool": "Pool",
-        "barSports": "Games",
+        "pool": "Yes",
+        "barSportsPlus": "Games",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.1286567302915, -115.22571018029151",
         "venueName": "Cue-D's",
         "streetAddress": "3400 S Jones Blvd # 19",
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89148,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.5239826802915, -119.81441348029148",
         "venueName": "RedRock Bar",
         "streetAddress": "241 S Sierra St,",
         "city": "Reno",
         "state": "NV",
         "zip": 89501,
-        "darts": true,
-        "shuffleboard": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
         "poolTables": 2
     },
     {
+        "coords": "39.4941182802915, -119.79790918029153",
         "venueName": "Q's Billiard Club",
         "streetAddress": "3350 S Virginia St",
         "city": "Reno",
         "state": "NV",
         "zip": 89502,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+"
     },
     {
+        "coords": "39.5316875802915, -119.7669808802915",
         "venueName": "Blitz",
         "streetAddress": "400 S Rock Blvd",
         "city": "Sparks",
         "state": "NV",
         "zip": 89431,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.6787483802915, -73.9742081802915",
         "venueName": "Brownstone Billiards",
         "streetAddress": "308 Flatbush Ave",
         "city": "Brooklyn",
         "state": "NY",
         "zip": 11238,
-        "pool": "Pool",
-        "barSports": "Air Hockey, Bowling"
+        "pool": "Yes",
+        "barSportsPlus": "Air Hockey, Bowling"
     },
     {
+        "coords": "40.7080369802915, -73.92485313029147",
         "venueName": "Cobra Club",
         "streetAddress": "6 Wyckoff Ave",
         "city": "Brooklyn",
         "state": "NY",
         "zip": 11237,
-        "pool": "Pool",
-        "barSports": "Karaoke, Live Music",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, Live Music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.72573578029149, -73.98422728029152",
         "venueName": "Ace Bar",
         "streetAddress": "531 E 5th St",
         "city": "New York",
         "state": "NY",
         "zip": 10009,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Skeeball"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Skeeball"
     },
     {
+        "coords": "40.73300218029149, -73.99099528029149",
         "venueName": "Amsterdam Billiards",
         "streetAddress": "110 E 11th St",
         "city": "New York",
         "state": "NY",
         "zip": 10003,
-        "darts": true,
-        "pingPong": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "dartsBoards": "8+",
         "pingPongTables": "8+",
         "foosballTables": "8+",
         "poolTables": "8+"
     },
     {
+        "coords": "40.7566312802915, -73.99479648029148",
         "venueName": "Blatt Billiards",
-        "streetAddress": "330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St 330 W 38th St",
+        "streetAddress": "330 W 38th St",
         "city": "New York",
         "state": "NY",
         "zip": 10018,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.7768330302915, -73.95514003029155",
         "venueName": "Brady's",
         "streetAddress": "1583 2nd Ave",
         "city": "New York",
         "state": "NY",
         "zip": 10028,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Video Games",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Video Games",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.78071378029149, -73.95593028029151",
         "venueName": "Eastside Billiards",
         "streetAddress": "163 East 86th St",
         "city": "New York",
         "state": "NY",
         "zip": 10028,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.8667223802915, -73.92022978029149",
         "venueName": "Post Billiards Café",
         "streetAddress": "154 Post Ave",
         "city": "New York",
         "state": "NY",
         "zip": 10034,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.74252423029149, -73.99457073029151",
         "venueName": "Slate NY",
         "streetAddress": "54 W 21st St",
         "city": "New York",
         "state": "NY",
         "zip": 10010,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.74123378029149, -73.99143078029152",
         "venueName": "Society Billiards + Bar",
         "streetAddress": "10 E 21st St",
         "city": "New York",
         "state": "NY",
         "zip": 10010,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.7490240802915, -73.98865648029152",
         "venueName": "Space Billiards, Inc.",
         "streetAddress": "34 W 32nd St,",
         "city": "New York",
         "state": "NY",
         "zip": 10001,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.7626436802915, -73.92587418029149",
         "venueName": "Break Bar and Billiards",
         "streetAddress": "32-04 Broadway",
         "city": "Queens",
         "state": "NY",
         "zip": 11103,
-        "pingPong": true,
-        "pool": "Pool",
+        "pingPong": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.1532618802915, -84.43307958029152",
         "venueName": "Animations",
         "streetAddress": "3059 Madison Rd",
         "city": "Cincinnati",
         "state": "OH",
         "zip": 45209,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "39.1259769802915, -84.52143098029148",
         "venueName": "Murphy's Pub",
         "streetAddress": "2329 W Clifton Ave",
         "city": "Cincinnati",
         "state": "OH",
         "zip": 45219,
-        "pool": "Pool",
-        "barSports": "Trivia, Jenga",
+        "pool": "Yes",
+        "barSportsPlus": "Trivia, Jenga",
         "sportsTv": "Yes"
     },
     {
+        "coords": "41.4614320302915, -81.7128977302915",
         "venueName": "Benny's Sports Bar",
         "streetAddress": "3463 Fulton Rd",
         "city": "Cleveland",
         "state": "OH",
         "zip": 44109,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "41.4993862802915, -81.56633258029149",
         "venueName": "The Social Room",
         "streetAddress": "2261 Lee Rd",
         "city": "Cleveland Heights",
         "state": "OH",
         "zip": 44118,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Open mics, Karaoke, live music",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Open mics, Karaoke, live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.0630838802915, -82.96534028029151",
         "venueName": "8 Ball Sports & Billiards",
         "streetAddress": "2100 Morse Rd",
         "city": "Columbus",
         "state": "OH",
         "zip": 43229,
-        "darts": true,
-        "cornhole": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "cornhole": "Yes",
+        "pool": "Yes",
         "poolTables": 28
     },
     {
+        "coords": "39.9849183802915, -83.0152609302915",
         "venueName": "Harrison's On Third",
         "streetAddress": "335 W 3rd Ave",
         "city": "Columbus",
         "state": "OH",
         "zip": 43201,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.0042026302915, -82.9990944302915",
         "venueName": "Suzi-Cue Pool Hall",
         "streetAddress": "1950 N 4th St L,",
         "city": "Columbus",
         "state": "OH",
         "zip": 43201,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.0270568802915, -83.16116198029152",
         "venueName": "Bankshot Billiards",
         "streetAddress": "3626 Main St",
         "city": "Hilliard",
         "state": "OH",
         "zip": 43026,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "41.4781722802915, -81.7869470802915",
         "venueName": "Iggy's Tavern",
         "streetAddress": "13405 Madison Ave",
         "city": "Lakewood",
         "state": "OH",
         "zip": 44107,
-        "foosball": true,
-        "pool": "Pool",
-        "barSports": "Live music",
+        "foosball": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.2240494802915, -97.44112183029148",
         "venueName": "Bluebonnet Bar",
         "streetAddress": "321 E Main St,",
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "shuffleboard": true,
-        "pool": "Pool",
-        "barSports": "Live music"
+        "shuffleboard": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Live music"
     },
     {
+        "coords": "35.2216791802915, -97.44568438029148",
         "venueName": "Brewhouse",
         "streetAddress": "110 W Main St",
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 4,
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.29541248029149, -97.48918848029155",
         "venueName": "Mooney's Pub & Grill",
         "streetAddress": "6221 N Interstate Dr",
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "pool": "Pool",
-        "barSports": "Live music",
+        "pool": "Yes",
+        "barSportsPlus": "Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "35.2043274802915, -97.4640900802915",
         "venueName": "Opies House of Spirits",
         "streetAddress": "1430 W Lindsey St",
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "pool": "Pool",
-        "barSports": "Dance floor"
+        "pool": "Yes",
+        "barSportsPlus": "Dance floor"
     },
     {
+        "coords": "35.22387743029149, -97.44149958029152",
         "venueName": "Red Brick Bar",
         "streetAddress": "311 E Main St",
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 2,
-        "barSports": "Karaoke, Live Music",
+        "barSportsPlus": "Karaoke, Live Music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.16503618029149, -86.77713308029149",
         "venueName": "Buffalo's Nashville",
         "streetAddress": "154 2ND AVE NORTH",
         "city": "Nashville",
         "state": "TN",
         "zip": 37201,
-        "darts": true,
-        "shuffleboard": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
         "poolCost": "$5/half hour",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.1770867302915, -86.75669903029149",
         "venueName": "Edgefield Sports Bar & Grill",
         "streetAddress": "921 Woodland St,",
         "city": "Nashville",
         "state": "TN",
         "zip": 37206,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Arcades",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Arcades",
         "sportsTv": "Yes"
     },
     {
+        "coords": "36.0720718802915, -86.72587498029151",
         "venueName": "TNT's Billiards Bar & Grill",
         "streetAddress": "4523 Nolensville Rd",
         "city": "Nashville",
         "state": "TN",
         "zip": 37211,
-        "pool": "Pool",
-        "barSports": "Live music, karaoke",
+        "pool": "Yes",
+        "barSportsPlus": "Live music, karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.2686810302915, -97.74262163029152",
         "venueName": "Buffalo Billiards",
         "streetAddress": "201 E 6th St",
         "city": "Austin",
         "state": "TX",
         "zip": 78701,
-        "pool": "Pool",
-        "barSports": "Shuffleboard",
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.2313649802915, -97.73398833029148",
         "venueName": "Click's Billiards",
         "streetAddress": "2121 E Oltorf St #14",
         "city": "Austin",
         "state": "TX",
         "zip": 78741,
-        "pool": "Pool",
-        "barSports": "Poker",
+        "pool": "Yes",
+        "barSportsPlus": "Poker",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.4762762802915, -97.67513848029148",
         "venueName": "Fast Eddie's Round Rock",
         "streetAddress": "100 Parker Dr",
         "city": "Austin",
         "state": "TX",
         "zip": 78728,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.4364995802915, -97.67588298029148",
         "venueName": "Rack Daddy's",
         "streetAddress": "1779 Wells Branch Pkwy",
         "city": "Austin",
         "state": "TX",
         "zip": 78728,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "30.4549589802915, -97.83017038029152",
         "venueName": "Shooters Billiards & Sports Bar",
         "streetAddress": "11416 Ranch Rd 620 N",
         "city": "Austin",
         "state": "TX",
         "zip": 78726,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Poker",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Poker",
         "sportsTv": "Yes"
     },
     {
+        "coords": "30.3680453802915, -97.7304239802915",
         "venueName": "Slick Willie's",
-        "streetAddress": "8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160 8440 Burnet Rd # 160",
+        "streetAddress": "8440 Burnet Rd # 160",
         "city": "Austin",
         "state": "TX",
         "zip": 78757,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Video Games"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Video Games"
     },
     {
+        "coords": "30.4469507802915, -97.77965348029147",
         "venueName": "The Local Outpost",
         "streetAddress": "13201 Pond Springs Rd",
         "city": "Austin",
         "state": "TX",
         "zip": 78729,
-        "darts": true,
-        "cornhole": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "cornhole": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "poolTables": 2,
-        "barSports": "Arcades"
+        "barSportsPlus": "Arcades"
     },
     {
+        "coords": "30.21978878029149, -97.75910493029153",
         "venueName": "Warehouse Billiard Bar",
         "streetAddress": "509 E Ben White Blvd",
         "city": "Austin",
         "state": "TX",
         "zip": 78704,
-        "foosball": true,
-        "pool": "Pool",
-        "barSports": "Karaoke",
+        "foosball": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.7243482802915, -96.82447208029151",
         "venueName": "Billiards 45",
         "streetAddress": "2005 S Beckley Ave",
         "city": "Dallas",
         "state": "TX",
         "zip": 75224,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "32.9104217802915, -96.8746069802915",
         "venueName": "Café Billiard Gameroom",
         "streetAddress": "3068 Forest Ln # 115",
         "city": "Dallas",
         "state": "TX",
         "zip": 75234,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.9055643802915, -96.71519768029151",
         "venueName": "CK Billiards",
         "streetAddress": "9247 Skillman St #105",
         "city": "Dallas",
         "state": "TX",
         "zip": 75243,
-        "pool": "Pool",
-        "barSports": "Poker",
+        "pool": "Yes",
+        "barSportsPlus": "Poker",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.9109397802915, -96.75087368029153",
         "venueName": "O'Riley's",
         "streetAddress": "8989 Forest Lane",
         "city": "Dallas",
         "state": "TX",
         "zip": 75243,
-        "pool": "Pool",
-        "barSports": "Karaoke, Live Music"
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, Live Music"
     },
     {
+        "coords": "32.99074368029149, -96.77009888029147",
         "venueName": "Rack Daddy's",
         "streetAddress": "17509 Coit Rd A",
         "city": "Dallas",
         "state": "TX",
         "zip": 75252,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.99231578029149, -96.80404878029151",
         "venueName": "Sharky's Bar, Grill & Games",
         "streetAddress": "17453 Preston Rd",
         "city": "Dallas",
         "state": "TX",
         "zip": 75252,
-        "pool": "Pool",
-        "barSports": "Shuffleboard, Video Games, & Karaoke",
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard, Video Games, & Karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.8117400802915, -96.77180658029152",
         "venueName": "Ships Lounge",
         "streetAddress": "1613 Greenville Ave",
         "city": "Dallas",
         "state": "TX",
         "zip": 75206,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "32.7860951802915, -96.78549933029149",
         "venueName": "The Green Room",
         "streetAddress": "2715 Elm St",
         "city": "Dallas",
         "state": "TX",
         "zip": 75226,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.7665222802915, -111.8873542802915",
         "venueName": "Johnny's On Second",
         "streetAddress": "165 E 200 S",
         "city": "Salt Lake City",
         "state": "UT",
         "zip": 84111,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.32334813029151, -122.2307997302915",
         "venueName": "Harvey's Pool",
         "streetAddress": "1525 A St NE",
         "city": "Auburn",
         "state": "WA",
         "zip": 98002,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.6181855802915, -122.20245658029148",
         "venueName": "Parlor Live",
         "streetAddress": "700 Bellevue Way NE #300",
         "city": "Bellevue",
         "state": "WA",
         "zip": 98004,
-        "pingPong": true,
-        "pool": "Pool",
-        "barSports": "Comedy, Live Music"
+        "pingPong": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Comedy, Live Music"
     },
     {
+        "coords": "47.62133233029149, -122.18012828029151",
         "venueName": "The Goose Pub & Eatery",
         "streetAddress": "12001 NE 12th St",
         "city": "Bellevue",
         "state": "WA",
         "zip": 98005,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
         "poolCost": 0.75,
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.5817541802915, -122.70648113029148",
         "venueName": "Garage Bar & Grill",
         "streetAddress": "6812 Kitsap Way",
         "city": "Bremerton",
         "state": "WA",
         "zip": 98312,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.46785278029149, -122.34294148029153",
         "venueName": "Black Zia Cantina",
-        "streetAddress": "15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW 15212 6th Ave SW",
+        "streetAddress": "15212 6th Ave SW",
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.4463230802915, -122.3304637802915",
         "venueName": "BZ's Sports Bar & Grill",
         "streetAddress": "17730 Ambaum Blvd S",
         "city": "Burien",
         "state": "WA",
         "zip": 98148,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.46929968029149, -122.34736418029149",
         "venueName": "Elmer's Pub",
         "streetAddress": "15027 Ambaum Blvd SW",
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.4626744302915, -122.33778568029152",
         "venueName": "Good Time Ernie's",
         "streetAddress": "15747 Ambaum Blvd SW",
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.4030254802915, -122.32634418029147",
         "venueName": "All-Star Sports Bar",
         "streetAddress": "22303 Marine View Dr S",
         "city": "Des Moines",
         "state": "WA",
         "zip": 98198,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 2,
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.3974068802915, -122.3246335802915",
         "venueName": "Yardarm Pub",
-        "streetAddress": "812 S 230th St 812 S 230th St 812 S 230th St 812 S 230th St 812 S 230th St 812 S 230th St 812 S 230th St 812 S 230th St",
+        "streetAddress": "812 S 230th St",
         "city": "Des Moines",
         "state": "WA",
         "zip": 98198,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 3,
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.2847763302915, -121.9272605302915",
         "venueName": "City Hall Saloon & Eatery",
         "streetAddress": "35317 314th Way SE",
         "city": "Enumclaw",
         "state": "WA",
         "zip": 98022,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.9481359802915, -122.2174478802915",
         "venueName": "White Buffalo Saloon",
         "streetAddress": "5614 Evergreen Way",
         "city": "Everett",
         "state": "WA",
         "zip": 98203,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.3034465802915, -122.3144901802915",
         "venueName": "7 Pool",
         "streetAddress": "33324 Pacific Hwy S",
         "city": "Federal Way",
         "state": "WA",
         "zip": 98003,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$15/hr"
     },
     {
+        "coords": "47.2931524802915, -122.31537593029151",
         "venueName": "Time Out Ale House",
         "streetAddress": "34525 16th Ave S",
         "city": "Federal Way",
         "state": "WA",
         "zip": 98003,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 3,
         "poolCost": 0.75
     },
     {
+        "coords": "47.5316867802915, -122.03707988029151",
         "venueName": "Rollin Log Tavern",
         "streetAddress": "50 E Sunset Way",
         "city": "Issaquah",
         "state": "WA",
         "zip": 98027,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.40936903029149, -122.22978418029152",
         "venueName": "Gator's Sports Bar & Grill",
         "streetAddress": "21609 84th Ave S",
         "city": "Kent",
         "state": "WA",
         "zip": 98032,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 4,
         "poolTables": 4,
         "poolCost": "$1/game"
     },
     {
+        "coords": "47.3733593802915, -122.3031454802915",
         "venueName": "Stimpy's Bar & Grill",
         "streetAddress": "25608 Pacific Hwy S",
         "city": "Kent",
         "state": "WA",
         "zip": 98032,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.37321728029151, -122.20069018029153",
         "venueName": "Clubhouse Sports Bar & Grill",
         "streetAddress": "10432 SE Kent Kangley Rd",
         "city": "Kent",
         "state": "WA",
         "zip": 98030,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.5533289802915, -122.17868938029153",
         "venueName": "Mustard Seed Bar & Grill",
         "streetAddress": "5608 119th Ave SE",
         "city": "Newcastle",
         "state": "WA",
         "zip": 98006,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 3,
         "poolTables": 3,
         "poolCost": "0.75/game",
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.55521428029149, -122.54634918029149",
         "venueName": "Manchester Pub",
         "streetAddress": "2350 Colchester Dr E",
         "city": "Port Orchard",
         "state": "WA",
         "zip": 98366,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "48.1157180802915, -122.75719718029148",
         "venueName": "Sirens",
-        "streetAddress": "823 Water St 823 Water St 823 Water St 823 Water St 823 Water St 823 Water St 823 Water St",
+        "streetAddress": "823 Water St",
         "city": "Port Townsend",
         "state": "WA",
         "zip": 98368,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 1,
         "poolCost": "FREE"
     },
     {
+        "coords": "47.6340032802915, -122.14356248029151",
         "venueName": "Daman's Tavern",
         "streetAddress": "14810 NE 24th St",
         "city": "Redmond",
         "state": "WA",
         "zip": 98052,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.5340566802915, -122.19564258029152",
         "venueName": "Dino's Pub",
         "streetAddress": "1800 NE 44th St",
         "city": "Renton",
         "state": "WA",
         "zip": 98056,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.4807717302915, -122.20634893029148",
         "venueName": "The Local 907",
         "streetAddress": "907 S 3rd St",
         "city": "Renton",
         "state": "WA",
         "zip": 98057,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.4432322802915, -122.21985813029153",
         "venueName": "The Spot Sports Bar & Grill",
         "streetAddress": "4224 E Valley Rd",
         "city": "Renton",
         "state": "WA",
         "zip": 98057,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "47.4753155802915, -122.31640838029148",
         "venueName": "Sunnydale Saloon",
         "streetAddress": "14404 Des Moines Memorial Dr S",
         "city": "Seatac",
         "state": "WA",
         "zip": 98168,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolCost": "FREE Sunday"
     },
     {
+        "coords": "47.6604603802915, -122.36579878029147",
         "venueName": "4B's",
-        "streetAddress": "4300 Leary Way NW 4300 Leary Way NW 4300 Leary Way NW 4300 Leary Way NW 4300 Leary Way NW 4300 Leary Way NW",
+        "streetAddress": "4300 Leary Way NW",
         "city": "Seattle",
         "state": "WA",
         "zip": 98107,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.5840934802915, -122.38752958029147",
         "venueName": "Admiral Pub",
         "streetAddress": "2306 California Ave SW",
         "city": "Seattle",
         "state": "WA",
         "zip": 98116,
-        "darts": true,
-        "pingPong": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "pool": "Yes",
         "poolTables": 2,
-        "barSports": "Games (Skeeball), Entertainment (Karaoke, Live Music)"
+        "barSportsPlus": "Skeeball, Karaoke, Live Music"
     },
     {
+        "coords": "47.6534239802915, -122.35438298029152",
         "venueName": "Ballroom",
-        "streetAddress": "456 N 36th St 456 N 36th St 456 N 36th St 456 N 36th St 456 N 36th St 456 N 36th St",
+        "streetAddress": "456 N 36th St",
         "city": "Seattle",
         "state": "WA",
         "zip": 98103,
-        "pool": "Pool",
-        "barSports": "Dance Floor"
+        "pool": "Yes",
+        "barSportsPlus": "Dance Floor"
     },
     {
+        "coords": "47.5467396302915, -122.38886653029147",
         "venueName": "Beveridge Place Pub",
         "streetAddress": "6413 California Ave SW",
         "city": "Seattle",
         "state": "WA",
         "zip": 98136,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.65194478029149, -122.38375303029147",
         "venueName": "Boxcar Ale House",
         "streetAddress": "3407 Gilman Ave W",
         "city": "Seattle",
         "state": "WA",
         "zip": 98199,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "47.62558798029149, -122.31369498029153",
         "venueName": "Canterbury Alehouse",
         "streetAddress": "534 15th Ave E",
         "city": "Seattle",
         "state": "WA",
         "zip": 98112,
-        "pool": "Pool",
-        "barSports": "Shuffleboard"
+        "pool": "Yes",
+        "barSportsPlus": "Shuffleboard"
     },
     {
+        "coords": "47.6113647302915, -122.3368974802915",
         "venueName": "Elephant & Castle",
         "streetAddress": "1415 5th Ave",
         "city": "Seattle",
         "state": "WA",
         "zip": 98101,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "47.60156123029149, -122.3325283302915",
         "venueName": "Flatstick Pub",
         "streetAddress": "240 2nd Ave S",
         "city": "Seattle",
         "state": "WA",
         "zip": 98104,
-        "cornhole": true,
-        "pool": "Pool",
-        "barSports": "Mini Golf"
+        "cornhole": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Mini Golf"
     },
     {
+        "coords": "47.7309033302915, -122.2941436302915",
         "venueName": "Golden Fleece Pool",
         "streetAddress": "13741 Lake City Way NE",
         "city": "Seattle",
         "state": "WA",
         "zip": 98125,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 8,
         "poolCost": "$/hr",
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.6282357802915, -122.34916078029153",
         "venueName": "Great Nabob",
-        "streetAddress": "819 5th Ave N 819 5th Ave N 819 5th Ave N 819 5th Ave N 819 5th Ave N 819 5th Ave N",
+        "streetAddress": "819 5th Ave N",
         "city": "Seattle",
         "state": "WA",
         "zip": 98109,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Trivia Nights"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Trivia Nights"
     },
     {
+        "coords": "47.6196403802915, -122.32737258029147",
         "venueName": "Hillside Bar",
         "streetAddress": "1520 E Olive Wa",
         "city": "Seattle",
         "state": "WA",
         "zip": 98122,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Pinball"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Pinball"
     },
     {
+        "coords": "47.6669292802915, -122.3831949302915",
         "venueName": "Lock & Keel",
         "streetAddress": "5144 Ballard Ave NW",
         "city": "Seattle",
         "state": "WA",
         "zip": 98107,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.61472648029149, -122.31627058029153",
         "venueName": "Madison Pub",
         "streetAddress": "1315 E Madison St",
         "city": "Seattle",
         "state": "WA",
         "zip": 98122,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "47.6045935802915, -122.3369447802915",
         "venueName": "Owl N Thistle",
         "streetAddress": "808 Post Ave",
         "city": "Seattle",
         "state": "WA",
         "zip": 98104,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.6256960802915, -122.35965503029149",
         "venueName": "Ozzie's",
         "streetAddress": "105 W Mercer St",
         "city": "Seattle",
         "state": "WA",
         "zip": 98119,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "47.5517571802915, -122.31978278029152",
         "venueName": "Seattle Tavern & Pool Hall",
         "streetAddress": "5811 Airport Way S",
         "city": "Seattle",
         "state": "WA",
         "zip": 98108,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.67022018029149, -122.39565703029149",
         "venueName": "Sloop",
         "streetAddress": "2830 NW Market St,",
         "city": "Seattle",
         "state": "WA",
         "zip": 98107,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
         "dartsCost": "$.75/game",
@@ -2250,408 +2487,390 @@
         "sportsTv": "Yes"
     },
     {
+        "coords": "47.6392890802915, -122.3665461802915",
         "venueName": "Targy's Tavern",
         "streetAddress": "600 W Crockett St",
         "city": "Seattle",
         "state": "WA",
         "zip": 98119,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Trivia Nights"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Trivia Nights"
     },
     {
+        "coords": "47.6007407802915, -122.33471288029148",
         "venueName": "Temple Billiards",
         "streetAddress": "126 S Jackson St",
         "city": "Seattle",
         "state": "WA",
         "zip": 98104,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 7
     },
     {
+        "coords": "47.6133167802915, -122.3216754802915",
         "venueName": "The Garage",
         "streetAddress": "1120 Broadway",
         "city": "Seattle",
         "state": "WA",
         "zip": 98122,
-        "pool": "Pool",
-        "barSports": "Bowling"
+        "pool": "Yes",
+        "barSportsPlus": "Bowling"
     },
     {
+        "coords": "47.64118578029149, -122.32740248029148",
         "venueName": "Zoo Tavern",
         "streetAddress": "2301 Eastlake Ave E",
         "city": "Seattle",
         "state": "WA",
         "zip": 98102,
-        "darts": true,
-        "pingPong": true,
-        "foosball": true,
-        "shuffleboard": true,
-        "pool": "Pool",
-        "barSports": "Games (Skeeball)"
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "foosball": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Skeeball"
     },
     {
+        "coords": "47.2596162802915, -122.4468091802915",
         "venueName": "Malarkey's Pool and Brew",
         "streetAddress": "455 Tacoma Ave S",
         "city": "Tacoma",
         "state": "WA",
         "zip": 98402,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 8,
         "poolCost": "/hr"
     },
     {
+        "coords": "47.26448198029149, -122.4550959802915",
         "venueName": "Parkaway Tavern",
-        "streetAddress": "313 N I St #1 313 N I St #1 313 N I St #1 313 N I St #1",
+        "streetAddress": "313 N I St #1",
         "city": "Tacoma",
         "state": "WA",
         "zip": 98403,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "47.46119823029149, -122.25447138029153",
         "venueName": "ACME Bowling Pool",
         "streetAddress": "100 Andover Park W #100",
         "city": "Tukwila",
         "state": "WA",
         "zip": 98188,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "poolTables": 6,
         "dartsCost": "$/hr",
         "poolCost": "$/hr",
-        "barSports": "Bowling"
+        "barSportsPlus": "Bowling"
     },
     {
+        "coords": "43.0811661302915, -89.3776451802915",
         "venueName": "Brass Ring Bar & Restaurant",
         "streetAddress": "701 E Washington Ave",
         "city": "Madison",
         "state": "WI",
         "zip": 53703,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 8,
-        "barSports": "Trivia, Live Music",
+        "barSportsPlus": "Trivia, Live Music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "43.0737350802915, -89.38605018029148",
         "venueName": "Paradise Lounge",
         "streetAddress": "119 W Main St",
         "city": "Madison",
         "state": "WI",
         "zip": 53703,
-        "pool": "Pool",
-        "barSports": "Live music",
+        "pool": "Yes",
+        "barSportsPlus": "Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "43.03801738029149, -89.39021223029152",
         "venueName": "Pitcher's Pub",
         "streetAddress": "323 W Beltline Hwy",
         "city": "Madison",
         "state": "WI",
         "zip": 53713,
-        "darts": true,
-        "foosball": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "foosball": "Yes",
+        "pool": "Yes",
         "poolTables": 4,
         "sportsTv": "Yes"
     },
     {
+        "coords": "43.0175617802915, -88.08079188029149",
         "venueName": "Haybaler's Saloon",
         "streetAddress": "13327 W Greenfield Ave",
         "city": "New Berlin",
         "state": "WI",
         "zip": 53151,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Poker"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Poker"
     },
     {
+        "coords": "41.1157480802915, -104.80418478029151",
         "venueName": "Outlaw Saloon",
         "streetAddress": "312 S Greeley Hwy",
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82007,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Dance floor, Live music",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Dance floor, Live music",
         "sportsTv": "Yes"
     },
     {
+        "coords": "41.1605513802915, -104.80127448029151",
         "venueName": "PepperMill Bar & Liquor",
         "streetAddress": "618 Stillwater Ave",
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82001,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Karaoke"
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "41.1360761802915, -104.81036948029151",
         "venueName": "Scooter's Bar & Package Liquor",
         "streetAddress": "507 E Lincolnway",
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82001,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
-        "barSports": "Karaoke",
+        "barSportsPlus": "Karaoke",
         "sportsTv": "Yes"
     },
     {
+        "coords": "41.1475194302915, -104.7703007802915",
         "venueName": "Tusker Bar",
         "streetAddress": "3310 Ridge Rd",
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82001,
-        "shuffleboard": true,
-        "pool": "Pool"
+        "shuffleboard": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "37.6748073802915, -97.44371148029148",
         "venueName": "Side Pockets",
         "streetAddress": "600 S Tyler Rd #222",
         "city": "Wichita",
         "state": "KS",
         "zip": 67209,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "37.6582858302915, -97.2451592302915",
         "venueName": "Southrock Billiards & Sports Bar",
         "streetAddress": "2020 S Rock Rd #20",
         "city": "Wichita",
         "state": "KS",
         "zip": 67207,
-        "darts": true,
-        "pool": "Pool",
-        "barSports": "Arcades",
+        "darts": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "Arcades",
         "sportsTv": "Yes"
     },
     {
+        "coords": "37.67339528029149, -97.3537086802915",
         "venueName": "Champs Bar & Grill",
         "streetAddress": "1106 S Seneca St",
         "city": "Wichita",
         "state": "KS",
         "zip": 67213,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 4,
-        "barSports": "Karaoke"
+        "barSportsPlus": "Karaoke"
     },
     {
+        "coords": "37.6850630302915, -97.35286318029148",
         "venueName": "Club Billiards",
         "streetAddress": "925 W Douglas Ave",
         "city": "Wichita",
         "state": "KS",
         "zip": 67213,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "40.7712598802915, -96.6918172802915",
         "venueName": "WC's South Sports Bar",
         "streetAddress": "2109 Nebraska 2",
         "city": "Lincoln",
         "state": "NE",
         "zip": 68502,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 1,
         "poolTables": 3,
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.8588401802915, -96.67409638029153",
         "venueName": "Heidelberg's Sports Bar",
-        "streetAddress": "4620 Bair Ave 4620 Bair Ave 4620 Bair Ave",
+        "streetAddress": "4620 Bair Ave",
         "city": "Lincoln",
         "state": "NE",
         "zip": 68504,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.8276079802915, -96.63132398029148",
         "venueName": "Kelli's Pub",
         "streetAddress": "1318 N 66th St,",
         "city": "Lincoln",
         "state": "NE",
         "zip": 68505,
-        "pool": "Pool",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
+        "coords": "40.7592040802915, -96.64616628029148",
         "venueName": "Press Box Sports Bar & Grille",
         "streetAddress": "5601 S 56th St",
         "city": "Lincoln",
         "state": "NE",
         "zip": 68516,
-        "pool": "Pool",
-        "barSports": "Games",
+        "pool": "Yes",
+        "barSportsPlus": "Games",
         "sportsTv": "Yes"
     },
     {
+        "coords": "43.5460958802915, -96.77011408029148",
         "venueName": "Bigs Bar",
         "streetAddress": "3110 W 12th St",
         "city": "Sioux Falls",
         "state": "SD",
         "zip": 57104,
-        "darts": true,
-        "pool": "Pool",
+        "darts": "Yes",
+        "pool": "Yes",
         "dartsBoards": 4,
         "poolTables": 4,
-        "barSports": "Entertainment (live music)"
+        "barSportsPlus": "Live Music"
     },
     {
+        "coords": "43.54687378029149, -96.69105148029149",
         "venueName": "The Pocket",
         "streetAddress": "301 S Thompson Ave",
         "city": "Sioux Falls",
         "state": "SD",
         "zip": 57103,
-        "foosball": true,
-        "pool": "Pool"
+        "foosball": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "43.54644398029149, -96.7277014802915",
         "venueName": "Lucky's",
         "streetAddress": "224 S Phillips Ave",
         "city": "Sioux Falls",
         "state": "SD",
         "zip": 57104,
-        "foosball": true,
-        "pool": "Pool",
+        "foosball": "Yes",
+        "pool": "Yes",
         "sportsTv": "Yes"
     },
     {
-        "venueName": "JJ's Billiards & true",
+        "coords": "43.5456168802915, -96.75754958029154",
+        "venueName": "JJ's Billiards & Yes",
         "streetAddress": "309 S Elmwood Ave",
         "city": "Sioux Falls",
         "state": "SD",
         "zip": 57104,
-        "darts": true,
-        "pool": "Pool"
+        "darts": "Yes",
+        "pool": "Yes"
     },
     {
+        "coords": "41.5883573802915, -93.61223133029154",
         "venueName": "AJ's on East Court",
         "streetAddress": "419 E Court Ave",
         "city": "Des Moines",
         "state": "IA",
         "zip": 50309,
-        "pool": "Pool",
-        "barSports": "Entertainment (Karaoke, Live Music)"
+        "pool": "Yes",
+        "barSportsPlus": "Karaoke, Live Music"
     },
     {
+        "coords": "41.5913766302915, -93.61221383029147",
         "venueName": "Ricochet",
         "streetAddress": "504 E Locust St #200",
         "city": "Des Moines",
         "state": "IA",
         "zip": 50309,
-        "darts": true,
-        "pingPong": true,
-        "cornhole": true,
-        "shuffleboard": true,
-        "pool": "Pool",
-        "barSports": "Games (N64)"
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "cornhole": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
+        "barSportsPlus": "N64"
     },
     {
+        "coords": "41.6154027802915, -93.73714883029152",
         "venueName": "The Rack",
         "streetAddress": "2249 NW 86th St",
         "city": "Clive",
         "state": "IA",
         "zip": 50325,
-        "pool": "Pool"
+        "pool": "Yes"
     },
     {
+        "coords": "41.5892628302915, -93.64122913029149",
         "venueName": "Carl's Place",
         "streetAddress": "1620 Woodland Ave",
         "city": "Des Moines",
         "state": "IA",
         "zip": 50309,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 2
     },
     {
+        "coords": "47.58422098029149, -122.38759308029148",
         "venueName": "Yen Wor Village",
         "streetAddress": "2300 California Ave SW",
         "city": "Seattle",
         "state": "WA",
         "zip": 98116,
-        "pool": "Pool",
+        "pool": "Yes",
         "poolTables": 1,
-        "barSports": "Entertainment (Karaoke)"
+        "barSportsPlus": "Karaoke"
     },
     {
-        "dateSubmitted": "2018-04-25T19:55:02.878Z",
+        "dateSubmitted": "2018-05-01T00:08:43.414Z",
         "name": "Chad Oehlschlaeger-Browne",
-        "venueName": "casdf",
+        "coords": "47.8692503302915, -122.20720418029151",
+        "venueName": "asdf",
         "streetAddress": "1914 SE 144th St.",
         "city": "Mill Creek",
         "state": "WA",
         "zip": 98012,
-        "darts": false,
-        "pingPong": false,
-        "cornhole": false,
-        "foosball": false,
-        "shuffleboard": false,
-        "pool": true,
-        "barSports": ", ",
-        "sportsTv": "undefined",
-        "website": "undefined"
-    },
-    {
-        "dateSubmitted": "2018-04-25T20:16:24.658Z",
-        "name": "Chad Oehlschlaeger-Browne",
-        "venueName": "test",
-        "streetAddress": "1914 SE 144th St.",
-        "city": "Mill Creek",
-        "state": "WA",
-        "zip": 98012,
-        "darts": true,
-        "pingPong": true,
-        "cornhole": true,
-        "foosball": true,
-        "shuffleboard": true,
-        "pool": true,
-        "dartsBoards": "2018-03-02T00:00:00.000Z",
-        "pingPongTables": "8+",
-        "cornholeSetups": "2018-07-03T23:00:00.000Z",
-        "foosballTables": 1,
-        "shuffleboardTables": "8+",
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "cornhole": "Yes",
+        "foosball": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
+        "barSportsOther": "Bar Sports Other",
+        "dartsBoards": "2 to 3",
+        "pingPongTables": 1,
+        "cornholeSetups": "8+",
+        "foosballTables": "2 to 3",
+        "shuffleboardTables": 1,
         "poolTables": 1,
         "dartsCost": "Per Game",
-        "pingPongCost": "Varies",
-        "cornholeCost": "Per Game",
-        "foosballCost": "Free",
-        "shuffleboardCost": "Per Game",
-        "poolCost": "Per Game",
-        "barSports": "Live Music, Karaoke, Dancing, Piano, Open Mic, Comedy, fdsa, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, asd",
-        "sportsTv": "undefined",
-        "website": "undefined"
-    },
-    {
-        "dateSubmitted": "2018-04-25T22:03:22.447Z",
-        "name": "Jake Brenneman",
-        "coords": "undefined",
-        "venueName": "Luckey's Club Cigar Store",
-        "streetAddress": "933 Olive St",
-        "city": "Eugene",
-        "state": "OR",
-        "zip": 97401,
-        "darts": true,
-        "pingPong": false,
-        "cornhole": false,
-        "foosball": false,
-        "shuffleboard": false,
-        "pool": true,
-        "dartsBoards": 1,
-        "poolTables": "2018-03-02T00:00:00.000Z",
-        "barSports": ", ",
-        "sportsTv": "undefined"
-    },
-    {
-        "dateSubmitted": "2018-04-26T00:09:46.938Z",
-        "coords": "undefined",
-        "darts": false,
-        "pingPong": false,
-        "cornhole": false,
-        "foosball": false,
-        "shuffleboard": false,
-        "pool": false,
-        "barSports": ", ",
-        "sportsTv": "undefined"
+        "pingPongCost": "Per Hour",
+        "cornholeCost": "Free",
+        "foosballCost": "Per Hour",
+        "shuffleboardCost": "Free",
+        "poolCost": "Per Hour",
+        "barSportsPlus": "Live Music, Karaoke, Dancing, Piano, Open Mic, Comedy, liveother, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, gameother"
     }
 ]

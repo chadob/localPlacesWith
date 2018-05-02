@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./map.css">
+    <link rel="stylesheet" type="text/css" href="./styles/map.css">
 
     <!-- Custom styles for this template -->
     <style>
@@ -89,8 +89,38 @@
 
 
           <div id="map" width="100%" height="650px" style=""></div>
-
-          <p><iframe src="" frameborder="0" "></iframe></p>
+          <nav id="mapNav" class="mapNav navbar navbar-expand navbar-dark bg-dark">
+            <div class="navbar-nav">
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Pool</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Ping Pong</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Darts</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Cornhole</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Foosball</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Shuffleboard</span>
+              </a>
+              <a class="map-nav-item nav-item nav-link" href="#">
+                <img src="">
+                <span>Other</span>
+              </a>
+            </div>
+          </nav>
 
 
           <strong>Updated:</strong> April, 8th 2018<Br>
@@ -102,8 +132,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./all-data.js"></script>
-    <script src="./get-coords-script.js"></script>
+    <script src="data/bar-sports-data.js"></script>
+    <script src="scripts/map-script.js"></script>
+    <script src="scripts/map-events.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0&callback=initMap">
     </script>

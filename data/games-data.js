@@ -1,0 +1,488 @@
+var gamesData = 
+[
+    {
+        "coords": "61.2200714802915, -149.89837808029154",
+        "venueName": "Pioneer Bar",
+        "streetAddress": "739 W 4th Ave",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": 99501,
+        "arcades": "Yes",
+        "gamesPlus": "Pool, Darts, Shuffleboard"
+    },
+    {
+        "coords": "34.7468975802915, -92.27181483029153",
+        "venueName": "Brewski's Pub & Grub",
+        "streetAddress": "315 Main St STE. 100",
+        "city": "Little Rock",
+        "state": "AR",
+        "zip": 72201,
+        "arcades": "Yes",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "33.5819604802915, -112.13436068029148",
+        "venueName": "Bull Shooters",
+        "streetAddress": "3337 W Peoria Ave",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": 85029,
+        "gamesOther": "Poker",
+        "arcadeMachines": "8+",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "34.04860438029149, -118.25138178029147",
+        "venueName": "The Down and Out",
+        "streetAddress": "501 S Spring St",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": 90013,
+        "gamesOther": "Beer Pong",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "34.0767026802915, -118.25487543029152",
+        "venueName": "The Short Stop",
+        "streetAddress": "1455 Sunset Blvd",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": 90026,
+        "gamesOther": "Beer Pong",
+        "gamesPlus": "Pool, Dancing"
+    },
+    {
+        "coords": "38.6139344802915, -121.3832539802915",
+        "venueName": "Candlerock Lounge & Billiards",
+        "streetAddress": "2600 Watt Ave",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": 95821,
+        "gamesOther": "Bowling",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "39.6736763802915, -104.86667328029148",
+        "venueName": "Stampede",
+        "streetAddress": "2430 S Havana St",
+        "city": "Aurora",
+        "state": "CO",
+        "zip": 80014,
+        "gamesOther": "Mechanical Bull",
+        "gamesPlus": "Pool, Dancing"
+    },
+    {
+        "coords": "39.7165109802915, -104.98854468029151",
+        "venueName": "Badgers Pub",
+        "streetAddress": "76 S Broadway",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80209,
+        "skeeball": "Yes",
+        "arcades": "Yes",
+        "skeeballTables": 1,
+        "arcadeMachines": 1,
+        "skeeballCost": "$/game",
+        "arcadesCost": "$/game",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "39.79659513029149, -104.98804538029151",
+        "venueName": "Grizzly Rose",
+        "streetAddress": "5450 N Valley Hwy",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80216,
+        "gamesOther": "Mechanical Bull",
+        "gamesPlus": "Pool, Dancing"
+    },
+    {
+        "coords": "39.71927758029151, -104.9893295802915",
+        "venueName": "Punchbowl Social",
+        "streetAddress": "65 Broadway",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80203,
+        "skeeball": "Yes",
+        "arcades": "Yes",
+        "skeeballTables": 1,
+        "arcadeMachines": 1,
+        "skeeballCost": "$/hr",
+        "arcadesCost": "$/hr",
+        "gamesPlus": "Pool, Shuffleboard"
+    },
+    {
+        "coords": "39.75032798029149, -105.00203498029151",
+        "venueName": "Society Sports & Spirits",
+        "streetAddress": "1434 Blake St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80202,
+        "videoGames": "Yes",
+        "gamesPlus": "Shuffleboard"
+    },
+    {
+        "coords": "39.6980111802915, -104.93992418029148",
+        "venueName": "Dr. Proctor's Lounge",
+        "streetAddress": "4201 E Mississippi Ave",
+        "city": "Glendale",
+        "state": "CO",
+        "zip": 80246,
+        "jenga": "Yes",
+        "jengaBoxes": 5,
+        "jengaCost": "$.75, Free at times",
+        "gamesPlus": "Foosball"
+    },
+    {
+        "coords": "25.72909798029151, -80.24452598029154",
+        "venueName": "Barracuda Taphouse & Grill",
+        "streetAddress": "3035 Fuller St",
+        "city": "Miami",
+        "state": "FL",
+        "zip": 33133,
+        "trivia": "Yes",
+        "gamesOther": "Beer Pong",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "27.8158167802915, -82.67233678029152",
+        "venueName": "Mad Hatter's Ethnobotanical Tea Bar",
+        "streetAddress": "4685 28th St N, St",
+        "city": "Petersburg",
+        "state": "FL",
+        "zip": 33714,
+        "boardGames": "Yes",
+        "gamesPlus": "Pool, Hookah"
+    },
+    {
+        "coords": "32.52164243029149, -84.9676861302915",
+        "venueName": "Player's",
+        "streetAddress": "1500 54th St",
+        "city": "Columbus",
+        "state": "GA",
+        "zip": 31904,
+        "gamesOther": "Mini Bowling",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "33.6806239802915, -84.44180198029147",
+        "venueName": "Chairs",
+        "streetAddress": "2783 MAIN STREET",
+        "city": "East Point",
+        "state": "GA",
+        "zip": 30344,
+        "arcades": "Yes",
+        "gamesPlus": "Pool, Darts, Piano, Karaoke"
+    },
+    {
+        "coords": "42.3506735802915, -71.09727328029146",
+        "venueName": "Cornwall's",
+        "streetAddress": "654 Beacon St",
+        "city": "Boston",
+        "state": "MA",
+        "zip": 2215,
+        "boardGames": "Yes",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "44.9890485302915, -93.2231721802915",
+        "venueName": "Sporty's Pub & Grill",
+        "streetAddress": "2124 Como Ave SE",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": 55414,
+        "gamesOther": "Pinball",
+        "gamesPlus": "Pool, Foosball, Darts"
+    },
+    {
+        "coords": "38.6249589802915, -90.19837798029153",
+        "venueName": "Start Bar",
+        "streetAddress": "1000 Spruce St",
+        "city": "St Louis",
+        "state": "MO",
+        "zip": 63102,
+        "skeeball": "Yes",
+        "videoGames": "Yes",
+        "arcades": "Yes",
+        "gamesOther": "Pinball",
+        "gamesPlus": "More Games",
+        "website": "https://startbarstl.com/"
+    },
+    {
+        "coords": "38.5934784802915, -90.28118718029151",
+        "venueName": "The Famous Bar",
+        "streetAddress": "5213 Chippewa St",
+        "city": "St Louis",
+        "state": "MO",
+        "zip": 63109,
+        "arcades": "Yes",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "45.7786884302915, -108.55356298029153",
+        "venueName": "Bones Arcade",
+        "streetAddress": "1425 Broadwater Ave",
+        "city": "Billings",
+        "state": "MT",
+        "zip": 59102,
+        "arcades": "Yes",
+        "gamesPlus": "Bar Sports"
+    },
+    {
+        "coords": "35.2180829802915, -80.85575698029152",
+        "venueName": "Slate Charlotte",
+        "streetAddress": "200 E Bland St",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": 28203,
+        "jenga": "Yes",
+        "gamesPlus": "Pool, Darts, Karaoke"
+    },
+    {
+        "coords": "46.8405910302915, -96.7994055302915",
+        "venueName": "The Bowler Inc.",
+        "streetAddress": "2630 S University Dr",
+        "city": "Fargo",
+        "state": "ND",
+        "zip": 58103,
+        "gamesOther": "Bowling, Casino Games",
+        "gamesPlus": "Pool, Darts, Karaoke"
+    },
+    {
+        "coords": "35.0815729302915, -106.61553583029149",
+        "venueName": "Carraro's & Joe's Place",
+        "streetAddress": "108 Vassar Dr SE",
+        "city": "Albuquerque",
+        "state": "NM",
+        "zip": 87106,
+        "gamesOther": "Air Hockey, Pinball",
+        "gamesPlus": "Pool, PingPong"
+    },
+    {
+        "coords": "40.6787483802915, -73.9742081802915",
+        "venueName": "Brownstone Billiards",
+        "streetAddress": "308 Flatbush Ave",
+        "city": "Brooklyn",
+        "state": "NY",
+        "zip": 11238,
+        "gamesOther": "Air Hockey, Bowling",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "40.72573578029149, -73.98422728029152",
+        "venueName": "Ace Bar",
+        "streetAddress": "531 E 5th St",
+        "city": "New York",
+        "state": "NY",
+        "zip": 10009,
+        "skeeball": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "40.7768330302915, -73.95514003029155",
+        "venueName": "Brady's",
+        "streetAddress": "1583 2nd Ave",
+        "city": "New York",
+        "state": "NY",
+        "zip": 10028,
+        "videoGames": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "39.1259769802915, -84.52143098029148",
+        "venueName": "Murphy's Pub",
+        "streetAddress": "2329 W Clifton Ave",
+        "city": "Cincinnati",
+        "state": "OH",
+        "zip": 45219,
+        "jenga": "Yes",
+        "trivia": "Yes",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "36.1770867302915, -86.75669903029149",
+        "venueName": "Edgefield Sports Bar & Grill",
+        "streetAddress": "921 Woodland St,",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": 37206,
+        "arcades": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "30.2313649802915, -97.73398833029148",
+        "venueName": "Click's Billiards",
+        "streetAddress": "2121 E Oltorf St #14",
+        "city": "Austin",
+        "state": "TX",
+        "zip": 78741,
+        "gamesOther": "Poker",
+        "gamesPlus": "Pool"
+    },
+    {
+        "coords": "30.4549589802915, -97.83017038029152",
+        "venueName": "Shooters Billiards & Sports Bar",
+        "streetAddress": "11416 Ranch Rd 620 N",
+        "city": "Austin",
+        "state": "TX",
+        "zip": 78726,
+        "gamesOther": "Poker",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "30.3675065802915, -97.73050038029152",
+        "venueName": "Slick Willie's",
+        "streetAddress": "8440 Burnet Rd # 160",
+        "city": "Austin",
+        "state": "TX",
+        "zip": 78757,
+        "videoGames": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "30.4469507802915, -97.77965348029147",
+        "venueName": "The Local Outpost",
+        "streetAddress": "13201 Pond Springs Rd",
+        "city": "Austin",
+        "state": "TX",
+        "zip": 78729,
+        "arcades": "Yes",
+        "gamesPlus": "Pool, Darts, Cornhole, Foosball"
+    },
+    {
+        "coords": "32.99231578029149, -96.80404878029151",
+        "venueName": "Sharky's Bar, Grill & Games",
+        "streetAddress": "17453 Preston Rd",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": 75252,
+        "videoGames": "Yes",
+        "gamesPlus": "Pool, Shuffleboard, Karaoke"
+    },
+    {
+        "coords": "47.5533289802915, -122.17868938029153",
+        "venueName": "Mustard Seed Bar & Grill",
+        "streetAddress": "5608 119th Ave SE",
+        "city": "Newcastle",
+        "state": "WA",
+        "zip": 98006,
+        "arcades": "Yes",
+        "arcadeMachines": 3,
+        "arcadesCost": "0.75/game",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "47.5840934802915, -122.38752958029147",
+        "venueName": "Admiral Pub",
+        "streetAddress": "2306 California Ave SW",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98116,
+        "skeeball": "Yes",
+        "skeeballTables": 2,
+        "gamesPlus": "Bar Sports"
+    },
+    {
+        "coords": "47.60156123029149, -122.3325283302915",
+        "venueName": "Flatstick Pub",
+        "streetAddress": "240 2nd Ave S",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98104,
+        "gamesOther": "Mini Golf",
+        "gamesPlus": "Pool, Cornhole"
+    },
+    {
+        "coords": "47.6282357802915, -122.34916078029153",
+        "venueName": "Great Nabob",
+        "streetAddress": "819 5th Ave N",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98109,
+        "trivia": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "47.6196403802915, -122.32737258029147",
+        "venueName": "Hillside Bar",
+        "streetAddress": "1520 E Olive Wa",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98122,
+        "gamesOther": "Pinball",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "47.6392890802915, -122.3665461802915",
+        "venueName": "Targy's Tavern",
+        "streetAddress": "600 W Crockett St",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98119,
+        "trivia": "Yes",
+        "gamesPlus": "Pool, Darts"
+    },
+    {
+        "coords": "47.5828153802915, -122.38703293029153",
+        "venueName": "Vidiot Arcade Bar",
+        "streetAddress": "4210 SW Admiral Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98116,
+        "arcades": "Yes",
+        "gamesOther": "Pinball"
+    },
+    {
+        "coords": "47.64118578029149, -122.32740248029148",
+        "venueName": "Zoo Tavern",
+        "streetAddress": "2301 Eastlake Ave E",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": 98102,
+        "skeeball": "Yes",
+        "boardGames": "Yes",
+        "gamesPlus": "Bar Sports"
+    },
+    {
+        "coords": "43.0811661302915, -89.3776451802915",
+        "venueName": "Brass Ring Bar & Restaurant",
+        "streetAddress": "701 E Washington Ave",
+        "city": "Madison",
+        "state": "WI",
+        "zip": 53703,
+        "trivia": "Yes",
+        "triviaTables": 8,
+        "gamesPlus": "Pool, Live Music"
+    },
+    {
+        "coords": "43.0175617802915, -88.08079188029149",
+        "venueName": "Haybaler's Saloon",
+        "streetAddress": "13327 W Greenfield Ave",
+        "city": "New Berlin",
+        "state": "WI",
+        "zip": 53151,
+        "gamesOther": "Poker"
+    },
+    {
+        "coords": "39.6996065302915, -104.96354788029151",
+        "venueName": "Homegrown Tap & Dough",
+        "streetAddress": "1001 S Gaylord St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80209,
+        "videoGames": "Yes",
+        "gamesPlus": "Cornhole",
+        "website": "https://www.yelp.com/biz/homegrown-tap-and-dough-wash-park-denver"
+    },
+    {
+        "coords": "39.6984759802915, -104.96287053029153",
+        "venueName": "The Tavern Wash Park",
+        "streetAddress": "1066 S Gaylord St",
+        "city": "Denver",
+        "state": "CO",
+        "zip": 80209,
+        "jenga": "Yes",
+        "jengaCost": "Free",
+        "gamesPlus": "Cornhole"
+    }
+]

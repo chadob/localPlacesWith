@@ -60,36 +60,54 @@ function getFormData() {
 
 //For adding the Plus section to the data
   var sectionsObject = {
-    "Bar Sports": ["Pool", "Ping Pong", "Darts", "Cornhole", "Foosball", "Shuffleboard", data["Bar Sports Other"]],
-    "Live Entertainment": ["Live Music", "Karaoke", "Dancing", "Piano", "Open Mic", "Comedy", data["Live Entertainment Other"]],
-    "Games": ["Skeeball", "Jenga", "Trivia", "Board Games", "Video Games", "Arcades", data["Games Other"]]
+    "Bar Sports": ["Pool", "Ping Pong", "Darts", "Cornhole", "Foosball", "Shuffleboard", "Bar Sports Other"],
+    "Live Entertainment": ["Live Music", "Karaoke", "Dancing", "Piano", "Open Mic", "Comedy", "Live Entertainment Other"],
+    "Games": ["Skeeball", "Jenga", "Trivia", "Board Games", "Video Games", "Arcades", "Games Other"]
   }
   var plusObject = {};
-  //ulObject will have to be updated if other pages are to be added
+  //plus object contains strings with all of the categories that the current location offers
   for (var prop in sectionsObject) {
     if (sectionsObject.hasOwnProperty(prop)) {
-      plusObject[prop + " array"] = []
+      plusObject[prop] = "";
       sectionsObject[prop].forEach(function(ele) {
-        if (data[ele] !== "false" || data[ele !== ""]) {
-          plusObject[prop + " array"].push(ele);
+        if (!(data[ele] === "false" || data[ele] === "" || data[ele] === undefined)) {
+          if (ele === prop + " Other") {
+            plusObject[prop] = plusObject[prop].concat(data[ele] + ', ');
+          } else {
+            plusObject[prop] = plusObject[prop].concat(ele + ', ');
+          }
         }
       });
     }
   }
+  //combines all main categories into a plus category for each section
   for (var prop in sectionsObject) {
     if (sectionsObject.hasOwnProperty(prop) && data[prop] == "true") {
       data[prop + " Plus"] = [];
       for (var property in sectionsObject) {
-        if (property !== prop) {
-          data[prop + " Plus"].push(plusObject[property + " array"].join(', '));
+        if (!(property === prop)) {
+          data[prop + " Plus"].push(plusObject[property]);
         }
       }
-      data[prop + " Plus"] = data[prop + " Plus"].join(", ");
+      data[prop + " Plus"] = data[prop + " Plus"].join("");
+      if (data[prop + " Plus"].charAt(data[prop + " Plus"].length - 2) === ",") {
+        data[prop + " Plus"] = data[prop + " Plus"].slice(0, data[prop + " Plus"].length - 2);
+      }
+    } else {
+      data[prop + " Plus"] = [];
+    }
+  }
+  // code to change all false/undefined results to empty
+  for (var prop in data) {
+    if (data[prop] === "false" || data[prop] === undefined) {
+      data[prop] = "";
+    }
+    if (data[prop] === "true") {
+      data[prop] = "Yes";
     }
   }
   return data;
 }
-
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
@@ -98,7 +116,6 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     return false;
   }
   */
-  console.log(data);
   if( data.email && !validEmail(data.email) ) {   // if email is not valid show error
     var invalidEmail = document.getElementById("email-invalid");
     if (invalidEmail) {
@@ -111,6 +128,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     geocoder.geocode( { 'address': data["Street Address"] + ' ' + data["City"] + ' ' + data["State"]}, function(results, status) {
       if (status == 'OK') {
         data.Coords = results[0].geometry.viewport.f.f + ', ' + results[0].geometry.viewport.b.b;
+        //urlObject will have to be updated if other pages are to be added
         var urlObject = {
           "Bar Sports": "https://script.google.com/macros/s/AKfycbwWmTVJ2FIvgs2dW3j9wuJxusd4IvsLMgvcrlEgjWVkX40512Y/exec",
           "Live Entertainment": "https://script.google.com/macros/s/AKfycbw110UMntSIAcMqh0dBPUVtHn6hpzYmtijT-Wl5p1OnR-7HFsxx/exec",
@@ -150,7 +168,7 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
           }
           //posts to each individual spreadsheet
           for (var sect in urlObject) {
-            if(data[sect] === "true") {
+            if(data[sect] === "Yes") {
               var url = urlObject[sect];  //
               var xhr = new XMLHttpRequest();
               xhr.open('POST', url);
