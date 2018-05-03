@@ -4,7 +4,20 @@ var map;
 var geocoder;
 var infoWindows = [];
 var currentMarkers = [];
+var hiddenMarkers = [];
 var allMarkers = [];
+Array.prototype.partition = function (f, trueArray, falseArray) {
+  var matched = [],
+      unmatched = [],
+      i = 0,
+      j = this.length;
+
+  for (; i < j; i++){
+    (f.call(this, this[i], i) ? matched : unmatched).push(this[i]);
+  }
+  return [matched, unmatched];
+};
+
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 45, lng: -110},
@@ -21,11 +34,24 @@ function initMap() {
 }
 
 var mapFunctions = {
-
-  sortBy: function(category, array) {
-    return array.map(function(idx) {
-      idx[category] === "Yes";
-    });
+  everyFunction(categoryArray){
+    return function(idx) {
+      return categoryArray.every(function(cat) {
+        return cat in idx.location;
+      });
+    }
+  },
+  //searches categories selected against all markers
+  filterAllMarkers: function(categoryArray, allArray, curArray, hidArray) {
+    var joinedArr = allArray.partition(mapFunctions.everyFunction(categoryArray), curArray, hidArray);
+    curArray = joinedArr[0];
+    hidArray = joinedArr[1];
+    for (var i=0;i<curArray.length;i++) {
+      curArray[i].setMap(map);
+    }
+    for (var i=0;i<hidArray.length;i++) {
+      hidArray[i].setMap(null);
+    }
   },
 
   closeAllInfoWindows: function() {
@@ -45,7 +71,8 @@ var mapFunctions = {
     });
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
-      title:location["Venue Name"]
+      title:location["Venue Name"],
+      location: location,
       // icon: img
     });
     marker.addListener('click', function() {
