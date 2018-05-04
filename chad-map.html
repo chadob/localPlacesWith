@@ -87,7 +87,8 @@
           <font size="3"><strong>Bar Sports</strong></font><br>
           <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, <strong>ping-pong</strong>, and <strong>more</strong> near you.</font></h6>
 
-
+          <input class="form-control" id="mapSearch" placeholder="Search by Zip or City" type="text" name="Email">
+          <button class="btn btn-primary"> Search </button>
           <div id="map" width="100%" height="650px" style=""></div>
           <nav id="mapNav" class="mapNav navbar navbar-expand navbar-dark bg-dark">
             <div class="navbar-nav">
@@ -121,6 +122,13 @@
               </a>
             </div>
           </nav>
+          <div class="container p-0">
+            <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
+              <span class="">Hide/Show List</span>
+            </button>
+            <div class="list-container">
+            </div>
+          </div>
 
 
           <strong>Updated:</strong> April, 8th 2018<Br>
@@ -133,6 +141,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="data/bar-sports-data.js"></script>
+    <script src="scripts/list-script.js"></script>
     <script src="scripts/map-script.js"></script>
     <script src="scripts/map-events.js"></script>
     <script async defer

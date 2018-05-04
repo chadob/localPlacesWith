@@ -15,3 +15,10 @@
 .gm-style-iw div {
   border: none;
 }
+.list-container {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+.card {
+  max-height: 300px;
+}

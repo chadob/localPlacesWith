@@ -27,9 +27,8 @@ function initMap() {
     mapFunctions.closeAllInfoWindows();
     infoWindows = [];
   });
-  // organizedData = mapFunctions.organizeLocations(barSportsData, "Bar Sports");
   for (i = 0; i < barSportsData.length; i++) {
-    mapFunctions.createMarker(barSportsData[i], "Bar Sports");
+    mapFunctions.createMarkerAndListItem(barSportsData[i], "Bar Sports", i);
   }
 }
 
@@ -41,38 +40,54 @@ var mapFunctions = {
       });
     }
   },
+  //function for finding an instance of a character in a string
+  nthIndex: function(str, pat, n){
+    var L= str.length, i= -1;
+    while(n-- && i++<L){
+        i= str.indexOf(pat, i);
+        if (i < 0) break;
+    }
+    return i;
+  },
   //searches categories selected against all markers
-  filterAllMarkers: function(categoryArray, allArray, curArray, hidArray) {
+  filterAllMarkersAndListItems: function(categoryArray, allArray, curArray, hidArray) {
     var joinedArr = allArray.partition(mapFunctions.everyFunction(categoryArray), curArray, hidArray);
     curArray = joinedArr[0];
     hidArray = joinedArr[1];
+    var endOfString;
     for (var i=0;i<curArray.length;i++) {
       curArray[i].setMap(map);
+      endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
+      listFunctions.showListItem(curArray[i].card.slice(curArray[i].card.indexOf("id"), endOfString));
     }
     for (var i=0;i<hidArray.length;i++) {
       hidArray[i].setMap(null);
+      endOfString = mapFunctions.nthIndex(hidArray[i].card, '"', 2);
+      listFunctions.hideListItem(hidArray[i].card.slice(hidArray[i].card.indexOf("id"), endOfString));
     }
   },
-
+  //hides all cards when clicking on map
   closeAllInfoWindows: function() {
     for (var i=0;i<infoWindows.length;i++) {
        infoWindows[i].close();
     }
   },
   //Create marker based on the data in location
-  createMarker: function(location, section) {
+  createMarkerAndListItem: function(location, section, id) {
     var locArr = location.coords.split(',');
     var lat = Number(locArr[0]);
     var lng = Number(locArr[1]);
     var img = this.colorMarker(location, section)
-    var card = this.setUpCard(location, section);
+    var card = this.setUpCard(location, section, id);
     var infoWindow = new google.maps.InfoWindow({
-      content: card
+      content: card,
+      maxHeight: 500
     });
     var marker = new google.maps.Marker({
       position: {lat: lat, lng: lng},
       title:location["Venue Name"],
       location: location,
+      card: card
       // icon: img
     });
     marker.addListener('click', function() {
@@ -84,7 +99,10 @@ var mapFunctions = {
     allMarkers.push(marker);
     currentMarkers.push(marker);
     marker.setMap(map);
+    //function located in list-script.js
+    listFunctions.createListItem(marker.card);
   },
+  //chooses what color markers should have
   colorMarker(location, section) {
     var img = '';
     var numSections = this.sectionsObject[section].length;
@@ -95,7 +113,8 @@ var mapFunctions = {
       }
     }
   },
-  setUpCard(location, section) {
+  //creates the text on the cards
+  setUpCard(location, section, id) {
     var adjusted;
     var basicProps = "";
     // fix this
@@ -121,7 +140,7 @@ var mapFunctions = {
       var plus = "";
     }
     var content =
-    '<div class="card">' +
+    '<div class="card id' + id + '">' +
     '<h5>' + location.venueName + '</h5>' +
     '<p><a href="https://maps.google.com/?q=1200' + location.streetAddress + ' ' + location.city + ', ' + location.state + ' ' + location.zip  + '">' + location.streetAddress + ' ' + location.city + ', ' + location.state + ' ' + location.zip + '</a></p>' +
     basicProps +
@@ -135,17 +154,5 @@ var mapFunctions = {
     "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard", "barSportsOther"],
     "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy", "liveEntertainmentOther"],
     "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades", "gamesOther"]
-  },
-  organizeLocations: function(data, page) {
-    var organizedData = {};
-    for (var sect in this.sectionsObject[page]) {
-      organizedData[sect] = [];
-      for (var loc in data) {
-        if (data[loc][sect]) {
-          organizedData[sect].push(data[loc]);
-        }
-      }
-    }
-    return organizedData;
   }
 }

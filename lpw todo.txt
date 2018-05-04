@@ -1,4 +1,5 @@
 Todo:
-7. sort function
-7. new table
-9. search function
+1. new table
+-change button icon
+2. search function
+3. Add icons.

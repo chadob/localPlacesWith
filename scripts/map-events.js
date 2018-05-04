@@ -9,12 +9,11 @@ $('.map-nav-item').on('click', function(e) {
     cat = cat.replace(/\s+/g, '');
     catArray.push(cat);
   });
-  console.log(catArray);
   if ($(this).hasClass('active')) {
-    mapFunctions.filterAllMarkers(catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(catArray, allMarkers, currentMarkers, hiddenMarkers);
     $(this).css('color', '#fff');
   } else {
-    mapFunctions.filterAllMarkers(catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(catArray, allMarkers, currentMarkers, hiddenMarkers);
     $(this).css('color', 'rgba(255,255,255,.5)');
   }
 });
