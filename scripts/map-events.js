@@ -10,10 +10,10 @@ $('.map-nav-item').on('click', function(e) {
     catArray.push(cat);
   });
   if ($(this).hasClass('active')) {
-    mapFunctions.filterAllMarkersAndListItems(catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, allMarkers, currentMarkers, hiddenMarkers);
     $(this).css('color', '#fff');
   } else {
-    mapFunctions.filterAllMarkersAndListItems(catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, allMarkers, currentMarkers, hiddenMarkers);
     $(this).css('color', 'rgba(255,255,255,.5)');
   }
 });

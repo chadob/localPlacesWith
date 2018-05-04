@@ -50,8 +50,8 @@ var mapFunctions = {
     return i;
   },
   //searches categories selected against all markers
-  filterAllMarkersAndListItems: function(categoryArray, allArray, curArray, hidArray) {
-    var joinedArr = allArray.partition(mapFunctions.everyFunction(categoryArray), curArray, hidArray);
+  filterAllMarkersAndListItems: function(filterFunction, filterQuery, allArray, curArray, hidArray, prop) {
+    var joinedArr = allArray.partition(filterFunction(filterQuery, prop), curArray, hidArray);
     curArray = joinedArr[0];
     hidArray = joinedArr[1];
     var endOfString;
