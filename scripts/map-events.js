@@ -17,3 +17,13 @@ $('.map-nav-item').on('click', function(e) {
     $(this).css('color', 'rgba(255,255,255,.5)');
   }
 });
+$('#searchButton').on('click', function() {
+    var query = $('#mapSearch').val();
+    if (query === "") {
+      mapFunctions.showAllMarkersAndListItems(currentMarkers, hiddenMarkers, allMarkers);
+      $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
+    } else {
+      mapSearchFunctions.search(mapSearchFunctions.checkQuery, mapSearchFunctions.searchProps, allMarkers, currentMarkers, hiddenMarkers, query);
+      $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
+    }
+});

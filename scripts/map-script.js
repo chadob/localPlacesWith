@@ -49,9 +49,19 @@ var mapFunctions = {
     }
     return i;
   },
+  showAllMarkersAndListItems: function(curArray, hidArray, allArray) {
+    var endOfString;
+    curArray = allArray;
+    hidArray = [];
+    for (var i = 0; i < allArray.length; i++) {
+      allArray[i].setMap(map);
+      endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
+      listFunctions.showListItem(allArray[i].card.slice(allArray[i].card.indexOf("id"), endOfString));
+    }
+  },
   //searches categories selected against all markers
-  filterAllMarkersAndListItems: function(filterFunction, filterQuery, allArray, curArray, hidArray, prop) {
-    var joinedArr = allArray.partition(filterFunction(filterQuery, prop), curArray, hidArray);
+  filterAllMarkersAndListItems: function(filterFunction, categories, allArray, curArray, hidArray, query) {
+    var joinedArr = allArray.partition(filterFunction(categories, query), curArray, hidArray);
     curArray = joinedArr[0];
     hidArray = joinedArr[1];
     var endOfString;

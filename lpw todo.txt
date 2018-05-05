@@ -1,5 +1,7 @@
 Todo:
 1. new table
 -change button icon
-2. search function
+-blinks on first click
+2. Search: widen searchbar
 3. Add icons.
+Mobile compatibility

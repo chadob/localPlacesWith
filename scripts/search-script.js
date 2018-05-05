@@ -1,20 +1,16 @@
-$('.map-search-select').on('change', function() {
-  var prop = $('.map-search-select').val();
-  if(!(prop === "Search by?")) {
-    var query = $('#mapSearch').val();
-    mapSearchFunctions.search(mapSearchFunctions.checkQuery, query, allMarkers, currentMarkers, hiddenMarkers, prop);
-  }
-  console.log(query);
-  console.log(prop);
-});
-
 var mapSearchFunctions = {
-  search(filterFunction, filterQuery, allMarkers, currentMarkers, hiddenMarkers, prop) {
-    mapFunctions.filterAllMarkersAndListItems(mapSearchFunctions.checkQuery, allMarkers, currentMarkers, hiddenMarkers)
+
+  searchProps: ["zip", "state", "city"],
+
+  search(filterFunction, categories, allMarkers, currentMarkers, hiddenMarkers, query) {
+    mapFunctions.filterAllMarkersAndListItems(mapSearchFunctions.checkQuery, categories, allMarkers, currentMarkers, hiddenMarkers, query)
   },
-  checkQuery(query, prop) {
+
+  checkQuery(categoryArray, query) {
     return function(idx) {
-      return idx.location[prop] === query;
+      return categoryArray.some(function(cat) {
+        return query.toString().toLowerCase() === idx.location[cat].toString().toLowerCase();
+      });
     }
   }
 }
