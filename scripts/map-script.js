@@ -6,6 +6,7 @@ var infoWindows = [];
 var currentMarkers = [];
 var hiddenMarkers = [];
 var allMarkers = [];
+var currentListItems = [];
 Array.prototype.partition = function (f, trueArray, falseArray) {
   var matched = [],
       unmatched = [],
@@ -27,12 +28,31 @@ function initMap() {
     mapFunctions.closeAllInfoWindows();
     infoWindows = [];
   });
-  for (i = 0; i < barSportsData.length; i++) {
-    mapFunctions.createMarkerAndListItem(barSportsData[i], "Bar Sports", i);
-  }
+  mapFunctions.createAllMarkers(barSportsData, "Bar Sports");
+  listFunctions.generateList();
 }
 
 var mapFunctions = {
+  createAllMarkers(data, page) {
+    this.adjustCurrentSection(page);
+    var numSections = this.sectionsObject[page].length;
+    for (i = 0; i < data.length; i++) {
+      mapFunctions.createMarker(data[i], page, i, numSections);
+    }
+  },
+  //create object that has locations sorted by categories they have
+  adjustedSection: "",
+  sectionsObject: {
+    "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard", "barSportsOther"],
+    "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy", "liveEntertainmentOther"],
+    "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades", "gamesOther"]
+  },
+  adjustCurrentSection(section) {
+    var adjustedCurrentSection =  section.replace(/([A-Z])/g, '$1').trim();
+    adjustedCurrentSection = adjustedCurrentSection.charAt(0).toLowerCase() + adjustedCurrentSection.substr(1);
+    adjustedCurrentSection = adjustedCurrentSection.replace(/\s+/g, '');
+    this.adjustedSection = adjustedCurrentSection;
+  },
   everyFunction(categoryArray){
     return function(idx) {
       return categoryArray.every(function(cat) {
@@ -63,18 +83,24 @@ var mapFunctions = {
   filterAllMarkersAndListItems: function(filterFunction, categories, allArray, curArray, hidArray, query) {
     var joinedArr = allArray.partition(filterFunction(categories, query), curArray, hidArray);
     curArray = joinedArr[0];
+    listFunctions.currentListItems = curArray;
     hidArray = joinedArr[1];
+    listFunctions.filteredListItems = hidArray;
     var endOfString;
+    //hide/show markers
     for (var i=0;i<curArray.length;i++) {
       curArray[i].setMap(map);
-      endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
-      listFunctions.showListItem(curArray[i].card.slice(curArray[i].card.indexOf("id"), endOfString));
+      // endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
+      // listFunctions.showListItem(curArray[i].card.slice(curArray[i].card.indexOf("id"), endOfString));
     }
     for (var i=0;i<hidArray.length;i++) {
       hidArray[i].setMap(null);
-      endOfString = mapFunctions.nthIndex(hidArray[i].card, '"', 2);
-      listFunctions.hideListItem(hidArray[i].card.slice(hidArray[i].card.indexOf("id"), endOfString));
+      // endOfString = mapFunctions.nthIndex(hidArray[i].card, '"', 2);
+      // listFunctions.hideListItem(hidArray[i].card.slice(hidArray[i].card.indexOf("id"), endOfString));
     }
+    //hide list items/show 20
+    listFunctions.emptyList();
+    listFunctions.generateList();
   },
   //hides all cards when clicking on map
   closeAllInfoWindows: function() {
@@ -83,12 +109,14 @@ var mapFunctions = {
     }
   },
   //Create marker based on the data in location
-  createMarkerAndListItem: function(location, section, id) {
+  createMarker: function(location, section, id, numSections) {
     var locArr = location.coords.split(',');
     var lat = Number(locArr[0]);
     var lng = Number(locArr[1]);
-    var img = this.colorMarker(location, section)
-    var card = this.setUpCard(location, section, id);
+    var img = {
+      url: './images/marker' + location[this.adjustedSection + "Color"] + '.png',
+    }
+    var card = this.setUpCard(location, section, id, this.adjustedSection);
     var infoWindow = new google.maps.InfoWindow({
       content: card,
       maxHeight: 500
@@ -97,8 +125,8 @@ var mapFunctions = {
       position: {lat: lat, lng: lng},
       title:location["Venue Name"],
       location: location,
-      card: card
-      // icon: img
+      card: card,
+      icon: img
     });
     marker.addListener('click', function() {
       mapFunctions.closeAllInfoWindows();
@@ -108,30 +136,16 @@ var mapFunctions = {
     });
     allMarkers.push(marker);
     currentMarkers.push(marker);
+    //send markers over to list to generate divs
+    listFunctions.allListItems.push(marker);
+    listFunctions.currentListItems.push(marker);
     marker.setMap(map);
-    //function located in list-script.js
-    listFunctions.createListItem(marker.card);
-  },
-  //chooses what color markers should have
-  colorMarker(location, section) {
-    var img = '';
-    var numSections = this.sectionsObject[section].length;
-    for(var i = this.sectionsObject[section].length - 1; i > 0; i--) {
-      if (location[this.sectionsObject[section][i]]) {
-        img = './images/marker' + i + '.png';
-        return img;
-      }
-    }
   },
   //creates the text on the cards
-  setUpCard(location, section, id) {
+  setUpCard(location, section, id, adjustedSection) {
     var adjusted;
     var basicProps = "";
-    // fix this
-    var adjustedSection = section.replace(/([A-Z])/g, '$1').trim();
-    adjustedSection = adjustedSection.charAt(0).toLowerCase() + adjustedSection.substr(1);
-    adjustedSection = adjustedSection.replace(/\s+/g, '');
-    var checkAgainstCategories = ["dateSubmitted","name","coords","venueName","streetAddress","city","state","zip", adjustedSection + "Other", adjustedSection + "Plus"];
+    var checkAgainstCategories = ["dateSubmitted","name","coords","venueName","streetAddress","city","state","zip", adjustedSection + "Other", adjustedSection + "Color", adjustedSection + "Plus"];
     for (var prop in location) {
       if (checkAgainstCategories.indexOf(prop) < 0) {
         adjusted = prop.replace(/([A-Z])/g, ' $1').trim();
@@ -158,11 +172,5 @@ var mapFunctions = {
     plus +
     '<div>';
     return content;
-  },
-  //create object that has locations sorted by categories they have
-  sectionsObject: {
-    "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard", "barSportsOther"],
-    "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy", "liveEntertainmentOther"],
-    "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades", "gamesOther"]
   }
 }

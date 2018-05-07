@@ -2,7 +2,9 @@
 <html lang="en">
 
   <head>
-
+    <script type="text/javascript">
+            var timerStart = Date.now();
+        </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Find local places with pool tables, darts, shuffleboard, ping-pong, cornhole, and foosball, near you!">
@@ -86,49 +88,50 @@
           </div>
           <font size="3"><strong>Bar Sports</strong></font><br>
           <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, <strong>ping-pong</strong>, and <strong>more</strong> near you.</font></h6>
-          <div class="container row mx-0 px-0">
-            <input class="form-control col-7" id="mapSearch" placeholder="Search by Zip, City, or State" type="text" name="Email">
-            <button class="btn btn-primary" id="searchButton"> Search</button>
+
+          <div class="input-group">
+            <input class="form-control" id="mapSearch" placeholder="Search by Zip, City, or State" type="text" name="Email">
+            <div class="input-group-append">
+              <button class="btn btn-primary" id="searchButton"> Search</button>
+            </div>
           </div>
 
           <div id="map" width="100%" height="650px" style=""></div>
-          <nav id="mapNav" class="mapNav navbar navbar-expand navbar-dark bg-dark">
-            <div class="navbar-nav">
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+          <nav id="mapNav" class="mapNav py-2">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img" src="./images/marker0.png">
                 <span>Pool</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker1.png">
                 <span>Ping Pong</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker2.png">
                 <span>Darts</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker3.png">
                 <span>Cornhole</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker4.png">
                 <span>Foosball</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker5.png">
                 <span>Shuffleboard</span>
               </a>
-              <a class="map-nav-item nav-item nav-link" href="#">
-                <img src="">
+              <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker6.png">
                 <span>Bar Sports Other</span>
               </a>
-            </div>
           </nav>
           <div class="container p-0">
             <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
               <span class="">Hide/Show List</span>
             </button>
-            <div class="list-container">
+            <div class="collapse list-container">
             </div>
           </div>
 
@@ -149,6 +152,14 @@
     <script src="scripts/map-events.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0&callback=initMap">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      console.log("Time until DOMready: ", Date.now()-timerStart);
+    });
+    $(window).load(function() {
+      console.log("Time until everything loaded: ", Date.now()-timerStart);
+    });
     </script>
   </body>
 

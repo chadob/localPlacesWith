@@ -1,4 +1,4 @@
-var gamesData = 
+var gamesData =
 [
     {
         "coords": "61.2200714802915, -149.89837808029154",
@@ -8,6 +8,7 @@ var gamesData =
         "state": "AK",
         "zip": 99501,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Shuffleboard"
     },
     {
@@ -18,6 +19,7 @@ var gamesData =
         "state": "AR",
         "zip": 72201,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool"
     },
     {
@@ -29,6 +31,7 @@ var gamesData =
         "zip": 85029,
         "gamesOther": "Poker",
         "arcadeMachines": "8+",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -39,6 +42,7 @@ var gamesData =
         "state": "CA",
         "zip": 90013,
         "gamesOther": "Beer Pong",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -49,6 +53,7 @@ var gamesData =
         "state": "CA",
         "zip": 90026,
         "gamesOther": "Beer Pong",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -59,6 +64,7 @@ var gamesData =
         "state": "CA",
         "zip": 95821,
         "gamesOther": "Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -69,6 +75,7 @@ var gamesData =
         "state": "CO",
         "zip": 80014,
         "gamesOther": "Mechanical Bull",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -84,6 +91,7 @@ var gamesData =
         "arcadeMachines": 1,
         "skeeballCost": "$/game",
         "arcadesCost": "$/game",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -94,6 +102,7 @@ var gamesData =
         "state": "CO",
         "zip": 80216,
         "gamesOther": "Mechanical Bull",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -109,6 +118,7 @@ var gamesData =
         "arcadeMachines": 1,
         "skeeballCost": "$/hr",
         "arcadesCost": "$/hr",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Shuffleboard"
     },
     {
@@ -119,6 +129,7 @@ var gamesData =
         "state": "CO",
         "zip": 80202,
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Shuffleboard"
     },
     {
@@ -131,6 +142,7 @@ var gamesData =
         "jenga": "Yes",
         "jengaBoxes": 5,
         "jengaCost": "$.75, Free at times",
+        "gamesColor": 1,
         "gamesPlus": "Foosball"
     },
     {
@@ -142,6 +154,7 @@ var gamesData =
         "zip": 33133,
         "trivia": "Yes",
         "gamesOther": "Beer Pong",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -152,6 +165,7 @@ var gamesData =
         "state": "FL",
         "zip": 33714,
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Pool, Hookah"
     },
     {
@@ -162,6 +176,7 @@ var gamesData =
         "state": "GA",
         "zip": 31904,
         "gamesOther": "Mini Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -172,6 +187,7 @@ var gamesData =
         "state": "GA",
         "zip": 30344,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Piano, Karaoke"
     },
     {
@@ -182,6 +198,7 @@ var gamesData =
         "state": "MA",
         "zip": 2215,
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Pool"
     },
     {
@@ -192,6 +209,7 @@ var gamesData =
         "state": "MN",
         "zip": 55414,
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Foosball, Darts"
     },
     {
@@ -205,6 +223,7 @@ var gamesData =
         "videoGames": "Yes",
         "arcades": "Yes",
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "More Games",
         "website": "https://startbarstl.com/"
     },
@@ -216,6 +235,7 @@ var gamesData =
         "state": "MO",
         "zip": 63109,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool"
     },
     {
@@ -226,6 +246,7 @@ var gamesData =
         "state": "MT",
         "zip": 59102,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Bar Sports"
     },
     {
@@ -236,6 +257,7 @@ var gamesData =
         "state": "NC",
         "zip": 28203,
         "jenga": "Yes",
+        "gamesColor": 1,
         "gamesPlus": "Pool, Darts, Karaoke"
     },
     {
@@ -246,6 +268,7 @@ var gamesData =
         "state": "ND",
         "zip": 58103,
         "gamesOther": "Bowling, Casino Games",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts, Karaoke"
     },
     {
@@ -256,6 +279,7 @@ var gamesData =
         "state": "NM",
         "zip": 87106,
         "gamesOther": "Air Hockey, Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, PingPong"
     },
     {
@@ -266,6 +290,7 @@ var gamesData =
         "state": "NY",
         "zip": 11238,
         "gamesOther": "Air Hockey, Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -276,6 +301,7 @@ var gamesData =
         "state": "NY",
         "zip": 10009,
         "skeeball": "Yes",
+        "gamesColor": 0,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -286,6 +312,7 @@ var gamesData =
         "state": "NY",
         "zip": 10028,
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -297,6 +324,7 @@ var gamesData =
         "zip": 45219,
         "jenga": "Yes",
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool"
     },
     {
@@ -307,6 +335,7 @@ var gamesData =
         "state": "TN",
         "zip": 37206,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -317,6 +346,7 @@ var gamesData =
         "state": "TX",
         "zip": 78741,
         "gamesOther": "Poker",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -327,6 +357,7 @@ var gamesData =
         "state": "TX",
         "zip": 78726,
         "gamesOther": "Poker",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -337,6 +368,7 @@ var gamesData =
         "state": "TX",
         "zip": 78757,
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -347,6 +379,7 @@ var gamesData =
         "state": "TX",
         "zip": 78729,
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Cornhole, Foosball"
     },
     {
@@ -357,6 +390,7 @@ var gamesData =
         "state": "TX",
         "zip": 75252,
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Shuffleboard, Karaoke"
     },
     {
@@ -369,6 +403,7 @@ var gamesData =
         "arcades": "Yes",
         "arcadeMachines": 3,
         "arcadesCost": "0.75/game",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -380,6 +415,7 @@ var gamesData =
         "zip": 98116,
         "skeeball": "Yes",
         "skeeballTables": 2,
+        "gamesColor": 0,
         "gamesPlus": "Bar Sports"
     },
     {
@@ -390,6 +426,7 @@ var gamesData =
         "state": "WA",
         "zip": 98104,
         "gamesOther": "Mini Golf",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Cornhole"
     },
     {
@@ -400,6 +437,7 @@ var gamesData =
         "state": "WA",
         "zip": 98109,
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -410,6 +448,7 @@ var gamesData =
         "state": "WA",
         "zip": 98122,
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -420,6 +459,7 @@ var gamesData =
         "state": "WA",
         "zip": 98119,
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -430,7 +470,8 @@ var gamesData =
         "state": "WA",
         "zip": 98116,
         "arcades": "Yes",
-        "gamesOther": "Pinball"
+        "gamesOther": "Pinball",
+        "gamesColor": 6
     },
     {
         "coords": "47.64118578029149, -122.32740248029148",
@@ -441,6 +482,7 @@ var gamesData =
         "zip": 98102,
         "skeeball": "Yes",
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Bar Sports"
     },
     {
@@ -452,6 +494,7 @@ var gamesData =
         "zip": 53703,
         "trivia": "Yes",
         "triviaTables": 8,
+        "gamesColor": 2,
         "gamesPlus": "Pool, Live Music"
     },
     {
@@ -461,7 +504,8 @@ var gamesData =
         "city": "New Berlin",
         "state": "WI",
         "zip": 53151,
-        "gamesOther": "Poker"
+        "gamesOther": "Poker",
+        "gamesColor": 6
     },
     {
         "coords": "39.6996065302915, -104.96354788029151",
@@ -471,6 +515,7 @@ var gamesData =
         "state": "CO",
         "zip": 80209,
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Cornhole",
         "website": "https://www.yelp.com/biz/homegrown-tap-and-dough-wash-park-denver"
     },
@@ -483,6 +528,38 @@ var gamesData =
         "zip": 80209,
         "jenga": "Yes",
         "jengaCost": "Free",
+        "gamesColor": 1,
         "gamesPlus": "Cornhole"
+    },
+    {
+        "dateSubmitted": "2018-05-01T00:08:43.758Z",
+        "name": "Chad Oehlschlaeger-Browne",
+        "coords": "47.8692503302915, -122.20720418029151",
+        "venueName": "asdf",
+        "streetAddress": "1914 SE 144th St.",
+        "city": "Mill Creek",
+        "state": "WA",
+        "zip": 98012,
+        "skeeball": "Yes",
+        "jenga": "Yes",
+        "trivia": "Yes",
+        "boardGames": "Yes",
+        "videoGames": "Yes",
+        "arcades": "Yes",
+        "gamesOther": "gameother",
+        "skeeballTables": "8+",
+        "jengaBoxes": "2018-03-02T00:00:00.000Z",
+        "triviaTables": "2018-03-02T00:00:00.000Z",
+        "boardGamesBoards": "2018-07-03T23:00:00.000Z",
+        "videoGamesConsoles": 1,
+        "arcadeMachines": "8+",
+        "skeeballCost": "Per Hour",
+        "jengaCost": "Free",
+        "triviaCost": "Per Hour",
+        "boardGamesCost": "Per Game",
+        "videoGamesCost": "Per Hour",
+        "arcadesCost": "Varies",
+        "gamesColor": 6,
+        "gamesPlus": "Pool, Ping Pong, Darts, Cornhole, Foosball, Shuffleboard, Bar Sports Other, Live Music, Karaoke, Dancing, Piano, Open Mic, Comedy, liveother"
     }
 ]

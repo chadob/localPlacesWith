@@ -15,7 +15,8 @@ var liveEntertainementData =
         "city": "Little Rock",
         "state": "AR",
         "zip": 72211,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "33.5249726802915, -112.11563648029153",
@@ -26,7 +27,8 @@ var liveEntertainementData =
         "zip": 85017,
         "dancing": "Yes",
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "34.0767026802915, -118.25487543029152",
@@ -36,6 +38,7 @@ var liveEntertainementData =
         "state": "CA",
         "zip": 90026,
         "liveMusic": "Dancing",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Beer Pong"
     },
     {
@@ -45,7 +48,8 @@ var liveEntertainementData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94102,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7878058302915, -122.42222543029152",
@@ -54,7 +58,8 @@ var liveEntertainementData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94109,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7871637802915, -122.43148408029151",
@@ -63,7 +68,8 @@ var liveEntertainementData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94115,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7922462302915, -122.42138118029152",
@@ -72,7 +78,8 @@ var liveEntertainementData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94109,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7716371302915, -122.42718513029149",
@@ -82,6 +89,7 @@ var liveEntertainementData =
         "state": "CA",
         "zip": 94102,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Cash Only"
     },
     {
@@ -92,7 +100,8 @@ var liveEntertainementData =
         "state": "CA",
         "zip": 94118,
         "dancing": "Yes",
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "37.78629068029149, -122.43340608029149",
@@ -101,7 +110,8 @@ var liveEntertainementData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94115,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "39.6736763802915, -104.86667328029148",
@@ -111,6 +121,7 @@ var liveEntertainementData =
         "state": "CO",
         "zip": 80014,
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Mechanical Bull"
     },
     {
@@ -121,6 +132,7 @@ var liveEntertainementData =
         "state": "CO",
         "zip": 80216,
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Mechanical Bull"
     },
     {
@@ -132,6 +144,7 @@ var liveEntertainementData =
         "zip": 30344,
         "piano": "Yes",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 3,
         "liveEntertainmentPlus": "Arcades"
     },
     {
@@ -141,7 +154,8 @@ var liveEntertainementData =
         "city": "Honolulu",
         "state": "HI",
         "zip": 96814,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "41.5883573802915, -93.61223133029154",
@@ -152,6 +166,7 @@ var liveEntertainementData =
         "zip": 50309,
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool"
     },
     {
@@ -161,7 +176,8 @@ var liveEntertainementData =
         "city": "Boise",
         "state": "ID",
         "zip": 83642,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "43.5790216302915, -116.19467213029151",
@@ -170,7 +186,8 @@ var liveEntertainementData =
         "city": "Boise",
         "state": "ID",
         "zip": 83706,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "39.6400269302915, -86.0856318302915",
@@ -181,6 +198,7 @@ var liveEntertainementData =
         "zip": 46237,
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool, Darts, Shuffleboard"
     },
     {
@@ -191,6 +209,7 @@ var liveEntertainementData =
         "state": "IN",
         "zip": 46204,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": " Pool, Gay Bar"
     },
     {
@@ -202,6 +221,7 @@ var liveEntertainementData =
         "zip": 46250,
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool, Darts"
     },
     {
@@ -212,6 +232,7 @@ var liveEntertainementData =
         "state": "IN",
         "zip": 46225,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool, Darts, PingPong, Arcades, Jenga, Bowling"
     },
     {
@@ -222,6 +243,7 @@ var liveEntertainementData =
         "state": "KS",
         "zip": 67213,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool"
     },
     {
@@ -232,6 +254,7 @@ var liveEntertainementData =
         "state": "KY",
         "zip": 40291,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": " Pool"
     },
     {
@@ -242,6 +265,7 @@ var liveEntertainementData =
         "state": "KY",
         "zip": 40207,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": " Pool"
     },
     {
@@ -251,7 +275,8 @@ var liveEntertainementData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70114,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "29.9712793802915, -90.1078081802915",
@@ -260,7 +285,8 @@ var liveEntertainementData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70119,
-        "dancing": "Yes"
+        "dancing": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "44.9763425302915, -93.25423153029152",
@@ -269,7 +295,8 @@ var liveEntertainementData =
         "city": "Minneapolis",
         "state": "MN",
         "zip": 55415,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "44.95136898029149, -93.2342003802915",
@@ -279,7 +306,8 @@ var liveEntertainementData =
         "state": "MN",
         "zip": 55406,
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "35.2180829802915, -80.85575698029152",
@@ -289,6 +317,7 @@ var liveEntertainementData =
         "state": "NC",
         "zip": 28203,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Jenga"
     },
     {
@@ -299,6 +328,7 @@ var liveEntertainementData =
         "state": "ND",
         "zip": 58103,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Casino games, Bowling"
     },
     {
@@ -308,7 +338,8 @@ var liveEntertainementData =
         "city": "Albuquerque",
         "state": "NM",
         "zip": 87110,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "36.16972558029151, -115.14072398029151",
@@ -317,7 +348,8 @@ var liveEntertainementData =
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89101,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "40.7080369802915, -73.92485313029147",
@@ -327,7 +359,8 @@ var liveEntertainementData =
         "state": "NY",
         "zip": 11237,
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "41.4993862802915, -81.56633258029149",
@@ -338,7 +371,8 @@ var liveEntertainementData =
         "zip": 44118,
         "openMic": "Yes",
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 4
     },
     {
         "coords": "41.4781722802915, -81.7869470802915",
@@ -347,7 +381,8 @@ var liveEntertainementData =
         "city": "Lakewood",
         "state": "OH",
         "zip": 44107,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "35.2240494802915, -97.44112183029148",
@@ -356,7 +391,8 @@ var liveEntertainementData =
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "35.29541248029149, -97.48918848029155",
@@ -365,7 +401,8 @@ var liveEntertainementData =
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "35.2043274802915, -97.4640900802915",
@@ -374,7 +411,8 @@ var liveEntertainementData =
         "city": "Norman",
         "state": "OK",
         "zip": 73069,
-        "dancing": "Yes"
+        "dancing": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "35.22387743029149, -97.44149958029152",
@@ -384,7 +422,8 @@ var liveEntertainementData =
         "state": "OK",
         "zip": 73069,
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "45.5240810802915, -122.66082508029149",
@@ -394,6 +433,7 @@ var liveEntertainementData =
         "state": "OR",
         "zip": 97214,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": " PingPong"
     },
     {
@@ -404,7 +444,8 @@ var liveEntertainementData =
         "state": "TN",
         "zip": 37211,
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "30.21978878029149, -97.75910493029153",
@@ -413,7 +454,8 @@ var liveEntertainementData =
         "city": "Austin",
         "state": "TX",
         "zip": 78704,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "32.9109397802915, -96.75087368029153",
@@ -423,7 +465,8 @@ var liveEntertainementData =
         "state": "TX",
         "zip": 75243,
         "karaoke": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "32.99231578029149, -96.80404878029151",
@@ -433,6 +476,7 @@ var liveEntertainementData =
         "state": "TX",
         "zip": 75252,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Games"
     },
     {
@@ -443,7 +487,8 @@ var liveEntertainementData =
         "state": "WA",
         "zip": 98004,
         "comedy": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 5
     },
     {
         "coords": "47.6534239802915, -122.35438298029152",
@@ -452,7 +497,8 @@ var liveEntertainementData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98103,
-        "dancing": "Yes"
+        "dancing": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "47.65194478029149, -122.38375303029147",
@@ -462,6 +508,7 @@ var liveEntertainementData =
         "state": "WA",
         "zip": 98199,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool, PingPong"
     },
     {
@@ -471,7 +518,8 @@ var liveEntertainementData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98119,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "47.5840934802915, -122.38752958029147",
@@ -482,7 +530,8 @@ var liveEntertainementData =
         "zip": 98116,
         "karaoke": "Yes",
         "liveMusic": "Yes",
-        "liveCost": 2
+        "liveCost": 2,
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "47.58422098029149, -122.38759308029148",
@@ -492,6 +541,7 @@ var liveEntertainementData =
         "state": "WA",
         "zip": 98116,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " Pool"
     },
     {
@@ -503,6 +553,7 @@ var liveEntertainementData =
         "zip": 98101,
         "dancing": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": " PingPong"
     },
     {
@@ -513,6 +564,7 @@ var liveEntertainementData =
         "state": "WA",
         "zip": 98117,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": " PingPong, Trivia, Bingo"
     },
     {
@@ -523,6 +575,7 @@ var liveEntertainementData =
         "state": "WI",
         "zip": 53703,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Trivia"
     },
     {
@@ -532,7 +585,8 @@ var liveEntertainementData =
         "city": "Madison",
         "state": "WI",
         "zip": 53703,
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 0
     },
     {
         "coords": "41.1157480802915, -104.80418478029151",
@@ -542,7 +596,8 @@ var liveEntertainementData =
         "state": "WY",
         "zip": 82007,
         "dancing": "Yes",
-        "liveMusic": "Yes"
+        "liveMusic": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "41.1605513802915, -104.80127448029151",
@@ -551,7 +606,8 @@ var liveEntertainementData =
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82001,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "41.1360761802915, -104.81036948029151",
@@ -560,6 +616,27 @@ var liveEntertainementData =
         "city": "Cheyenne",
         "state": "WY",
         "zip": 82001,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
+    },
+    {
+        "dateSubmitted": "2018-05-01T00:08:43.590Z",
+        "name": "Chad Oehlschlaeger-Browne",
+        "coords": "47.8692503302915, -122.20720418029151",
+        "venueName": "asdf",
+        "streetAddress": "1914 SE 144th St.",
+        "city": "Mill Creek",
+        "state": "WA",
+        "zip": 98012,
+        "comedy": "Yes",
+        "openMic": "Yes",
+        "piano": "Yes",
+        "dancing": "Yes",
+        "karaoke": "Yes",
+        "liveMusic": "Yes",
+        "liveEntertainmentOther": "liveother",
+        "liveCost": "Lots",
+        "liveAttire": "formal",
+        "liveEntertainmentPlus": "Pool, Ping Pong, Darts, Cornhole, Foosball, Shuffleboard, Bar Sports Other, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, gameother"
     }
 ]

@@ -80,9 +80,17 @@ function getFormData() {
       });
     }
   }
+
   //combines all main categories into a plus category for each section
   for (var prop in sectionsObject) {
     if (sectionsObject.hasOwnProperty(prop) && data[prop] == "true") {
+      //Set the color of the marker for google maps
+      for(var i = sectionsObject[prop].length - 1; i > -1; i--) {
+        if (location[this.sectionsObject[section][i]]) {
+            data[prop + " Color"] = i;
+        }
+      }
+
       data[prop + " Plus"] = [];
       for (var property in sectionsObject) {
         if (!(property === prop)) {

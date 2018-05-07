@@ -3,8 +3,21 @@
   width: 100%;
 }
 .mapNav {
-  height: 50px;
+  min-height: 50px;
   padding: 0px;
+  background-color: #343a40;
+}
+.mapNav img {
+  width: 15px;
+  height: 22px;
+}
+.map-nav-item {
+  display: inline-block;
+  color: rgba(255,255,255,.5);
+}
+.map-nav-item:hover {
+  color: #fff;
+  text-decoration: none;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #fff;

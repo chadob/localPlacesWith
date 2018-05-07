@@ -7,7 +7,8 @@ var allData =
         "city": "Anchorage",
         "state": "AK",
         "zip": 99503,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "61.1831019802915, -149.81621848029147",
@@ -16,7 +17,8 @@ var allData =
         "city": "Anchorage",
         "state": "AK",
         "zip": 99507,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "61.1960809802915, -149.90624698029148",
@@ -26,6 +28,7 @@ var allData =
         "state": "AK",
         "zip": 99503,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -35,7 +38,8 @@ var allData =
         "city": "Anchorage",
         "state": "AK",
         "zip": 99501,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "61.2200714802915, -149.89837808029154",
@@ -47,8 +51,10 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Shuffleboard, Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Shuffleboard"
     },
     {
@@ -59,7 +65,8 @@ var allData =
         "state": "AL",
         "zip": 35205,
         "pool": "Yes",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 0
     },
     {
         "coords": "33.3936599802915, -86.79485328029153",
@@ -69,7 +76,8 @@ var allData =
         "state": "AL",
         "zip": 35216,
         "pool": "Yes",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 0
     },
     {
         "coords": "33.4249845802915, -86.70313538029154",
@@ -80,7 +88,8 @@ var allData =
         "zip": 35242,
         "pool": "Yes",
         "poolTables": 3,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.43970068029149, -86.8672833802915",
@@ -91,7 +100,8 @@ var allData =
         "zip": 35211,
         "pool": "Yes",
         "poolTables": 1,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.4734069302915, -86.82115858029147",
@@ -102,7 +112,8 @@ var allData =
         "zip": 35209,
         "pool": "Yes",
         "poolTables": 4,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.5119296302915, -86.79081458029151",
@@ -113,6 +124,7 @@ var allData =
         "zip": 35233,
         "pool": "Yes",
         "poolTables": 1,
+        "barSportsColor": 0,
         "barSportsPlus": "Live music"
     },
     {
@@ -124,10 +136,13 @@ var allData =
         "zip": 72201,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Arcades",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool"
     },
     {
@@ -138,7 +153,8 @@ var allData =
         "state": "AR",
         "zip": 72114,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.73718728029149, -92.2743630802915",
@@ -147,7 +163,8 @@ var allData =
         "city": "Little Rock",
         "state": "AR",
         "zip": 72202,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.7610571302915, -92.3097446302915",
@@ -156,7 +173,8 @@ var allData =
         "city": "Little Rock",
         "state": "AR",
         "zip": 72202,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.75651098029149, -92.39446998029149",
@@ -167,8 +185,10 @@ var allData =
         "zip": 72211,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -182,9 +202,11 @@ var allData =
         "pool": "Yes",
         "poolTables": "8+",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Poker",
         "gamesOther": "Poker",
         "arcadeMachines": "8+",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -197,10 +219,12 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Live music, karaoke, dance floor",
         "dancing": "Yes",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -210,7 +234,8 @@ var allData =
         "city": "Phoenix",
         "state": "AZ",
         "zip": 85032,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.5813879802915, -112.11947188029148",
@@ -220,7 +245,8 @@ var allData =
         "state": "AZ",
         "zip": 85051,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.4959765802915, -112.00379578029151",
@@ -230,7 +256,8 @@ var allData =
         "state": "AZ",
         "zip": 85018,
         "shuffleboard": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "34.10746708029149, -117.86847928029147",
@@ -239,7 +266,8 @@ var allData =
         "city": "Covina",
         "state": "CA",
         "zip": 91724,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "36.83274993029151, -119.79090343029151",
@@ -248,7 +276,8 @@ var allData =
         "city": "Fresno",
         "state": "CA",
         "zip": 93710,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.7752005802915, -117.9630626802915",
@@ -259,7 +288,8 @@ var allData =
         "zip": 92844,
         "pingPong": "Yes",
         "pool": "Yes",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 1
     },
     {
         "coords": "32.7650145802915, -117.02484088029149",
@@ -271,7 +301,8 @@ var allData =
         "pingPong": "Yes",
         "pool": "Yes",
         "poolTables": "8+",
-        "poolCost": "$/hr, varies by time of day"
+        "poolCost": "$/hr, varies by time of day",
+        "barSportsColor": 1
     },
     {
         "coords": "33.71675198029151, -116.2980364802915",
@@ -281,7 +312,8 @@ var allData =
         "state": "CA",
         "zip": 92253,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.05346128029151, -118.2933945302915",
@@ -290,7 +322,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90006,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.10407608029149, -118.2934262802915",
@@ -299,7 +332,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90027,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "33.98686178029149, -118.42598803029148",
@@ -308,7 +342,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90066,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.0107995802915, -118.41441608029152",
@@ -318,6 +353,7 @@ var allData =
         "state": "CA",
         "zip": 90232,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -327,7 +363,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90065,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.06607638029151, -118.31025248029152",
@@ -336,7 +373,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.12152183029149, -118.25285433029148",
@@ -345,7 +383,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90065,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.0309545802915, -118.41264528029149",
@@ -354,7 +393,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90034,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.0683151302915, -118.29354528029148",
@@ -363,7 +403,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.0234822802915, -118.44020718029151",
@@ -372,7 +413,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90064,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.04837648029151, -118.25728258029153",
@@ -381,7 +423,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90014,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.1054621802915, -118.33208258029151",
@@ -391,7 +434,8 @@ var allData =
         "state": "CA",
         "zip": 90028,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.04860438029149, -118.25138178029147",
@@ -402,8 +446,11 @@ var allData =
         "zip": 90013,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Beer Pong",
-        "arcadeMachines": "Pool"
+        "gamesOther": "Beer Pong",
+        "arcadeMachines": "Pool",
+        "gamesColor": 6
     },
     {
         "coords": "34.0767026802915, -118.25487543029152",
@@ -413,10 +460,13 @@ var allData =
         "state": "CA",
         "zip": 90026,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Beer Pong, Dance Floor",
         "liveMusic": "Dancing",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports, Beer Pong",
         "gamesOther": "Beer Pong",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -427,7 +477,8 @@ var allData =
         "state": "CA",
         "zip": 90017,
         "pingPong": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 1
     },
     {
         "coords": "35.2133607802915, -80.81842098029153",
@@ -437,7 +488,8 @@ var allData =
         "state": "CA",
         "zip": 90021,
         "pingPong": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 1
     },
     {
         "coords": "34.0645486802915, -118.29637508029151",
@@ -446,7 +498,8 @@ var allData =
         "city": "Los Angeles",
         "state": "CA",
         "zip": 90020,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "34.0934370802915, -117.68930198029148",
@@ -456,6 +509,7 @@ var allData =
         "state": "CA",
         "zip": 91763,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -465,7 +519,8 @@ var allData =
         "city": "Sacramento",
         "state": "CA",
         "zip": 95816,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "38.6139344802915, -121.3832539802915",
@@ -475,8 +530,10 @@ var allData =
         "state": "CA",
         "zip": 95821,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Bowling",
         "gamesOther": "Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -489,7 +546,8 @@ var allData =
         "pingPong": "Yes",
         "pool": "Yes",
         "poolTables": "8+",
-        "poolCost": "$/hr, varies by time of day"
+        "poolCost": "$/hr, varies by time of day",
+        "barSportsColor": 1
     },
     {
         "coords": "37.74146193029149, -122.4103839802915",
@@ -501,7 +559,8 @@ var allData =
         "pingPong": "Yes",
         "cornhole": "Yes",
         "foosball": "Yes",
-        "shuffleboard": "Yes"
+        "shuffleboard": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "37.7853433302915, -122.41178633029153",
@@ -510,7 +569,8 @@ var allData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94102,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7878058302915, -122.42222543029152",
@@ -519,7 +579,8 @@ var allData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94109,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7871637802915, -122.43148408029151",
@@ -528,7 +589,8 @@ var allData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94115,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7922462302915, -122.42138118029152",
@@ -537,7 +599,8 @@ var allData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94109,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7828139302915, -122.4627819302915",
@@ -547,7 +610,8 @@ var allData =
         "state": "CA",
         "zip": 94118,
         "dancing": "Yes",
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 2
     },
     {
         "coords": "37.78629068029149, -122.43340608029149",
@@ -556,7 +620,8 @@ var allData =
         "city": "San Francisco",
         "state": "CA",
         "zip": 94115,
-        "karaoke": "Yes"
+        "karaoke": "Yes",
+        "liveEntertainmentColor": 1
     },
     {
         "coords": "37.7716371302915, -122.42718513029149",
@@ -566,6 +631,7 @@ var allData =
         "state": "CA",
         "zip": 94102,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Cash Only"
     },
     {
@@ -575,7 +641,8 @@ var allData =
         "city": "San Jose",
         "state": "CA",
         "zip": 95118,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "37.3247887802915, -121.9094235802915",
@@ -584,7 +651,8 @@ var allData =
         "city": "San Jose",
         "state": "CA",
         "zip": 95126,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "37.64451418029149, -122.4272320802915",
@@ -593,7 +661,8 @@ var allData =
         "city": "South San Francisco",
         "state": "CA",
         "zip": 94080,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "39.1712710802915, -120.1445263802915",
@@ -604,6 +673,7 @@ var allData =
         "zip": 96145,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -617,7 +687,8 @@ var allData =
         "pool": "Yes",
         "poolTables": "8+",
         "poolCost": "$/hr",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "39.6736763802915, -104.86667328029148",
@@ -629,10 +700,13 @@ var allData =
         "pool": "Yes",
         "poolTables": 2,
         "poolCost": "$/game",
+        "barSportsColor": 0,
         "barSportsPlus": "Dancing, Mechanical Bull",
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports, Mechanical Bull",
         "gamesOther": "Mechanical Bull",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -646,6 +720,7 @@ var allData =
         "pool": "Yes",
         "poolTables": 1,
         "poolCost": "$/game",
+        "barSportsColor": 2,
         "barSportsPlus": "Arcades, Skeeball",
         "skeeball": "Yes",
         "arcades": "Yes",
@@ -653,6 +728,7 @@ var allData =
         "arcadeMachines": 1,
         "skeeballCost": "$/game",
         "arcadesCost": "$/game",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -665,10 +741,13 @@ var allData =
         "pool": "Yes",
         "poolTables": 4,
         "poolCost": "$/game",
+        "barSportsColor": 0,
         "barSportsPlus": "Dancing, Mechanical Bull",
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports, Mechanical Bull",
         "gamesOther": "Mechanical Bull",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Dancing"
     },
     {
@@ -678,7 +757,8 @@ var allData =
         "city": "Denver",
         "state": "CO",
         "zip": 80205,
-        "cornhole": "Yes"
+        "cornhole": "Yes",
+        "barSportsColor": 3
     },
     {
         "coords": "39.6996065302915, -104.96354788029151",
@@ -690,8 +770,10 @@ var allData =
         "website": "https://www.yelp.com/biz/homegrown-tap-and-dough-wash-park-denver",
         "cornhole": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 3,
         "barSportsPlus": "Video Games",
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Cornhole"
     },
     {
@@ -704,9 +786,11 @@ var allData =
         "cornhole": "Yes",
         "poolCost": "FREE",
         "sportsTv": "Yes",
+        "barSportsColor": 3,
         "barSportsPlus": "Jenga",
         "jenga": "Yes",
         "jengaCost": "Free",
+        "gamesColor": 1,
         "gamesPlus": "Cornhole"
     },
     {
@@ -726,6 +810,7 @@ var allData =
         "foosballTables": 1,
         "poolTables": 1,
         "poolCost": "$/hr",
+        "barSportsColor": 4,
         "barSportsPlus": "Shuffleboard, Arcades, Skeeball",
         "skeeball": "Yes",
         "arcades": "Yes",
@@ -733,6 +818,7 @@ var allData =
         "arcadeMachines": 1,
         "skeeballCost": "$/hr",
         "arcadesCost": "$/hr",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Shuffleboard"
     },
     {
@@ -743,8 +829,10 @@ var allData =
         "state": "CO",
         "zip": 80202,
         "shuffleboard": "Yes",
+        "barSportsColor": 5,
         "barSportsPlus": "Video games",
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Shuffleboard"
     },
     {
@@ -756,7 +844,8 @@ var allData =
         "zip": 80202,
         "pool": "Yes",
         "poolTables": "8+",
-        "poolCost": "$/hr"
+        "poolCost": "$/hr",
+        "barSportsColor": 0
     },
     {
         "coords": "39.7547324302915, -104.99988283029148",
@@ -767,7 +856,8 @@ var allData =
         "zip": 80202,
         "pool": "Yes",
         "poolTables": "8+",
-        "poolCost": "$/hr"
+        "poolCost": "$/hr",
+        "barSportsColor": 0
     },
     {
         "coords": "39.6980111802915, -104.93992418029148",
@@ -784,10 +874,12 @@ var allData =
         "poolTables": 5,
         "poolCost": "$.75, Free at times",
         "sportsTv": "Yes",
+        "barSportsColor": 4,
         "barSportsPlus": "Jenga",
         "jenga": "Yes",
         "jengaBoxes": 5,
         "jengaCost": "$.75, Free at times",
+        "gamesColor": 1,
         "gamesPlus": "Foosball"
     },
     {
@@ -804,7 +896,8 @@ var allData =
         "poolTables": 2,
         "dartsCost": "$/game",
         "poolCost": "$/game",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "30.31486258029149, -81.69654553029147",
@@ -817,7 +910,8 @@ var allData =
         "pingPong": "Yes",
         "shuffleboard": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "30.3096809802915, -81.71541748029153",
@@ -829,7 +923,8 @@ var allData =
         "shuffleboard": "Yes",
         "pool": "Yes",
         "poolTables": 8,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "30.28737778029149, -81.55086178029148",
@@ -841,7 +936,8 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "poolTables": 8,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "30.1668118802915, -81.6043201802915",
@@ -852,7 +948,8 @@ var allData =
         "zip": 32223,
         "darts": "Yes",
         "pool": "Yes",
-        "poolTables": 8
+        "poolTables": 8,
+        "barSportsColor": 2
     },
     {
         "coords": "28.0701898802915, -80.55971328029148",
@@ -862,7 +959,8 @@ var allData =
         "state": "FL",
         "zip": 32951,
         "pingPong": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 1
     },
     {
         "coords": "25.72909798029151, -80.24452598029154",
@@ -875,9 +973,11 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 1,
         "poolTables": 1,
+        "barSportsColor": 2,
         "barSportsPlus": "Beer Pong, Trivia Night",
         "trivia": "Yes",
         "gamesOther": "Beer Pong",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -889,7 +989,8 @@ var allData =
         "zip": 33138,
         "pool": "Yes",
         "poolTables": 8,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "27.8158167802915, -82.67233678029152",
@@ -899,8 +1000,10 @@ var allData =
         "state": "FL",
         "zip": 33714,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Board Games, Hookah",
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Pool, Hookah"
     },
     {
@@ -911,6 +1014,7 @@ var allData =
         "state": "GA",
         "zip": 30344,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Hookah"
     },
     {
@@ -924,8 +1028,10 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 8,
         "poolTables": "8+",
+        "barSportsColor": 2,
         "barSportsPlus": "Mini Bowling",
         "gamesOther": "Mini Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -938,11 +1044,14 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Arcades, Piano, Karaoke",
         "piano": "Yes",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 3,
         "liveEntertainmentPlus": "Bar Sports, Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Piano, Karaoke"
     },
     {
@@ -954,8 +1063,10 @@ var allData =
         "zip": 96814,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -965,7 +1076,8 @@ var allData =
         "city": "Honolulu",
         "state": "HI",
         "zip": 96816,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "21.2856228802915, -157.81474418029154",
@@ -976,7 +1088,8 @@ var allData =
         "zip": 96816,
         "darts": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "21.3078821302915, -157.86694593029154",
@@ -986,6 +1099,7 @@ var allData =
         "state": "HI",
         "zip": 96813,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music, dancing"
     },
     {
@@ -996,8 +1110,10 @@ var allData =
         "state": "ID",
         "zip": 83642,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1008,7 +1124,8 @@ var allData =
         "state": "ID",
         "zip": 83709,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "43.5790216302915, -116.19467213029151",
@@ -1018,8 +1135,10 @@ var allData =
         "state": "ID",
         "zip": 83706,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1029,7 +1148,8 @@ var allData =
         "city": "Boise",
         "state": "ID",
         "zip": 83702,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "43.6193011802915, -116.25573898029148",
@@ -1038,7 +1158,8 @@ var allData =
         "city": "Boise",
         "state": "ID",
         "zip": 83706,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "39.6400269302915, -86.0856318302915",
@@ -1050,8 +1171,10 @@ var allData =
         "darts": "Yes",
         "shuffleboard": "Yes",
         "pool": "Yes",
+        "barSportsColor": 5,
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool, Darts, Shuffleboard"
     },
     {
@@ -1062,7 +1185,9 @@ var allData =
         "state": "IN",
         "zip": 46204,
         "pool": "Yes",
+        "barSportsColor": 0,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Pool, Gay Bar"
     },
     {
@@ -1074,8 +1199,10 @@ var allData =
         "zip": 46250,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool, Darts"
     },
     {
@@ -1088,7 +1215,9 @@ var allData =
         "darts": "Yes",
         "pingPong": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool, Darts, PingPong, Arcades, Jenga, Bowling"
     },
     {
@@ -1098,7 +1227,8 @@ var allData =
         "city": "Chicago",
         "state": "IL",
         "zip": 60622,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.9983914302915, -87.67203748029152",
@@ -1107,7 +1237,8 @@ var allData =
         "city": "Chicago",
         "state": "IL",
         "zip": 60660,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.9547620802915, -87.67008408029147",
@@ -1116,7 +1247,8 @@ var allData =
         "city": "Chicago",
         "state": "IL",
         "zip": 60613,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.9482356802915, -90.37076868029152",
@@ -1125,7 +1257,8 @@ var allData =
         "city": "Galesburg",
         "state": "IL",
         "zip": 61401,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "38.1683519802915, -85.6036914802915",
@@ -1135,7 +1268,9 @@ var allData =
         "state": "KY",
         "zip": 40291,
         "pool": "Yes",
+        "barSportsColor": 0,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Pool"
     },
     {
@@ -1146,7 +1281,9 @@ var allData =
         "state": "KY",
         "zip": 40207,
         "pool": "Yes",
+        "barSportsColor": 0,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Pool"
     },
     {
@@ -1156,7 +1293,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70119,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9423129302915, -90.13000988029148",
@@ -1167,6 +1305,7 @@ var allData =
         "zip": 70118,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -1177,7 +1316,8 @@ var allData =
         "state": "LA",
         "zip": 70118,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9653369802915, -90.0652417802915",
@@ -1186,7 +1326,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70116,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9602759802915, -90.06950118029152",
@@ -1196,7 +1337,8 @@ var allData =
         "state": "LA",
         "zip": 70112,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "29.9186780302915, -90.10846343029152",
@@ -1205,7 +1347,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9520804802915, -90.07599293029148",
@@ -1214,7 +1357,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70112,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9359041302915, -90.08188023029152",
@@ -1225,6 +1369,7 @@ var allData =
         "zip": 70130,
         "foosball": "Yes",
         "pool": "Yes",
+        "barSportsColor": 4,
         "barSportsPlus": "Laundromat"
     },
     {
@@ -1234,7 +1379,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9394554302915, -90.07806068029151",
@@ -1244,6 +1390,7 @@ var allData =
         "state": "LA",
         "zip": 70130,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Laundromat, Open 24HRs"
     },
     {
@@ -1254,7 +1401,8 @@ var allData =
         "state": "LA",
         "zip": 70115,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9590249802915, -90.06752398029153",
@@ -1264,7 +1412,8 @@ var allData =
         "state": "LA",
         "zip": 70130,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "29.9563482802915, -90.0515327802915",
@@ -1274,8 +1423,10 @@ var allData =
         "state": "LA",
         "zip": 70114,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live performances",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1289,8 +1440,10 @@ var allData =
         "pingPong": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Dancing",
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1300,7 +1453,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70115,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "29.9525820802915, -90.07263318029152",
@@ -1309,7 +1463,8 @@ var allData =
         "city": "New Orleans",
         "state": "LA",
         "zip": 70130,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "42.3584639802915, -71.06222208029152",
@@ -1318,7 +1473,8 @@ var allData =
         "city": "Boston",
         "state": "MA",
         "zip": 2108,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "42.3506735802915, -71.09727328029146",
@@ -1328,8 +1484,10 @@ var allData =
         "state": "MA",
         "zip": 2215,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Board Games",
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Pool"
     },
     {
@@ -1339,7 +1497,8 @@ var allData =
         "city": "Boston",
         "state": "MA",
         "zip": 2108,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "42.3681281802915, -71.09227878029151",
@@ -1348,7 +1507,8 @@ var allData =
         "city": "Cambridge",
         "state": "MA",
         "zip": 2139,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "42.3876236802915, -71.00878568029151",
@@ -1357,7 +1517,8 @@ var allData =
         "city": "East Boston",
         "state": "MA",
         "zip": 2128,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "39.4993923802915, -76.32808948029151",
@@ -1366,7 +1527,8 @@ var allData =
         "city": "Bel Air",
         "state": "MD",
         "zip": 21015,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "39.5768589302915, -76.99707813029147",
@@ -1376,7 +1538,8 @@ var allData =
         "state": "MD",
         "zip": 21157,
         "pool": "Yes",
-        "poolCost": "Free at times"
+        "poolCost": "Free at times",
+        "barSportsColor": 0
     },
     {
         "coords": "44.98221738029151, -93.2749215802915",
@@ -1389,7 +1552,8 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 2,
         "poolTables": 2,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "44.9763425302915, -93.25423153029152",
@@ -1401,8 +1565,10 @@ var allData =
         "pool": "Yes",
         "poolTables": 2,
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music, jukebox",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1414,8 +1580,10 @@ var allData =
         "zip": 55406,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke, Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1430,8 +1598,10 @@ var allData =
         "pool": "Yes",
         "poolTables": 5,
         "sportsTv": "Yes",
+        "barSportsColor": 4,
         "barSportsPlus": "Pinball",
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Foosball, Darts"
     },
     {
@@ -1445,7 +1615,8 @@ var allData =
         "foosball": "Yes",
         "dartsBoards": 5,
         "foosballTables": 5,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 4
     },
     {
         "coords": "38.6434971802915, -90.1902073802915",
@@ -1455,7 +1626,8 @@ var allData =
         "state": "MO",
         "zip": 63104,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "38.6241326802915, -90.28787053029151",
@@ -1464,7 +1636,8 @@ var allData =
         "city": "St Louis",
         "state": "MO",
         "zip": 63110,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "38.6249589802915, -90.19837798029153",
@@ -1478,6 +1651,7 @@ var allData =
         "videoGames": "Yes",
         "arcades": "Yes",
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "More Games"
     },
     {
@@ -1487,7 +1661,8 @@ var allData =
         "city": "St Louis",
         "state": "MO",
         "zip": 63143,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "38.5934784802915, -90.28118718029151",
@@ -1498,8 +1673,10 @@ var allData =
         "zip": 63109,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool"
     },
     {
@@ -1511,7 +1688,8 @@ var allData =
         "zip": 63116,
         "darts": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "38.6071732802915, -90.27708438029151",
@@ -1521,7 +1699,8 @@ var allData =
         "state": "MO",
         "zip": 63139,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "38.7018572802915, -90.4484928802915",
@@ -1537,6 +1716,7 @@ var allData =
         "shuffleboard": "Yes",
         "poolCost": "FREE",
         "sportsTv": "Yes",
+        "barSportsColor": 5,
         "barSportsPlus": "Other Sports, Music, Games"
     },
     {
@@ -1546,7 +1726,8 @@ var allData =
         "city": "Billings",
         "state": "MT",
         "zip": 59102,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "45.83171033029149, -108.47385488029147",
@@ -1555,7 +1736,8 @@ var allData =
         "city": "Billings",
         "state": "MT",
         "zip": 59105,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "45.76792698029149, -108.53247983029149",
@@ -1564,7 +1746,8 @@ var allData =
         "city": "Billings",
         "state": "MT",
         "zip": 59101,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.0428752802915, -73.77057668029147",
@@ -1574,7 +1757,8 @@ var allData =
         "state": "MT",
         "zip": 59101,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "45.7786884302915, -108.55356298029153",
@@ -1584,8 +1768,10 @@ var allData =
         "state": "MT",
         "zip": 59102,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Bar Sports"
     },
     {
@@ -1596,7 +1782,8 @@ var allData =
         "state": "MT",
         "zip": 59102,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "35.2180829802915, -80.85575698029152",
@@ -1607,10 +1794,13 @@ var allData =
         "zip": 28203,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke, Jenga",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports, Jenga",
         "jenga": "Yes",
+        "gamesColor": 1,
         "gamesPlus": "Pool, Darts, Karaoke"
     },
     {
@@ -1622,7 +1812,8 @@ var allData =
         "zip": 28273,
         "pool": "Yes",
         "poolTables": 4,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "46.8326728802915, -96.85762478029153",
@@ -1631,7 +1822,8 @@ var allData =
         "city": "Fargo",
         "state": "ND",
         "zip": 58104,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "46.87755118029149, -96.82214788029148",
@@ -1641,7 +1833,8 @@ var allData =
         "state": "ND",
         "zip": 58103,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "46.8405910302915, -96.7994055302915",
@@ -1652,10 +1845,13 @@ var allData =
         "zip": 58103,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke, casino games, bowling",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports, Casino games, Bowling",
         "gamesOther": "Bowling, Casino Games",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts, Karaoke"
     },
     {
@@ -1667,6 +1863,7 @@ var allData =
         "zip": 7072,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Hookah"
     },
     {
@@ -1677,7 +1874,8 @@ var allData =
         "state": "NJ",
         "zip": 7073,
         "pool": "Yes",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 0
     },
     {
         "coords": "35.0862509802915, -106.65328498029152",
@@ -1687,7 +1885,8 @@ var allData =
         "state": "NM",
         "zip": 87102,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "35.0815729302915, -106.61553583029149",
@@ -1699,8 +1898,10 @@ var allData =
         "pingPong": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 1,
         "barSportsPlus": "Air Hockey, Pinball",
         "gamesOther": "Air Hockey, Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, PingPong"
     },
     {
@@ -1713,8 +1914,10 @@ var allData =
         "pool": "Yes",
         "poolTables": 3,
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1726,8 +1929,10 @@ var allData =
         "zip": 89101,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1737,7 +1942,8 @@ var allData =
         "city": "Las Vegas",
         "state": "NV",
         "zip": 89103,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "36.14638868029149, -115.20628498029151",
@@ -1748,6 +1954,7 @@ var allData =
         "zip": 89102,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Games"
     },
     {
@@ -1758,7 +1965,8 @@ var allData =
         "state": "NV",
         "zip": 89148,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "39.5239826802915, -119.81441348029148",
@@ -1770,7 +1978,8 @@ var allData =
         "darts": "Yes",
         "shuffleboard": "Yes",
         "pool": "Yes",
-        "poolTables": 2
+        "poolTables": 2,
+        "barSportsColor": 5
     },
     {
         "coords": "39.4941182802915, -119.79790918029153",
@@ -1780,7 +1989,8 @@ var allData =
         "state": "NV",
         "zip": 89502,
         "pool": "Yes",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 0
     },
     {
         "coords": "39.5316875802915, -119.7669808802915",
@@ -1789,7 +1999,8 @@ var allData =
         "city": "Sparks",
         "state": "NV",
         "zip": 89431,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.6787483802915, -73.9742081802915",
@@ -1799,8 +2010,10 @@ var allData =
         "state": "NY",
         "zip": 11238,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Air Hockey, Bowling",
         "gamesOther": "Air Hockey, Bowling",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -1812,9 +2025,11 @@ var allData =
         "zip": 11237,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke, Live Music",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1826,8 +2041,10 @@ var allData =
         "zip": 10009,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Skeeball",
         "skeeball": "Yes",
+        "gamesColor": 0,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -1844,7 +2061,8 @@ var allData =
         "dartsBoards": "8+",
         "pingPongTables": "8+",
         "foosballTables": "8+",
-        "poolTables": "8+"
+        "poolTables": "8+",
+        "barSportsColor": 4
     },
     {
         "coords": "40.7566312802915, -73.99479648029148",
@@ -1853,7 +2071,8 @@ var allData =
         "city": "New York",
         "state": "NY",
         "zip": 10018,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7768330302915, -73.95514003029155",
@@ -1865,8 +2084,10 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Video Games",
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -1877,7 +2098,8 @@ var allData =
         "state": "NY",
         "zip": 10028,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.8667223802915, -73.92022978029149",
@@ -1887,7 +2109,8 @@ var allData =
         "state": "NY",
         "zip": 10034,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.74252423029149, -73.99457073029151",
@@ -1896,7 +2119,8 @@ var allData =
         "city": "New York",
         "state": "NY",
         "zip": 10010,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.74123378029149, -73.99143078029152",
@@ -1907,7 +2131,8 @@ var allData =
         "zip": 10010,
         "pool": "Yes",
         "poolTables": "8+",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7490240802915, -73.98865648029152",
@@ -1916,7 +2141,8 @@ var allData =
         "city": "New York",
         "state": "NY",
         "zip": 10001,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7626436802915, -73.92587418029149",
@@ -1927,7 +2153,8 @@ var allData =
         "zip": 11103,
         "pingPong": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 1
     },
     {
         "coords": "39.1532618802915, -84.43307958029152",
@@ -1938,7 +2165,8 @@ var allData =
         "zip": 45209,
         "darts": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "39.1259769802915, -84.52143098029148",
@@ -1949,9 +2177,11 @@ var allData =
         "zip": 45219,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Trivia, Jenga",
         "jenga": "Yes",
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool"
     },
     {
@@ -1962,7 +2192,8 @@ var allData =
         "state": "OH",
         "zip": 44109,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.4993862802915, -81.56633258029149",
@@ -1974,10 +2205,12 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Open mics, Karaoke, live music",
         "openMic": "Yes",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 4,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -1990,7 +2223,8 @@ var allData =
         "darts": "Yes",
         "cornhole": "Yes",
         "pool": "Yes",
-        "poolTables": 28
+        "poolTables": 28,
+        "barSportsColor": 3
     },
     {
         "coords": "39.9849183802915, -83.0152609302915",
@@ -2000,7 +2234,8 @@ var allData =
         "state": "OH",
         "zip": 43201,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.0042026302915, -82.9990944302915",
@@ -2009,7 +2244,8 @@ var allData =
         "city": "Columbus",
         "state": "OH",
         "zip": 43201,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.0270568802915, -83.16116198029152",
@@ -2019,7 +2255,8 @@ var allData =
         "state": "OH",
         "zip": 43026,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.4781722802915, -81.7869470802915",
@@ -2031,8 +2268,10 @@ var allData =
         "foosball": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 4,
         "barSportsPlus": "Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2044,8 +2283,10 @@ var allData =
         "zip": 73069,
         "shuffleboard": "Yes",
         "pool": "Yes",
+        "barSportsColor": 5,
         "barSportsPlus": "Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2057,7 +2298,8 @@ var allData =
         "zip": 73069,
         "pool": "Yes",
         "poolTables": 4,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "35.29541248029149, -97.48918848029155",
@@ -2068,8 +2310,10 @@ var allData =
         "zip": 73069,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2080,8 +2324,10 @@ var allData =
         "state": "OK",
         "zip": 73069,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Dance floor",
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2094,9 +2340,11 @@ var allData =
         "pool": "Yes",
         "poolTables": 2,
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke, Live Music",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2107,7 +2355,9 @@ var allData =
         "state": "OR",
         "zip": 97214,
         "pingPong": "Yes",
+        "barSportsColor": 1,
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "PingPong"
     },
     {
@@ -2121,7 +2371,8 @@ var allData =
         "shuffleboard": "Yes",
         "pool": "Yes",
         "poolCost": "$5/half hour",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "36.1770867302915, -86.75669903029149",
@@ -2133,8 +2384,10 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2146,9 +2399,11 @@ var allData =
         "zip": 37211,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music, karaoke",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2160,6 +2415,7 @@ var allData =
         "zip": 78701,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -2171,8 +2427,10 @@ var allData =
         "zip": 78741,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Poker",
         "gamesOther": "Poker",
+        "gamesColor": 6,
         "gamesPlus": "Pool"
     },
     {
@@ -2183,7 +2441,8 @@ var allData =
         "state": "TX",
         "zip": 78728,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "30.4364995802915, -97.67588298029148",
@@ -2192,7 +2451,8 @@ var allData =
         "city": "Austin",
         "state": "TX",
         "zip": 78728,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "30.4549589802915, -97.83017038029152",
@@ -2204,8 +2464,10 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Poker",
         "gamesOther": "Poker",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2217,8 +2479,10 @@ var allData =
         "zip": 78757,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Video Games",
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2233,8 +2497,10 @@ var allData =
         "foosball": "Yes",
         "pool": "Yes",
         "poolTables": 2,
+        "barSportsColor": 4,
         "barSportsPlus": "Arcades",
         "arcades": "Yes",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts, Cornhole, Foosball"
     },
     {
@@ -2247,8 +2513,10 @@ var allData =
         "foosball": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 4,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2258,7 +2526,8 @@ var allData =
         "city": "Dallas",
         "state": "TX",
         "zip": 75224,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "32.9104217802915, -96.8746069802915",
@@ -2268,7 +2537,8 @@ var allData =
         "state": "TX",
         "zip": 75234,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "32.9055643802915, -96.71519768029151",
@@ -2279,6 +2549,7 @@ var allData =
         "zip": 75243,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Poker"
     },
     {
@@ -2289,9 +2560,11 @@ var allData =
         "state": "TX",
         "zip": 75243,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke, Live Music",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2303,7 +2576,8 @@ var allData =
         "zip": 75252,
         "darts": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "32.99231578029149, -96.80404878029151",
@@ -2314,10 +2588,13 @@ var allData =
         "zip": 75252,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard, Video Games, & Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports, Games",
         "videoGames": "Yes",
+        "gamesColor": 4,
         "gamesPlus": "Pool, Shuffleboard, Karaoke"
     },
     {
@@ -2328,7 +2605,8 @@ var allData =
         "state": "TX",
         "zip": 75206,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "32.7860951802915, -96.78549933029149",
@@ -2337,7 +2615,8 @@ var allData =
         "city": "Dallas",
         "state": "TX",
         "zip": 75226,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7665222802915, -111.8873542802915",
@@ -2346,7 +2625,8 @@ var allData =
         "city": "Salt Lake City",
         "state": "UT",
         "zip": 84111,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.32334813029151, -122.2307997302915",
@@ -2355,7 +2635,8 @@ var allData =
         "city": "Auburn",
         "state": "WA",
         "zip": 98002,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.6181855802915, -122.20245658029148",
@@ -2366,9 +2647,11 @@ var allData =
         "zip": 98004,
         "pingPong": "Yes",
         "pool": "Yes",
+        "barSportsColor": 1,
         "barSportsPlus": "Comedy, Live Music",
         "comedy": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 5,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2383,7 +2666,8 @@ var allData =
         "dartsBoards": 2,
         "poolTables": 2,
         "poolCost": 0.75,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "47.5817541802915, -122.70648113029148",
@@ -2392,7 +2676,8 @@ var allData =
         "city": "Bremerton",
         "state": "WA",
         "zip": 98312,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.46785278029149, -122.34294148029153",
@@ -2401,7 +2686,8 @@ var allData =
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.4463230802915, -122.3304637802915",
@@ -2410,7 +2696,8 @@ var allData =
         "city": "Burien",
         "state": "WA",
         "zip": 98148,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.46929968029149, -122.34736418029149",
@@ -2419,7 +2706,8 @@ var allData =
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.4626744302915, -122.33778568029152",
@@ -2428,7 +2716,8 @@ var allData =
         "city": "Burien",
         "state": "WA",
         "zip": 98166,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.4030254802915, -122.32634418029147",
@@ -2439,7 +2728,8 @@ var allData =
         "zip": 98198,
         "pool": "Yes",
         "poolTables": 2,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.3974068802915, -122.3246335802915",
@@ -2450,7 +2740,8 @@ var allData =
         "zip": 98198,
         "pool": "Yes",
         "poolTables": 3,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.2847763302915, -121.9272605302915",
@@ -2459,7 +2750,8 @@ var allData =
         "city": "Enumclaw",
         "state": "WA",
         "zip": 98022,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.9481359802915, -122.2174478802915",
@@ -2468,7 +2760,8 @@ var allData =
         "city": "Everett",
         "state": "WA",
         "zip": 98203,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.3034465802915, -122.3144901802915",
@@ -2479,7 +2772,8 @@ var allData =
         "zip": 98003,
         "pool": "Yes",
         "poolTables": "8+",
-        "poolCost": "$15/hr"
+        "poolCost": "$15/hr",
+        "barSportsColor": 0
     },
     {
         "coords": "47.2931524802915, -122.31537593029151",
@@ -2490,7 +2784,8 @@ var allData =
         "zip": 98003,
         "pool": "Yes",
         "poolTables": 3,
-        "poolCost": 0.75
+        "poolCost": 0.75,
+        "barSportsColor": 0
     },
     {
         "coords": "47.5316867802915, -122.03707988029151",
@@ -2499,7 +2794,8 @@ var allData =
         "city": "Issaquah",
         "state": "WA",
         "zip": 98027,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.40936903029149, -122.22978418029152",
@@ -2512,7 +2808,8 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 4,
         "poolTables": 4,
-        "poolCost": "$1/game"
+        "poolCost": "$1/game",
+        "barSportsColor": 2
     },
     {
         "coords": "47.3733593802915, -122.3031454802915",
@@ -2521,7 +2818,8 @@ var allData =
         "city": "Kent",
         "state": "WA",
         "zip": 98032,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.37321728029151, -122.20069018029153",
@@ -2530,7 +2828,8 @@ var allData =
         "city": "Kent",
         "state": "WA",
         "zip": 98030,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.5533289802915, -122.17868938029153",
@@ -2545,9 +2844,11 @@ var allData =
         "poolTables": 3,
         "poolCost": "0.75/game",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "arcades": "Yes",
         "arcadeMachines": 3,
         "arcadesCost": "0.75/game",
+        "gamesColor": 5,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2557,7 +2858,8 @@ var allData =
         "city": "Port Orchard",
         "state": "WA",
         "zip": 98366,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "48.1157180802915, -122.75719718029148",
@@ -2568,7 +2870,8 @@ var allData =
         "zip": 98368,
         "pool": "Yes",
         "poolTables": 1,
-        "poolCost": "FREE"
+        "poolCost": "FREE",
+        "barSportsColor": 0
     },
     {
         "coords": "47.6340032802915, -122.14356248029151",
@@ -2577,7 +2880,8 @@ var allData =
         "city": "Redmond",
         "state": "WA",
         "zip": 98052,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.5340566802915, -122.19564258029152",
@@ -2587,7 +2891,8 @@ var allData =
         "state": "WA",
         "zip": 98056,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.4807717302915, -122.20634893029148",
@@ -2596,7 +2901,8 @@ var allData =
         "city": "Renton",
         "state": "WA",
         "zip": 98057,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.4432322802915, -122.21985813029153",
@@ -2606,7 +2912,8 @@ var allData =
         "state": "WA",
         "zip": 98057,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "47.4753155802915, -122.31640838029148",
@@ -2616,7 +2923,8 @@ var allData =
         "state": "WA",
         "zip": 98168,
         "pool": "Yes",
-        "poolCost": "FREE Sunday"
+        "poolCost": "FREE Sunday",
+        "barSportsColor": 0
     },
     {
         "coords": "47.6604603802915, -122.36579878029147",
@@ -2625,7 +2933,8 @@ var allData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98107,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.5840934802915, -122.38752958029147",
@@ -2638,13 +2947,16 @@ var allData =
         "pingPong": "Yes",
         "pool": "Yes",
         "poolTables": 2,
+        "barSportsColor": 2,
         "barSportsPlus": "Skeeball, Karaoke, Live Music",
         "karaoke": "Yes",
         "liveMusic": "Yes",
         "liveCost": 2,
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports, Games",
         "skeeball": "Yes",
         "skeeballTables": 2,
+        "gamesColor": 0,
         "gamesPlus": "Bar Sports, Live Entertainment"
     },
     {
@@ -2655,8 +2967,10 @@ var allData =
         "state": "WA",
         "zip": 98103,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Dance Floor",
         "dancing": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2666,7 +2980,8 @@ var allData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98136,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.65194478029149, -122.38375303029147",
@@ -2677,8 +2992,10 @@ var allData =
         "zip": 98199,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool, PingPong"
     },
     {
@@ -2689,6 +3006,7 @@ var allData =
         "state": "WA",
         "zip": 98112,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Shuffleboard"
     },
     {
@@ -2699,7 +3017,8 @@ var allData =
         "state": "WA",
         "zip": 98101,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "47.60156123029149, -122.3325283302915",
@@ -2710,8 +3029,10 @@ var allData =
         "zip": 98104,
         "cornhole": "Yes",
         "pool": "Yes",
+        "barSportsColor": 3,
         "barSportsPlus": "Mini Golf",
         "gamesOther": "Mini Golf",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Cornhole"
     },
     {
@@ -2724,7 +3045,8 @@ var allData =
         "pool": "Yes",
         "poolTables": 8,
         "poolCost": "$/hr",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.6282357802915, -122.34916078029153",
@@ -2735,8 +3057,10 @@ var allData =
         "zip": 98109,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Trivia Nights",
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2748,8 +3072,10 @@ var allData =
         "zip": 98122,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Pinball",
         "gamesOther": "Pinball",
+        "gamesColor": 6,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2759,7 +3085,8 @@ var allData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98107,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.61472648029149, -122.31627058029153",
@@ -2769,7 +3096,8 @@ var allData =
         "state": "WA",
         "zip": 98122,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "47.6045935802915, -122.3369447802915",
@@ -2778,7 +3106,8 @@ var allData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98104,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.6256960802915, -122.35965503029149",
@@ -2788,8 +3117,10 @@ var allData =
         "state": "WA",
         "zip": 98119,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2799,7 +3130,8 @@ var allData =
         "city": "Seattle",
         "state": "WA",
         "zip": 98108,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.67022018029149, -122.39565703029149",
@@ -2814,7 +3146,8 @@ var allData =
         "poolTables": 2,
         "dartsCost": "$.75/game",
         "poolCost": "$.75/game",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "47.61298298029149, -122.3366944802915",
@@ -2824,8 +3157,10 @@ var allData =
         "state": "WA",
         "zip": 98101,
         "pingPong": "Yes",
+        "barSportsColor": 1,
         "dancing": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "PingPong"
     },
     {
@@ -2837,8 +3172,10 @@ var allData =
         "zip": 98119,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Trivia Nights",
         "trivia": "Yes",
+        "gamesColor": 2,
         "gamesPlus": "Pool, Darts"
     },
     {
@@ -2849,7 +3186,8 @@ var allData =
         "state": "WA",
         "zip": 98104,
         "pool": "Yes",
-        "poolTables": 7
+        "poolTables": 7,
+        "barSportsColor": 0
     },
     {
         "coords": "47.6133167802915, -122.3216754802915",
@@ -2859,6 +3197,7 @@ var allData =
         "state": "WA",
         "zip": 98122,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Bowling"
     },
     {
@@ -2869,7 +3208,8 @@ var allData =
         "state": "WA",
         "zip": 98116,
         "arcades": "Yes",
-        "gamesOther": "Pinball"
+        "gamesOther": "Pinball",
+        "gamesColor": 6
     },
     {
         "coords": "47.6819326802915, -122.37766808029153",
@@ -2879,7 +3219,9 @@ var allData =
         "state": "WA",
         "zip": 98117,
         "pingPong": "Yes",
+        "barSportsColor": 1,
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "PingPong, Trivia, Bingo"
     },
     {
@@ -2894,9 +3236,11 @@ var allData =
         "foosball": "Yes",
         "shuffleboard": "Yes",
         "pool": "Yes",
+        "barSportsColor": 5,
         "barSportsPlus": "Skeeball",
         "skeeball": "Yes",
         "boardGames": "Yes",
+        "gamesColor": 3,
         "gamesPlus": "Bar Sports"
     },
     {
@@ -2908,7 +3252,8 @@ var allData =
         "zip": 98402,
         "pool": "Yes",
         "poolTables": 8,
-        "poolCost": "/hr"
+        "poolCost": "/hr",
+        "barSportsColor": 0
     },
     {
         "coords": "47.26448198029149, -122.4550959802915",
@@ -2917,7 +3262,8 @@ var allData =
         "city": "Tacoma",
         "state": "WA",
         "zip": 98403,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "47.46119823029149, -122.25447138029153",
@@ -2931,6 +3277,7 @@ var allData =
         "poolTables": 6,
         "dartsCost": "$/hr",
         "poolCost": "$/hr",
+        "barSportsColor": 2,
         "barSportsPlus": "Bowling"
     },
     {
@@ -2943,11 +3290,14 @@ var allData =
         "pool": "Yes",
         "poolTables": 8,
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Trivia, Live Music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports, Trivia",
         "trivia": "Yes",
         "triviaTables": 8,
+        "gamesColor": 2,
         "gamesPlus": "Pool, Live Music"
     },
     {
@@ -2959,8 +3309,10 @@ var allData =
         "zip": 53703,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Live music",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 0,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -2974,7 +3326,8 @@ var allData =
         "foosball": "Yes",
         "pool": "Yes",
         "poolTables": 4,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 4
     },
     {
         "coords": "43.0175617802915, -88.08079188029149",
@@ -2985,8 +3338,10 @@ var allData =
         "zip": 53151,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Poker",
-        "gamesOther": "Poker"
+        "gamesOther": "Poker",
+        "gamesColor": 6
     },
     {
         "coords": "41.1157480802915, -104.80418478029151",
@@ -2998,9 +3353,11 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Dance floor, Live music",
         "dancing": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 2,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -3012,8 +3369,10 @@ var allData =
         "zip": 82001,
         "darts": "Yes",
         "pool": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -3028,8 +3387,10 @@ var allData =
         "dartsBoards": 2,
         "poolTables": 2,
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Bar Sports"
     },
     {
@@ -3040,7 +3401,8 @@ var allData =
         "state": "WY",
         "zip": 82001,
         "shuffleboard": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 5
     },
     {
         "coords": "37.6748073802915, -97.44371148029148",
@@ -3050,7 +3412,8 @@ var allData =
         "state": "KS",
         "zip": 67209,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "37.6582858302915, -97.2451592302915",
@@ -3062,6 +3425,7 @@ var allData =
         "darts": "Yes",
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 2,
         "barSportsPlus": "Arcades"
     },
     {
@@ -3073,8 +3437,10 @@ var allData =
         "zip": 67213,
         "pool": "Yes",
         "poolTables": 4,
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool"
     },
     {
@@ -3084,7 +3450,8 @@ var allData =
         "city": "Wichita",
         "state": "KS",
         "zip": 67213,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7712598802915, -96.6918172802915",
@@ -3097,7 +3464,8 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 1,
         "poolTables": 3,
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "40.8588401802915, -96.67409638029153",
@@ -3107,7 +3475,8 @@ var allData =
         "state": "NE",
         "zip": 68504,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.8276079802915, -96.63132398029148",
@@ -3117,7 +3486,8 @@ var allData =
         "state": "NE",
         "zip": 68505,
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "40.7592040802915, -96.64616628029148",
@@ -3128,6 +3498,7 @@ var allData =
         "zip": 68516,
         "pool": "Yes",
         "sportsTv": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Games"
     },
     {
@@ -3141,6 +3512,7 @@ var allData =
         "pool": "Yes",
         "dartsBoards": 4,
         "poolTables": 4,
+        "barSportsColor": 2,
         "barSportsPlus": "live music"
     },
     {
@@ -3151,7 +3523,8 @@ var allData =
         "state": "SD",
         "zip": 57103,
         "foosball": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 4
     },
     {
         "coords": "43.54644398029149, -96.7277014802915",
@@ -3162,7 +3535,8 @@ var allData =
         "zip": 57104,
         "foosball": "Yes",
         "pool": "Yes",
-        "sportsTv": "Yes"
+        "sportsTv": "Yes",
+        "barSportsColor": 4
     },
     {
         "coords": "43.5456168802915, -96.75754958029154",
@@ -3172,7 +3546,8 @@ var allData =
         "state": "SD",
         "zip": 57104,
         "darts": "Yes",
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 2
     },
     {
         "coords": "41.5883573802915, -93.61223133029154",
@@ -3182,9 +3557,11 @@ var allData =
         "state": "IA",
         "zip": 50309,
         "pool": "Yes",
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke, Live Music",
         "karaoke": "Yes",
         "liveMusic": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool"
     },
     {
@@ -3199,6 +3576,7 @@ var allData =
         "cornhole": "Yes",
         "shuffleboard": "Yes",
         "pool": "Yes",
+        "barSportsColor": 5,
         "barSportsPlus": "N64"
     },
     {
@@ -3208,7 +3586,8 @@ var allData =
         "city": "Clive",
         "state": "IA",
         "zip": 50325,
-        "pool": "Yes"
+        "pool": "Yes",
+        "barSportsColor": 0
     },
     {
         "coords": "41.5892628302915, -93.64122913029149",
@@ -3218,7 +3597,8 @@ var allData =
         "state": "IA",
         "zip": 50309,
         "pool": "Yes",
-        "poolTables": 2
+        "poolTables": 2,
+        "barSportsColor": 0
     },
     {
         "coords": "47.58422098029149, -122.38759308029148",
@@ -3229,8 +3609,73 @@ var allData =
         "zip": 98116,
         "pool": "Yes",
         "poolTables": 1,
+        "barSportsColor": 0,
         "barSportsPlus": "Karaoke",
         "karaoke": "Yes",
+        "liveEntertainmentColor": 1,
         "liveEntertainmentPlus": "Pool"
+    },
+    {
+        "dateSubmitted": "2018-05-01T00:08:43.545Z",
+        "name": "Chad Oehlschlaeger-Browne",
+        "coords": "47.8692503302915, -122.20720418029151",
+        "venueName": "asdf",
+        "streetAddress": "1914 SE 144th St.",
+        "city": "Mill Creek",
+        "state": "WA",
+        "zip": 98012,
+        "darts": "Yes",
+        "pingPong": "Yes",
+        "cornhole": "Yes",
+        "foosball": "Yes",
+        "shuffleboard": "Yes",
+        "pool": "Yes",
+        "barSportsOther": "Bar Sports Other",
+        "dartsBoards": "2018-03-02T00:00:00.000Z",
+        "pingPongTables": 1,
+        "cornholeSetups": "8+",
+        "foosballTables": "2018-03-02T00:00:00.000Z",
+        "shuffleboardTables": 1,
+        "poolTables": 1,
+        "dartsCost": "Per Game",
+        "pingPongCost": "Per Hour",
+        "cornholeCost": "Free",
+        "foosballCost": "Per Hour",
+        "shuffleboardCost": "Free",
+        "poolCost": "Per Hour",
+        "barSportsColor": 6,
+        "barSportsPlus": "Live Music, Karaoke, Dancing, Piano, Open Mic, Comedy, liveother, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, gameother",
+        "comedy": "Yes",
+        "openMic": "Yes",
+        "piano": "Yes",
+        "dancing": "Yes",
+        "karaoke": "Yes",
+        "liveMusic": "Yes",
+        "liveEntertainmentOther": "liveother",
+        "liveCost": "Lots",
+        "liveAttire": "formal",
+        "liveEntertainmentColor": 6,
+        "liveEntertainmentPlus": "Pool, Ping Pong, Darts, Cornhole, Foosball, Shuffleboard, Bar Sports Other, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, gameother",
+        "skeeball": "Yes",
+        "jenga": "Yes",
+        "trivia": "Yes",
+        "boardGames": "Yes",
+        "videoGames": "Yes",
+        "arcades": "Yes",
+        "gamesOther": "gameother",
+        "skeeballTables": "8+",
+        "jengaBoxes": "2018-03-02T00:00:00.000Z",
+        "triviaTables": "2018-03-02T00:00:00.000Z",
+        "boardGamesBoards": "2018-07-03T23:00:00.000Z",
+        "videoGamesConsoles": 1,
+        "arcadeMachines": "8+",
+        "skeeballCost": "Per Hour",
+        "jengaCost": "Free",
+        "triviaCost": "Per Hour",
+        "boardGamesCost": "Per Game",
+        "videoGamesCost": "Per Hour",
+        "arcadesCost": "Varies",
+        "gamesColor": 6,
+        "gamesPlus": "Pool, Ping Pong, Darts, Cornhole, Foosball, Shuffleboard, Bar Sports Other, Live Music, Karaoke, Dancing, Piano, Open Mic, Comedy, liveother"
     }
 ]
