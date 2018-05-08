@@ -35,3 +35,6 @@
 .card {
   max-height: 300px;
 }
+.card-list {
+  max-height: none;
+}

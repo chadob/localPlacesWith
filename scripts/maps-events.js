@@ -27,3 +27,13 @@ $('#searchButton').on('click', function() {
       $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
     }
 });
+
+$('.list-container').scroll(function () {
+    if (!listFunctions.timeout) {
+        listFunctions.timeout = setTimeout(function () {
+            clearTimeout(listFunctions.timeout);
+            listFunctions.timeout = null;
+            listFunctions.loadMoreList();
+        }, 1000);
+    }
+});
