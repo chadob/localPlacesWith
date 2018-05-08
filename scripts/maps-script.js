@@ -90,17 +90,23 @@ var mapFunctions = {
     //hide/show markers
     for (var i=0;i<curArray.length;i++) {
       curArray[i].setMap(map);
-      // endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
-      // listFunctions.showListItem(curArray[i].card.slice(curArray[i].card.indexOf("id"), endOfString));
     }
     for (var i=0;i<hidArray.length;i++) {
       hidArray[i].setMap(null);
-      // endOfString = mapFunctions.nthIndex(hidArray[i].card, '"', 2);
-      // listFunctions.hideListItem(hidArray[i].card.slice(hidArray[i].card.indexOf("id"), endOfString));
     }
     //hide list items/show 20
     listFunctions.emptyList();
     listFunctions.generateList();
+  },
+  //pan to first result on searchs
+  panToMarker(marker) {
+    var coords = marker.location.coords.split(',');
+    coords = {
+      lat: parseFloat(coords[0]),
+      lng: parseFloat(coords[1])
+    }
+    map.panTo(coords);
+    map.setZoom(5);
   },
   //hides all cards when clicking on map
   closeAllInfoWindows: function() {

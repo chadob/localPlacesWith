@@ -1,3 +1,6 @@
+.failed-search {
+  display: none;
+}
 #map {
   height: 650px;
   width: 100%;

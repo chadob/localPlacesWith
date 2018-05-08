@@ -23,8 +23,18 @@ $('#searchButton').on('click', function() {
       mapFunctions.showAllMarkersAndListItems(currentMarkers, hiddenMarkers, allMarkers);
       $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
     } else {
+      console.log(currentMarkers);
       mapSearchFunctions.search(mapSearchFunctions.checkQuery, mapSearchFunctions.searchProps, allMarkers, currentMarkers, hiddenMarkers, query);
-      $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
+      console.log(currentMarkers);
+      if (currentMarkers.length > 0) {
+        $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
+        mapFunctions.panToMarker(currentMarkers[0]);
+      } else {
+        $('#failedSearch').show();
+        setTimeout(function() {
+          $('#failedSearch').hide();
+        }, 2000);
+      }
     }
 });
 
