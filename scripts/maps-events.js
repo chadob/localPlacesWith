@@ -10,25 +10,25 @@ $('.map-nav-item').on('click', function(e) {
     catArray.push(cat);
   });
   if ($(this).hasClass('active')) {
-    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, mapFunctions.allMarkers, mapFunctions.currentMarkers, mapFunctions.hiddenMarkers);
     $(this).css('color', '#fff');
   } else {
-    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, allMarkers, currentMarkers, hiddenMarkers);
+    mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, mapFunctions.allMarkers, mapFunctions.currentMarkers, mapFunctions.hiddenMarkers);
     $(this).css('color', 'rgba(255,255,255,.5)');
   }
 });
 $('#searchButton').on('click', function() {
     var query = $('#mapSearch').val();
     if (query === "") {
-      mapFunctions.showAllMarkersAndListItems(currentMarkers, hiddenMarkers, allMarkers);
+      mapFunctions.showAllMarkersAndListItems(mapFunctions.currentMarkers, mapFunctions.hiddenMarkers, mapFunctions.allMarkers);
       $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
     } else {
-      console.log(currentMarkers);
-      mapSearchFunctions.search(mapSearchFunctions.checkQuery, mapSearchFunctions.searchProps, allMarkers, currentMarkers, hiddenMarkers, query);
-      console.log(currentMarkers);
-      if (currentMarkers.length > 0) {
+      console.log(mapFunctions.currentMarkers);
+      mapSearchFunctions.search(mapSearchFunctions.checkQuery, mapSearchFunctions.searchProps, mapFunctions.allMarkers, mapFUnctions.currentMarkers, mapFunctions.hiddenMarkers, query);
+      console.log(mapFunctions.currentMarkers);
+      if (mapFunctions.currentMarkers.length > 0) {
         $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
-        mapFunctions.panToMarker(currentMarkers[0]);
+        mapFunctions.panToMarker(mapFunctions.currentMarkers[0]);
       } else {
         $('#failedSearch').show();
         setTimeout(function() {

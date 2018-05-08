@@ -1,12 +1,6 @@
 var apiKey="AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0";
-var organizedData;
 var map;
-var geocoder;
-var infoWindows = [];
-var currentMarkers = [];
-var hiddenMarkers = [];
-var allMarkers = [];
-var currentListItems = [];
+
 Array.prototype.partition = function (f, trueArray, falseArray) {
   var matched = [],
       unmatched = [],
@@ -26,13 +20,18 @@ function initMap() {
   });
   map.addListener('click', function(event) {
     mapFunctions.closeAllInfoWindows();
-    infoWindows = [];
+    mapFunctions.infoWindows = [];
   });
   mapFunctions.createAllMarkers(barSportsData, "Bar Sports");
   listFunctions.generateList();
 }
 
 var mapFunctions = {
+  infoWindows: [],
+  currentMarkers: [],
+  hiddenMarkers: [],
+  allMarkers: [],
+
   createAllMarkers(data, page) {
     this.adjustCurrentSection(page);
     var numSections = this.sectionsObject[page].length;
@@ -83,6 +82,8 @@ var mapFunctions = {
   filterAllMarkersAndListItems: function(filterFunction, categories, allArray, curArray, hidArray, query) {
     var joinedArr = allArray.partition(filterFunction(categories, query), curArray, hidArray);
     curArray = joinedArr[0];
+    console.log(curArray);
+    console.log(mapFunctions.currentMarkers);
     listFunctions.currentListItems = curArray;
     hidArray = joinedArr[1];
     listFunctions.filteredListItems = hidArray;
@@ -110,8 +111,8 @@ var mapFunctions = {
   },
   //hides all cards when clicking on map
   closeAllInfoWindows: function() {
-    for (var i=0;i<infoWindows.length;i++) {
-       infoWindows[i].close();
+    for (var i=0;i<this.infoWindows.length;i++) {
+       this.infoWindows[i].close();
     }
   },
   //Create marker based on the data in location
@@ -136,12 +137,12 @@ var mapFunctions = {
     });
     marker.addListener('click', function() {
       mapFunctions.closeAllInfoWindows();
-      infoWindows = [];
-      infoWindows.push(infoWindow);
+      mapFunctions.infoWindows = [];
+      mapFunctions.infoWindows.push(infoWindow);
       infoWindow.open(map, marker);
     });
-    allMarkers.push(marker);
-    currentMarkers.push(marker);
+    mapFunctions.allMarkers.push(marker);
+    mapFunctions.currentMarkers.push(marker);
     //send markers over to list to generate divs
     listFunctions.allListItems.push(marker);
     listFunctions.currentListItems.push(marker);
