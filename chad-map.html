@@ -2,9 +2,6 @@
 <html lang="en">
 
   <head>
-    <script type="text/javascript">
-            var timerStart = Date.now();
-        </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Find local places with pool tables, darts, shuffleboard, ping-pong, cornhole, and foosball, near you!">
@@ -15,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles/maps.css">
+    <link rel="stylesheet" type="text/css" href="./styles/map.css">
 
     <!-- Custom styles for this template -->
     <style>
@@ -124,10 +121,10 @@
                 <img class="map-nav-img ml-3" src="./images/marker5.png">
                 <span>Shuffleboard</span>
               </a>
-              <a class="map-nav-item" href="#">
+              <!-- <a class="map-nav-item" href="#">
                 <img class="map-nav-img ml-3" src="./images/marker6.png">
                 <span>Bar Sports Other</span>
-              </a>
+              </a> -->
           </nav>
           <div class="container p-0">
             <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
@@ -148,20 +145,12 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="data/bar-sports-data.js"></script>
-    <script src="scripts/lists-script.js"></script>
-    <script src="scripts/maps-script.js"></script>
-    <script src="scripts/searchs-script.js"></script>
-    <script src="scripts/maps-events.js"></script>
+    <script src="scripts/list-script.js"></script>
+    <script src="scripts/map-script.js"></script>
+    <script src="scripts/search-script.js"></script>
+    <script src="scripts/map-events.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0&callback=initMap">
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-      console.log("Time until DOMready: ", Date.now()-timerStart);
-    });
-    $(window).load(function() {
-      console.log("Time until everything loaded: ", Date.now()-timerStart);
-    });
     </script>
   </body>
 

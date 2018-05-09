@@ -85,7 +85,10 @@ function getFormData() {
   for (var prop in sectionsObject) {
     if (sectionsObject.hasOwnProperty(prop) && data[prop] === "true") {
       //Set the color of the marker for google maps
-      for(var i = sectionsObject[prop].length - 1; i > -1; i--) {
+
+      //if you want the other section to work change the below line to this without the double slash:
+      //for(var i = sectionsObject[prop].length - 1; i > -1; i--) {
+      for(var i = sectionsObject[prop].length - 2; i > -1; i--) {
         if (!(data[sectionsObject[prop][i]] === "false" || data[sectionsObject[prop][i]] === "")) {
             data[prop + " Color"] = i;
             break;

@@ -22,6 +22,7 @@ var listFunctions = {
   generateList() {
     this.shownListItems = [];
     this.hiddenListItems = [];
+    this.currentListItems = mapFunctions.currentMarkers;
     for (i=0; i<this.currentListItems.length; i++) {
       if (i<20) {
         this.createListItem(this.currentListItems[i].card);

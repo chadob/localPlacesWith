@@ -40,11 +40,17 @@ var mapFunctions = {
     }
   },
   //create object that has locations sorted by categories they have
+
+
   adjustedSection: "",
+  //replace sectionsObject lines with this if you want other again
+  // "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard", "barSportsOther"],
+  // "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy", "liveEntertainmentOther"],
+  // "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades", "gamesOther"]
   sectionsObject: {
-    "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard", "barSportsOther"],
-    "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy", "liveEntertainmentOther"],
-    "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades", "gamesOther"]
+    "Bar Sports": ["pool", "pingPong", "darts", "cornhole", "foosball", "shuffleboard"],
+    "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy"],
+    "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades"]
   },
   adjustCurrentSection(section) {
     var adjustedCurrentSection =  section.replace(/([A-Z])/g, '$1').trim();
@@ -68,32 +74,30 @@ var mapFunctions = {
     }
     return i;
   },
-  showAllMarkersAndListItems: function(curArray, hidArray, allArray) {
+  showAllMarkersAndListItems: function() {
     var endOfString;
-    curArray = allArray;
-    hidArray = [];
-    for (var i = 0; i < allArray.length; i++) {
-      allArray[i].setMap(map);
-      endOfString = mapFunctions.nthIndex(curArray[i].card, '"', 2);
-      listFunctions.showListItem(allArray[i].card.slice(allArray[i].card.indexOf("id"), endOfString));
+    mapFunctions.currentMarkers = mapFunctions.allMarkers;
+    mapFunctions.hiddenMarkers = [];
+    for (var i = 0; i < mapFunctions.allMarkers.length; i++) {
+      mapFunctions.allMarkers[i].setMap(map);
     }
+    listFunctions.emptyList();
+    listFunctions.generateList();
   },
   //searches categories selected against all markers
-  filterAllMarkersAndListItems: function(filterFunction, categories, allArray, curArray, hidArray, query) {
-    var joinedArr = allArray.partition(filterFunction(categories, query), curArray, hidArray);
-    curArray = joinedArr[0];
-    console.log(curArray);
-    console.log(mapFunctions.currentMarkers);
-    listFunctions.currentListItems = curArray;
-    hidArray = joinedArr[1];
-    listFunctions.filteredListItems = hidArray;
+  filterAllMarkersAndListItems: function(filterFunction, categories, query) {
+    var joinedArr = mapFunctions.allMarkers.partition(filterFunction(categories, query));
+    mapFunctions.currentMarkers = joinedArr[0];
+    listFunctions.currentListItems = mapFunctions.currentMarkers;
+    mapFunctions.hiddenMarkers = joinedArr[1];
+    listFunctions.filteredListItems = mapFunctions.hiddenMarkers;
     var endOfString;
     //hide/show markers
-    for (var i=0;i<curArray.length;i++) {
-      curArray[i].setMap(map);
+    for (var i=0;i<mapFunctions.currentMarkers.length;i++) {
+      mapFunctions.currentMarkers[i].setMap(map);
     }
-    for (var i=0;i<hidArray.length;i++) {
-      hidArray[i].setMap(null);
+    for (var i=0;i<mapFunctions.hiddenMarkers.length;i++) {
+      mapFunctions.hiddenMarkers[i].setMap(null);
     }
     //hide list items/show 20
     listFunctions.emptyList();
@@ -106,9 +110,25 @@ var mapFunctions = {
       lat: parseFloat(coords[0]),
       lng: parseFloat(coords[1])
     }
+    marker.
     map.panTo(coords);
-    map.setZoom(5);
+    map.setZoom(10);
+    var infoWindow = new google.maps.InfoWindow({
+      content: marker.card,
+      maxHeight: 500
+    });
+    mapFunctions.closeAllInfoWindows();
+    mapFunctions.infoWindows = [];
+    mapFunctions.infoWindows.push(infoWindow);
+    infoWindow.open(map, marker);
   },
+
+  //zoom out after failed search
+  zoomOut: function() {
+    map.panTo({lat: 45, lng: -110});
+    map.setZoom(3);
+  },
+
   //hides all cards when clicking on map
   closeAllInfoWindows: function() {
     for (var i=0;i<this.infoWindows.length;i++) {
@@ -161,7 +181,8 @@ var mapFunctions = {
       }
     }
     if (location[adjustedSection + "Other"]) {
-      var other = '<p> <span class="card-cat"> Other ' + section + ': </span>' + location[adjustedSection + "Other"] + '</p>';
+      var other = "";
+      // var other = '<p> <span class="card-cat"> Other ' + section + ': </span>' + location[adjustedSection + "Other"] + '</p>';
     } else {
       var other = "";
     }

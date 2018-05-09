@@ -1,3 +1,6 @@
-1. Comment out the "other" code so that it is still there but not running
-2. Add the pan in to matching results functionality
-3. Add the message on failed searches
+When I turn over the website:
+1. Adjust colors of markers in live, games, all
+2. Other:
+line90 form-submission-handler.js
+line51-53 map-script.js
+line 124-127 chad-map.html
