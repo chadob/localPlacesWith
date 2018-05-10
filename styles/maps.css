@@ -38,6 +38,9 @@
 .card {
   max-height: 300px;
 }
+.multi-select {
+  display: none;
+}
 .card-list {
   max-height: none;
 }

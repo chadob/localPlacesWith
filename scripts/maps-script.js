@@ -1,6 +1,6 @@
 var apiKey="AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0";
 var map;
-
+var page;
 Array.prototype.partition = function (f, trueArray, falseArray) {
   var matched = [],
       unmatched = [],
@@ -18,11 +18,15 @@ function initMap() {
     center: {lat: 45, lng: -110},
     zoom: 3
   });
+  page = "Bar Sports";
   map.addListener('click', function(event) {
     mapFunctions.closeAllInfoWindows();
     mapFunctions.infoWindows = [];
+    if (mapFunctions.currentMarker) {
+      mapFunctions.shrinkMarker(mapFunctions.currentMarker);
+    }
   });
-  mapFunctions.createAllMarkers(barSportsData, "Bar Sports");
+  mapFunctions.createAllMarkers(barSportsData, page);
   listFunctions.generateList();
 }
 
@@ -31,7 +35,7 @@ var mapFunctions = {
   currentMarkers: [],
   hiddenMarkers: [],
   allMarkers: [],
-
+  currentMarker: null,
   createAllMarkers(data, page) {
     this.adjustCurrentSection(page);
     var numSections = this.sectionsObject[page].length;
@@ -74,18 +78,23 @@ var mapFunctions = {
     }
     return i;
   },
+
   showAllMarkersAndListItems: function() {
     var endOfString;
     mapFunctions.currentMarkers = mapFunctions.allMarkers;
     mapFunctions.hiddenMarkers = [];
     for (var i = 0; i < mapFunctions.allMarkers.length; i++) {
+      mapFunctions.allMarkers[i].icon = {
+        url: './images/marker' + mapFunctions.allMarkers[i].color + '.png',
+      }
       mapFunctions.allMarkers[i].setMap(map);
     }
     listFunctions.emptyList();
     listFunctions.generateList();
   },
+
   //searches categories selected against all markers
-  filterAllMarkersAndListItems: function(filterFunction, categories, query) {
+  filterAllMarkersAndListItems: function(filterFunction, categories, query, color) {
     var joinedArr = mapFunctions.allMarkers.partition(filterFunction(categories, query));
     mapFunctions.currentMarkers = joinedArr[0];
     listFunctions.currentListItems = mapFunctions.currentMarkers;
@@ -94,7 +103,18 @@ var mapFunctions = {
     var endOfString;
     //hide/show markers
     for (var i=0;i<mapFunctions.currentMarkers.length;i++) {
-      mapFunctions.currentMarkers[i].setMap(map);
+      if (typeof color === "number") {
+        mapFunctions.currentMarkers[i].icon = {
+          url: './images/marker' + color + '.png',
+        }
+        mapFunctions.currentMarkers[i].setMap(map);
+      } else {
+        mapFunctions.currentMarkers[i].icon = {
+          url: './images/marker' + mapFunctions.currentMarkers[i].color + '.png',
+        }
+        mapFunctions.currentMarkers[i].setMap(map);
+
+      }
     }
     for (var i=0;i<mapFunctions.hiddenMarkers.length;i++) {
       mapFunctions.hiddenMarkers[i].setMap(null);
@@ -103,6 +123,22 @@ var mapFunctions = {
     listFunctions.emptyList();
     listFunctions.generateList();
   },
+
+  shrinkMarker(marker) {
+    marker.icon.url = './images/marker' + marker.icon.url.slice(15, 16) +'.png';
+    marker.icon.size= new google.maps.Size(20, 24);
+    marker.setZIndex(1000);
+    marker.setIcon(marker.icon);
+  },
+
+  growMarker(marker) {
+    marker.icon.url = marker.icon.url.substr(0, 16) + 'big' + marker.icon.url.substr(16);
+    marker.icon.size = new google.maps.Size(30, 36);
+    marker.setZIndex(10000000);
+    mapFunctions.currentMarker = marker;
+    marker.setIcon(marker.icon);
+  },
+
   //pan to first result on searchs
   panToMarker(marker) {
     var coords = marker.location.coords.split(',');
@@ -121,6 +157,10 @@ var mapFunctions = {
     mapFunctions.infoWindows = [];
     mapFunctions.infoWindows.push(infoWindow);
     infoWindow.open(map, marker);
+    if (mapFunctions.currentMarker) {
+      mapFunctions.shrinkMarker(mapFunctions.currentMarker);
+    }
+    mapFunctions.growMarker(marker);
   },
 
   //zoom out after failed search
@@ -149,6 +189,7 @@ var mapFunctions = {
       maxHeight: 500
     });
     var marker = new google.maps.Marker({
+      color: location[this.adjustedSection + "Color"],
       position: {lat: lat, lng: lng},
       title:location["Venue Name"],
       location: location,
@@ -160,6 +201,10 @@ var mapFunctions = {
       mapFunctions.infoWindows = [];
       mapFunctions.infoWindows.push(infoWindow);
       infoWindow.open(map, marker);
+      if (mapFunctions.currentMarker) {
+        mapFunctions.shrinkMarker(mapFunctions.currentMarker);
+      }
+      mapFunctions.growMarker(marker);
     });
     mapFunctions.allMarkers.push(marker);
     mapFunctions.currentMarkers.push(marker);
