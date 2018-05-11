@@ -4,3 +4,6 @@ When I turn over the website:
 line90 form-submission-handler.js
 line51-53 map-script.js
 line 124-127 chad-map.html
+3. remove asdf from data
+4. hide api key
+5. Figure out if jake can use get scripts
