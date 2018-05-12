@@ -35,7 +35,7 @@
   max-height: 500px;
   overflow-y: scroll;
 }
-.card {
+.gmap-card {
   max-height: 300px;
 }
 .multi-select {

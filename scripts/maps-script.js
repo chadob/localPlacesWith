@@ -237,7 +237,7 @@ var mapFunctions = {
       var plus = "";
     }
     var content =
-    '<div class="card id' + id + '">' +
+    '<div class="gmap-card id' + id + '">' +
     '<h5>' + location.venueName + '</h5>' +
     '<p><a href="https://maps.google.com/?q=1200' + location.streetAddress + ' ' + location.city + ', ' + location.state + ' ' + location.zip  + '">' + location.streetAddress + ' ' + location.city + ', ' + location.state + ' ' + location.zip + '</a></p>' +
     basicProps +
