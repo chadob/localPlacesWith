@@ -37,4 +37,4 @@ getCoordsObject {
   }
 }
 //call the loop
-getCoordsObject.loopOverObject(1000, allData, getCoords);
+// getCoordsObject.loopOverObject(1000, allData, getCoords);

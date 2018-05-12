@@ -1,6 +1,5 @@
-getColorObject {
+getColorObject = {
   getColor: function(data, loc, numSections, category, sectionsObject) {
-    console.log(loc);
     for(var i = numSections - 1; i > -1; i--) {
       if(data[loc]["venueName"] === "Vidiot Arcade Bar") {
       }
@@ -22,10 +21,10 @@ getColorObject {
         var adjustedCat = category.replace(/([A-Z])/g, '$1').trim();
         adjustedCat = adjustedCat.charAt(0).toLowerCase() + adjustedCat.substr(1);
         adjustedCat = adjustedCat.replace(/\s+/g, '');
-        object[loc][adjustedCat + "Color"] = getColor(object, loc, numSections, category, sectionsObject);
+        object[loc][adjustedCat + "Color"] = this.getColor(object, loc, numSections, category, sectionsObject);
       }
     }
-    postData(object);
+    this.postData(object);
   },
 
   postData: function(data) {
@@ -35,4 +34,4 @@ getColorObject {
   }
 }
 //call the loop
-loopOverObject(gamesData);
+getColorObject.loopOverObject(allData);

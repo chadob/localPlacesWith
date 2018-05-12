@@ -1,0 +1,9 @@
+/* CUSTOM LINK STYLE for FOOTER */
+
+a.customlink1:link { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }
+
+a.customlink1:visited { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }
+
+a.customlink1:hover { color:rgba(17, 92, 189); text-decoration:underline; font-weight:normal; }
+
+a.customlink1:active { color:rgba(17, 92, 189, 0.6); text-decoration:none; font-weight:normal; }

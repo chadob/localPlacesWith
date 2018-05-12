@@ -9,10 +9,12 @@
     <meta name="keywords" content="local places with pool tables, bars with pool, bars with pool tables, local bars with pool, local bars with pool tables, billiards, local bars with darts, bars with darts, pool tables, darts, ping-pong, foosball, cornhole, sports bars near me">
     <meta name="author" content="">
 
-    <title>Local Places With: Pool Tables, Darts, and more!</title>
+    <title>Local Places With: Pool Tables, Darts, Shuffleboard, PingPong, Foosball, Cornhole, and more</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/maps.css">
 
     <!-- Custom styles for this template -->
     <style>
@@ -66,27 +68,109 @@
           <br>
           <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            
+
               <p><font size="6">Welcome to <strong>Local Places With</strong></font><br>
               Your one-stop website for finding local places with bar sports, live entertainment, and games.<br></p>
-              
-              <p><font size="4">Tips for <b>mobile</b> users:</font><br>
-              <font class="lead">&#8226;View in landscape for the best experience.<br>
-              &#8226;Use two fingers on the map to move around.</font></p>
 
-              <p><font size="4">Tips for <b>first-time</b> users:</font><br>
-              <font class="lead">&#8226;Search for different amenities, using the menu in the top-right corner.<br>
-              &#8226;Add, update, or correct a location, by clicking the "+" on the menu.<br>
-              &#8226;Close out of this welcome screen by clicking the "x" in the top-right.</font></p>
+              <p><font size="4">Tips for <b>mobile</b> users:</font><br>
+              <font class="lead">&#8226;View in <b>landscape</b> for the best experience.<br>
+              &#8226;Use <b>two fingers</b> on the map to move around.</font></p>
 
               <font size="4">Have fun trying out new places!</font><br>
               ~LPW Management
           </div>
+
+          <!--MAIN BODY CONTENT & MAP -->
           <font size="3"><strong>Bar Sports</strong></font><br>
-          <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, <strong>ping-pong</strong>, and <strong>more</strong> near you.</font></h6>
-          <p><iframe src="https://batchgeo.com/map/f8a7ddc64802e9a3f493af97ead10440" frameborder="0" width="100%" height="650" style="border:1px solid #aaa;"></iframe></p>
-          <strong>Updated:</strong> April, 8th 2018<Br>
-          <p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></p>
+          <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, and <strong>more</strong> near you.</font></h6>
+          <div class="input-group">
+            <input class="form-control" id="mapSearch" placeholder="Search by Zip, City, or State" type="text" name="Email">
+            <div class="input-group-append">
+              <button class="btn btn-primary" id="searchButton"> Search</button>
+            </div>
+          </div>
+          <div id="failedSearch" class="failed-search">
+            <h4 class="mx-auto text-center"> No places found in this City/Zip/State </h4>
+          </div>
+          <div id="map" width="100%" height="650px" style=""></div>
+          <nav id="mapNav" class="mapNav py-2 px-2">
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img" src="./images/marker3.png">
+              <span>Cornhole</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="./images/marker2.png">
+              <span>Darts</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="./images/marker4.png">
+              <span>Foosball</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="./images/marker1.png">
+              <span>Ping Pong</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="./images/marker0.png">
+              <span>Pool</span>
+            </a>
+            <a class="map-nav-item" href="#">
+              <img class="map-nav-img ml-3" src="./images/marker5.png">
+              <span>Shuffleboard</span>
+            </a>
+              <!-- <a class="map-nav-item" href="#">
+                <img class="map-nav-img ml-3" src="./images/marker6.png">
+                <span>Bar Sports Other</span>
+              </a> -->
+          </nav>
+          <div id="multiSelect" class="multi-select mt-2">
+            <h4 class="mx-auto text-center"> Now displaying places with all categories selected. </h4>
+          </div>
+          <div class="container p-0">
+            <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
+              <span class="">Hide/Show List</span>
+            </button>
+            <div class="collapse list-container">
+            </div>
+          </div>
+
+          <!--'THE BACKSTORY' CONTENT -->
+          <p>
+
+              <div class="card mx-auto border-info mb-3 w-75 text-left">
+                <div class="card-header">About <b>Local Places With</b></div>
+                <div class="card-body text-info">
+                    <font size=4 class="card-title"><B>What is Local Places With?</B></font>
+                      <p class="card-text">Local Places With is a map of places with fun amenities like bar sports, live entertainment, and games.</p>
+                  <hr>
+                    <font size=4 class="card-title"><b>How do you define the amenities?</B></font>
+                      <ul class="list-group list-group-flush text-info">
+                          <li class="list-group-item"><strong>Bar Sports</strong>: A game that is much more likely to be found in a bar than anywhere else, and usually involves some amount of athletic skill (to be 'good', that is).</li>
+                          <li class="list-group-item"><strong>Live Entertainment</strong>: Social and musical activities centered around live entertainment or group participation.</li>
+                          <li class="list-group-item"><strong>Games</strong>: Not quite a sport, not quite a social event, but just as fun.</li>
+                      </ul>
+                  <br>
+                    <font size=4 class="card-title"><b>What do I use Local Places With for?</B></font>
+                      <p class="card-text">That's up to you! But we're guessing our website would be helpful to people trying to find stuff like this:</p>
+                          <ul class="list-group list-group-flush text-info">
+                              <li class="list-group-item"><strong>Bars with pool tables near me</strong> or <strong>bars with darts near me</strong>.</li>
+                              <li class="list-group-item"><strong>Places with live music near me</strong> or <strong>bars with karaoke near me</strong>.</li>
+                              <li class="list-group-item"><strong>Bars with board games near me</strong> or <strong> bars with trivia nights near me</strong>.</li>
+                          </ul>
+                  <br>
+                    <font size=4 class="card-title"><b>Who finds all these amenities?</B></font>
+                      <p class="card-text">You do! Feel free to add or update one <a href="add-a-place.html">here</a>.</p>
+                </div>
+              </div>
+
+          </p>
+
+          <!--FOOTER CONTENT -->
+          <small class="text-muted"><b>Updated:</b> May 10th, 2018</small><br>
+          <p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+          <br>
+          <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="credits.html" class="customlink1">Credits</a> - <font class="text-muted">Donate</font></font></p>
+
         </div>
       </div>
     </div>
@@ -94,7 +178,14 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="data/bar-sports-data.js"></script>
+    <script src="scripts/list-script.js"></script>
+    <script src="scripts/maps-script.js"></script>
+    <script src="scripts/search-script.js"></script>
+    <script src="scripts/maps-events.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8PHeruSgg5rBwwML2IWYO6DsSsaU5na0&callback=initMap">
+    </script>
   </body>
 
 </html>

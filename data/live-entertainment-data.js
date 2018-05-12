@@ -618,25 +618,5 @@ var liveEntertainementData =
         "zip": 82001,
         "karaoke": "Yes",
         "liveEntertainmentColor": 1
-    },
-    {
-        "dateSubmitted": "2018-05-01T00:08:43.590Z",
-        "name": "Chad Oehlschlaeger-Browne",
-        "coords": "47.8692503302915, -122.20720418029151",
-        "venueName": "asdf",
-        "streetAddress": "1914 SE 144th St.",
-        "city": "Mill Creek",
-        "state": "WA",
-        "zip": 98012,
-        "comedy": "Yes",
-        "openMic": "Yes",
-        "piano": "Yes",
-        "dancing": "Yes",
-        "karaoke": "Yes",
-        "liveMusic": "Yes",
-        "liveEntertainmentOther": "liveother",
-        "liveCost": "Lots",
-        "liveAttire": "formal",
-        "liveEntertainmentPlus": "Pool, Ping Pong, Darts, Cornhole, Foosball, Shuffleboard, Bar Sports Other, Skeeball, Jenga, Trivia, Board Games, Video Games, Arcades, gameother"
     }
 ]
