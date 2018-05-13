@@ -11,6 +11,6 @@ function initMap() {
       mapFunctions.shrinkMarker(mapFunctions.currentMarker);
     }
   });
-  mapFunctions.createAllMarkers(barSportsData, page);
+  mapFunctions.createAllMarkers(liveEntertainmentData, page);
   listFunctions.generateList();
 }

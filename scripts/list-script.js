@@ -13,9 +13,7 @@ var listFunctions = {
     $('.' + id).show();
   },
   createListItem: function(item) {
-    console.log(item);
     var adjustedItem = item.substr(0, 12) + 'card card-list ' + item.substr(22);
-    console.log(adjustedItem);
     $('.list-container').append(adjustedItem);
   },
   emptyList() {
