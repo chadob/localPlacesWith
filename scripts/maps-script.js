@@ -19,7 +19,7 @@ var mapFunctions = {
   hiddenMarkers: [],
   allMarkers: [],
   currentMarker: null,
-  createAllMarkers(data, page) {
+  createAllMarkers: function(data, page) {
     this.adjustCurrentSection(page);
     var numSections = this.sectionsObject[page].length;
     for (i = 0; i < data.length; i++) {
@@ -39,13 +39,13 @@ var mapFunctions = {
     "Live Entertainment": ["liveMusic", "karaoke", "dancing", "piano", "openMic", "comedy"],
     "Games": ["skeeball", "jenga", "trivia", "boardGames", "videoGames", "arcades"]
   },
-  adjustCurrentSection(section) {
+  adjustCurrentSection: function(section) {
     var adjustedCurrentSection =  section.replace(/([A-Z])/g, '$1').trim();
     adjustedCurrentSection = adjustedCurrentSection.charAt(0).toLowerCase() + adjustedCurrentSection.substr(1);
     adjustedCurrentSection = adjustedCurrentSection.replace(/\s+/g, '');
     this.adjustedSection = adjustedCurrentSection;
   },
-  everyFunction(categoryArray){
+  everyFunction: function(categoryArray){
     return function(idx) {
       return categoryArray.every(function(cat) {
         return cat in idx.location;
@@ -107,14 +107,14 @@ var mapFunctions = {
     listFunctions.generateList();
   },
 
-  shrinkMarker(marker) {
+  shrinkMarker: function(marker) {
     marker.icon.url = './images/marker' + marker.icon.url.slice(15, 16) +'.png';
     marker.icon.size= new google.maps.Size(20, 24);
     marker.setZIndex(1000);
     marker.setIcon(marker.icon);
   },
 
-  growMarker(marker) {
+  growMarker: function(marker) {
     marker.icon.url = marker.icon.url.substr(0, 16) + 'big' + marker.icon.url.substr(16);
     marker.icon.size = new google.maps.Size(30, 36);
     marker.setZIndex(10000000);
@@ -123,7 +123,7 @@ var mapFunctions = {
   },
 
   //pan to first result on searchs
-  panToMarker(marker) {
+  panToMarker: function(marker) {
     var coords = marker.location.coords.split(',');
     coords = {
       lat: parseFloat(coords[0]),
@@ -197,7 +197,7 @@ var mapFunctions = {
     marker.setMap(map);
   },
   //creates the text on the cards
-  setUpCard(location, section, id, adjustedSection) {
+  setUpCard: function(location, section, id, adjustedSection) {
     var adjusted;
     var basicProps = "";
     var checkAgainstCategories = ["dateSubmitted","name","coords","venueName","streetAddress","city","state","zip", adjustedSection + "Other", adjustedSection + "Color", adjustedSection + "Plus"];

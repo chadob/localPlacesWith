@@ -5,17 +5,21 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Find local places with pool tables, darts, shuffleboard, ping-pong, cornhole, and foosball, near you!">
-    <meta name="keywords" content="local places with pool tables, bars with pool, bars with pool tables, local bars with pool, local bars with pool tables, billiards, local bars with darts, bars with darts, pool tables, darts, ping-pong, foosball, cornhole, sports bars near me">
+    <meta name="description" content="Find local places and bars with pool tables, darts, shuffleboard, ping pong, cornhole, and foosball, near you!">
+    <meta name="keywords" content="local places with pool tables, local places with bar games, bars with pool tables near me, bars with pool near me, local bars with pool, local bars with pool tables, billiards near me, local bars with darts, bars with darts near me, bars with ping pong near me, places with ping pong near me, places with cornhole near me, places with foosball near me, sports bars near me">
     <meta name="author" content="">
 
-    <title>Local Places With: Pool Tables, Darts, Shuffleboard, PingPong, Foosball, Cornhole, and more</title>
+    <title>Local Places With | Local Bars with Pool Tables, Darts, Shuffleboard, Ping Pong, Foosball, and Cornhole near you!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/maps.css">
-
+    
+    <!--GOOGLE HREFLANG TAG-->
+    <link rel="alternate" href="http://localplaceswith.com" hreflang="en-us" />
+    
+   
     <!-- Custom styles for this template -->
     <style>
       body {
@@ -30,31 +34,34 @@
     </style>
 
   </head>
-<link rel="shortcut icon" href="images/map-pin5-blue.png"/>
+<link rel="shortcut icon" href="images/balloonsLOGO.png"/>
   <body>
 
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="http://www.localplaceswith.com"><img width="65%" height="65%" src="images/LPW_LOGO_Test3.png"></a>
+        <a 
+        ="Local Places With" class="navbar-brand" href="http://www.localplaceswith.com"><img width="85%"  src="images/LPW_Logo_SMALL.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
+        <!--NAVBAR COLLAPSABLE LINKS-->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"> <!--ACTIVE TAG HERE-->
-              <a title="Places with pool tables, darts, ping-pong, and more." class="nav-link" href="http://www.localplaceswith.com">Bar Sports
+              <a alt="Places with pool tables, darts, ping pong, and more." class="nav-link" href="http://www.localplaceswith.com">Bar Sports
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a title="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
+              <a alt="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
             </li>
             <li class="nav-item">
-              <a title="Places with trivia nights, arcades, board games, and more." class="nav-link" href="games.html">Games</a>
+              <a alt="Places with trivia nights, arcades, board games, and more." class="nav-link" href="games.html">Games</a>
             </li>
             <li class="nav-item">
-              <a title="Add a place!" class="nav-link" href="add-a-place.html">+</a>
+              <a alt="Add a place!" class="nav-link" href="add-a-place.html">+</a>
             </li>
           </ul>
         </div>
@@ -69,53 +76,52 @@
           <div class="alert alert-info alert-dismissible" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-              <p><font size="6">Welcome to <strong>Local Places With</strong></font><br>
-              Your one-stop website for finding local places with bar sports, live entertainment, and games.<br></p>
-
-              <p><font size="4">Tips for <b>mobile</b> users:</font><br>
-              <font class="lead">&#8226;View in <b>landscape</b> for the best experience.<br>
-              &#8226;Use <b>two fingers</b> on the map to move around.</font></p>
-
-              <font size="4">Have fun trying out new places!</font><br>
-              ~LPW Management
+              <p><img alt="Local Places With" width="80%" src="images/LPW_Logo_BIG.png"><br>
+              <FONT size=4 CLASS="LEAD"><STRONG>Your #1 website for finding local places with bar sports, live entertainment, and games.</STRONG></FONT></p>
           </div>
 
           <!--MAIN BODY CONTENT & MAP -->
           <font size="3"><strong>Bar Sports</strong></font><br>
           <h6><font class="lead">Find local places with <strong>pool tables</strong>, <strong>darts</strong>, and <strong>more</strong> near you.</font></h6>
+          
+          <!--MAP SEARCH-->
           <div class="input-group">
-            <input class="form-control" id="mapSearch" placeholder="Search by Zip, City, or State" type="text" name="Email">
+            <input class="form-control" id="mapSearch" placeholder="City, Zip, or State" type="text" name="Email">
             <div class="input-group-append">
               <button class="btn btn-primary" id="searchButton"> Search</button>
             </div>
           </div>
           <div id="failedSearch" class="failed-search">
-            <h4 class="mx-auto text-center"> No places found in this City/Zip/State </h4>
+            <h4 class="mx-auto text-center"> No places found here </h4>
           </div>
-          <div id="map" width="100%" height="650px" style=""></div>
+          
+          <!--MAP & MAP NAV-->
+          <div id="map" width="100%" height="450px" style=""></div>
+          
+          <!--MAP NAV-->
           <nav id="mapNav" class="mapNav py-2 px-2">
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img" src="./images/marker3.png">
+              <img class="map-nav-img" src="./images/marker3.png" alt="Local places with CORNHOLE">
               <span>Cornhole</span>
             </a>
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img ml-3" src="./images/marker2.png">
+              <img class="map-nav-img ml-3" src="./images/marker2.png" alt="Local places with DARTS">
               <span>Darts</span>
             </a>
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img ml-3" src="./images/marker4.png">
+              <img class="map-nav-img ml-3" src="./images/marker4.png" alt="Local places with FOOSBALL">
               <span>Foosball</span>
             </a>
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img ml-3" src="./images/marker1.png">
+              <img class="map-nav-img ml-3" src="./images/marker1.png" alt="Local places with PING PONG">
               <span>Ping Pong</span>
             </a>
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img ml-3" src="./images/marker0.png">
+              <img class="map-nav-img ml-3" src="./images/marker0.png" alt="Local places with POOL TABLES">
               <span>Pool</span>
             </a>
             <a class="map-nav-item" href="#">
-              <img class="map-nav-img ml-3" src="./images/marker5.png">
+              <img class="map-nav-img ml-3" src="./images/marker5.png" alt="Local places with SHUFFLEBOARD">
               <span>Shuffleboard</span>
             </a>
               <!-- <a class="map-nav-item" href="#">
@@ -123,9 +129,26 @@
                 <span>Bar Sports Other</span>
               </a> -->
           </nav>
+          
+          <!--MULTI SELECT FUNCTION-->
           <div id="multiSelect" class="multi-select mt-2">
-            <h4 class="mx-auto text-center"> Now displaying places with all categories selected. </h4>
+            <h4 class="mx-auto text-center"> Now displaying places with ALL selected Bar Sports. </h4>
           </div>
+                  
+                  <!--1ST AD--> 
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UNDER Map -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="2599711056"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                    
+          
+          <!--LIST/TABLE of PLACES-->
           <div class="container p-0">
             <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
               <span class="">Hide/Show List</span>
@@ -134,51 +157,334 @@
             </div>
           </div>
 
-          <!--'THE BACKSTORY' CONTENT -->
+        <!--ABOUT US-->
           <p>
-
               <div class="card mx-auto border-info mb-3 w-75 text-left">
-                <div class="card-header">About <b>Local Places With</b></div>
+                <div class="card-header">About <strong>LOCAL PLACES WITH</strong></div>
                 <div class="card-body text-info">
-                    <font size=4 class="card-title"><B>What is Local Places With?</B></font>
+                    <h5 class="card-title"><b>What is Local Places With?</b></h5>
                       <p class="card-text">Local Places With is a map of places with fun amenities like bar sports, live entertainment, and games.</p>
                   <hr>
-                    <font size=4 class="card-title"><b>How do you define the amenities?</B></font>
+                    <font size=4 class="card-title"><b>How does Local Places With define the amenities?</b></font>
                       <ul class="list-group list-group-flush text-info">
-                          <li class="list-group-item"><strong>Bar Sports</strong>: A game that is much more likely to be found in a bar than anywhere else, and usually involves some amount of athletic skill (to be 'good', that is).</li>
-                          <li class="list-group-item"><strong>Live Entertainment</strong>: Social and musical activities centered around live entertainment or group participation.</li>
-                          <li class="list-group-item"><strong>Games</strong>: Not quite a sport, not quite a social event, but just as fun.</li>
+                          <li class="list-group-item"><strong>Bar Sports</strong>: Most likely found in a bar. Doesn&rsquo;t require electricity. And a little athletic skill never hurts.</li>
+                          <li class="list-group-item"><strong>Live Entertainment</strong>: Social and musical activities geared toward an audience or group participation.</li>
+                          <li class="list-group-item"><strong>Games</strong>: Not quite a sport, not quite a social event, but probably just as fun.</li>
                       </ul>
                   <br>
-                    <font size=4 class="card-title"><b>What do I use Local Places With for?</B></font>
-                      <p class="card-text">That's up to you! But we're guessing our website would be helpful to people trying to find stuff like this:</p>
-                          <ul class="list-group list-group-flush text-info">
-                              <li class="list-group-item"><strong>Bars with pool tables near me</strong> or <strong>bars with darts near me</strong>.</li>
-                              <li class="list-group-item"><strong>Places with live music near me</strong> or <strong>bars with karaoke near me</strong>.</li>
-                              <li class="list-group-item"><strong>Bars with board games near me</strong> or <strong> bars with trivia nights near me</strong>.</li>
-                          </ul>
-                  <br>
-                    <font size=4 class="card-title"><b>Who finds all these amenities?</B></font>
+                    <font size=4 class="card-title"><b>Who finds all these local places?</b></font>
                       <p class="card-text">You do! Feel free to add or update one <a href="add-a-place.html">here</a>.</p>
                 </div>
               </div>
+              
+              <!--2ND AD-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- MID-PAGE -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="1549351243"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
+
+
+	<!--TITLE BAR-->
           </p>
+          <br>
+<p><h1><strong><img alt="Local Places With" src="images/balloonsLOGO.png" width=40 height=40> Local Places With</strong>: Bar Sports</h1>
+<h2>The #1 page for finding <strong>local places</strong> and <strong>bars with pool tables near you</strong>.</h2></p>
+<br>
+<br>
+
+<!--LPW's 5 Favorite: LPW with POOL TABLES-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#ff4e4e">Pool Tables</font></strong></h4>
+      <table class="table table-sm table-dark table-hover text-left">
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><a class="POOLlink" href="https://www.yelp.com/biz/dr-proctors-lounge-denver" rel="nofollow">Doctor Proctor&rsquo;s Lounge</a></td>
+          <td>Denver, CO</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><a class="POOLlink" href="http://theslooptavern.com/" rel="nofollow">The Sloop</a></td>
+          <td>Seattle, WA</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><a class="POOLlink" href="https://www.facebook.com/luckysbarnola/" rel="nofollow">Lucky&rsquo;s Bar</a></td>
+          <td>New Orleans, LA</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td><a class="POOLlink" href="http://www.joltnjoes.com/" rel="nofollow">Jolt&rsquo;n Joe&rsquo;s Gaslamp</a></td>
+          <td>San Diego, CA</td>
+        </tr>
+        
+        <tr>
+          <th scope="row">5</th>
+          <td><a class="POOLlink" href="http://www.johanssonsdininghouse.com/" rel="nofollow">Down Under Bar & Grill</a></td>
+          <td>Westminster, MD</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+<!--SPACE BETWEEN TABLES-->
+    <div class="col-md-0"></div>
+ 
+    <!--LPW's 5 Favorite: LPW with DARTS-->
+    <div class="col-md-6">
+      <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#525390">Darts</font></strong></h4>
+      <table class="table table-sm table-dark table-hover text-left">
+      <tbody>
+          <tr>
+              <th scope="row">1</th>
+              <td><a class="DARTlink" href="http://www.mustardseedgrill.com/" rel="nofollow">Mustard Seed Bar & Grill</a></td>
+              <td>Bellevue, WA</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td><a class="DARTlink" href="http://gafwestnyc.vpweb.com/Home.html" rel="nofollow">The Gaf West</a></td>
+                <td>New York, NY</td>
+              </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td><a class="DARTlink" href="https://www.facebook.com/Barracuda-Taphouse-Grill-115730971788078/" rel="nofollow">Barracuda Taphouse & Grill</a></td>
+                <td>Miami, FL</td>
+              </tr>
+              <tr>
+                  <th scope="row">4</th>
+                  <td><a class="DARTlink" href="http://www.eastlakezoo.com/" rel="nofollow">Zoo Tavern</a></td>
+                  <td>Seattle, WA</td>
+                </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><a class="DARTlink" href="http://213hospitality.com/project/tonyssaloon/" rel="nofollow">Tony&rsquo;s Saloon</a></td>
+              <td>Los Angeles, CA</td>
+            </tr>
+      </tbody>
+    </table></div>
+  </div>
+</div>
+
+
+<!--LPW's 5 Favorite: LPW with CORNHOLE-->
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#03690a">Cornhole</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><a class="CORNlink" href="http://www.thebrickcharleston.com/" rel="nofollow">The Brick</a></td>
+              <td>Charleston, SC</td>
+          </tr>  
+          <tr>
+            <th scope="row">2</th>
+              <td><a class="CORNlink" href="http://thelocaloutpost.net/" rel="nofollow">The Local Outpost</a></td>
+              <td>Austin, TX</td>
+          </tr>  
+          <tr>
+            <th scope="row">3</th>
+              <td><a class="CORNlink" href="http://www.barebottle.com/" rel="nofollow">Barebottle Brewing Company</a></td>
+              <td>San Francisco, CA</td>
+          </tr>  
+          <tr>
+            <th scope="row">4</th>
+              <td><a class="CORNlink" href="http://www.flatstickpub.com/" rel="nofollow">Flatstick Pub</a></td>
+              <td>Seattle, WA</td>
+          </tr>  
+              <tr>
+                <th scope="row">5</th>
+                  <td><a class="CORNlink" href="http://www.drinkmhs.com/welcome/" rel="nofollow">Mile High Spirits</a></td>
+                  <td>Denver, CO</td>
+              </tr>
+        </tbody>
+      </table></div>
+    
+
+ <div class="col-md-0"></div>
+
+  
+      <div class="col-md-6">
+        <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#d0c814">Foosball</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><a class="FOOSlink" href="http://westportsocial-stl.com/" rel="nofollow">Westport Social</a></td>
+              <td>St Louis, MO</td>
+            </tr>  
+            <tr>
+              <th scope="row">2</th>
+                <td><a class="FOOSlink" href="http://www.undertherosebrewing.com/" rel="nofollow">Under the Rose Brewing Company</a></td>
+                <td>Reno, NV</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td><a class="FOOSlink" href="https://www.facebook.com/Pitchers-Pub-155576747849604/" rel="nofollow">Pitcher&rsquo;s Pub</a></td>
+                  <td>Madison, WI</td>
+                </tr>
+              <tr>
+              <th scope="row">4</th>
+                <td><a class="FOOSlink" href="https://www.williamsminneapolis.com/" rel="nofollow">William&rsquo;s Uptown Pub & Peanut Bar</a></td>
+                <td>Minneapolis, MN</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><a class="FOOSlink" href="https://www.punchbowlsocial.com/location/denver" rel="nofollow">Punch Bowl Social</a></td>
+                <td>Denver, CO</td>
+              </tr>
+              
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+
+<!-- PING PONG & SHUFFLEBOARD -->
+<!--
+<div class="container">
+    <div class="row">
+      
+      <div class="col-md-6">
+        <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#29cddb">Ping Pong</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><a class="PINGlink" href="http://www.thebrickcharleston.com/" rel="nofollow">The Brick</a></td>
+              <td>Charleston, SC</td>
+          </tr>  
+          <tr>
+            <th scope="row">2</th>
+              <td><a class="PINGlink" href="http://thelocaloutpost.net/" rel="nofollow">The Local Outpost</a></td>
+              <td>Austin, TX</td>
+          </tr>  
+          <tr>
+            <th scope="row">3</th>
+              <td><a class="PINGlink" href="http://www.barebottle.com/" rel="nofollow">Barebottle Brewing Company</a></td>
+              <td>San Francisco, CA</td>
+          </tr>  
+          <tr>
+            <th scope="row">4</th>
+              <td><a class="PINGlink" href="http://www.flatstickpub.com/" rel="nofollow">Flatstick Pub</a></td>
+              <td>Seattle, WA</td>
+          </tr>  
+              <tr>
+                <th scope="row">5</th>
+                  <td><a class="PINGlink" href="http://www.drinkmhs.com/welcome/" rel="nofollow">Mile High Spirits</a></td>
+                  <td>Denver, CO</td>
+              </tr>
+        </tbody>
+      </table></div>
+  
+ 
+ <div class="col-md-0"></div>
+      <div class="col-md-6">
+        <img alt="Local Places With" src="images/balloonsLOGO.png" width=20 height=20><font size="4"> LPW&rsquo;s 5 Favorite:</font><h4>Local places with <strong><font color="#50d883">Shuffleboard</font></strong></h4>
+        <table class="table table-sm table-dark table-hover text-left">
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+              <td><a class="SHUFFLElink" href="http://westportsocial-stl.com/" rel="nofollow">Westport Social</a></td>
+              <td>St Louis, MO</td>
+            </tr>  
+            <tr>
+              <th scope="row">2</th>
+                <td><a class="SHUFFLElink" href="http://www.undertherosebrewing.com/" rel="nofollow">Under the Rose Brewing Company</a></td>
+                <td>Reno, NV</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                  <td><a class="SHUFFLElink" href="https://www.facebook.com/Pitchers-Pub-155576747849604/" rel="nofollow">Pitcher&rsquo;s Pub</a></td>
+                  <td>Madison, WI</td>
+                </tr>
+              <tr>
+              <th scope="row">4</th>
+                <td><a class="SHUFFLElink" href="https://www.williamsminneapolis.com/" rel="nofollow">William&rsquo;s Uptown Pub & Peanut Bar</a></td>
+                <td>Minneapolis, MN</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><a class="SHUFFLElink" href="https://www.punchbowlsocial.com/location/denver" rel="nofollow">Punch Bowl Social</a></td>
+                <td>Denver, CO</td>
+              </tr>
+              
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+-->
+
+
+<!--3RD AD-->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UNDER Map -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="2599711056"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<br>
+<!--OUR STORY-->
+<p>
+  <div class="card mx-auto border-info mb-3 w-75 text-left">
+    <div class="card-header">Our <b>STORY</b></div>
+    <div class="card-body text-info">
+      <h5 class="card-title"><b>The Inspiration for Local Places With</b></h5>
+        <p class="card-text">The idea for Local Places With came to us back in 2013 when a couple of us were out and about in downtown Seattle. We wanted to play pool
+          but realized none of us actually knew of any places to play pool nearby. Eventually, we started looking for local places with pool more often and started keeping track of a collection
+           of bars with pool tables and other bar games. One thing lead to another, things like karaoke and trivia nights and arcades bars started showing up on our lists, until finally 
+           one of us slapped a sloppily-designed Powerpoint presentation in front of everyone&rsquo;s faces, and we came to the conclusion that Local Places With had to happen. 
+        </p>
+    <hr>
+    <h5 class="card-title"><b>How Local Places With is different from other websites</b></h5>
+      <p class="card-text">While we love using tools like Yelp and Google, we want to create a website that focuses on finding only specific amenities or activities for users, 
+        such as bars with pool tables or other bar games, rather than attempting to provide every possible piece of information about a place. 
+        We&rsquo;ll leave that task to veterans of the industry like Yelp and Google!
+      </p>
+  <hr>
+  <h5 class="card-title"><b>The Vision for Local Places With</b></h5>
+  <p class="card-text">Our goal for Local Places With is to create a website that helps users find the activities and amenities they love the most, while also being
+    fun and easy-to-use. Currently, we&rsquo;ve focused on locating bars with pool tables and other bar games, but that will soon carry over into 
+     places with karaoke and dancing, trivia nights and arcades, and we really see it expanding into a ton of different areas!
+  </p>
+
+    </div>
+  </div>
+
 
           <!--FOOTER CONTENT -->
-          <small class="text-muted"><b>Updated:</b> May 10th, 2018</small><br>
-          <p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
           <br>
-          <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="credits.html" class="customlink1">Credits</a> - <font class="text-muted">Donate</font></font></p>
+          <small class="text-muted"><b>Updated:</b> June 14th, 2018</small><br>
+          <p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="75" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+          <br>
+          <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="contact-us.html" class="customlink1">Contact Us</a> - <a href="credits.html" class="customlink1">Credits</a><br><a href="terms-and-conditions.html" class="customlink1">Terms and Conditions</a> - <a href="privacy-policy.html" class="customlink1">Privacy Policy</a></font></p>
 
         </div>
       </div>
     </div>
 
+
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="scripts/bar-sports-init-map-script.js"></script>
+    <script type="text/javascript" src="scripts/bar-sports-init-map.js"></script>
     <script src="data/bar-sports-data.js"></script>
     <script src="scripts/list-script.js"></script>
     <script src="scripts/maps-script.js"></script>

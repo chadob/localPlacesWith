@@ -2,10 +2,10 @@ var mapSearchFunctions = {
 
   searchProps: ["zip", "state", "city"],
 
-  search(filterFunction, categories, query) {
+  search: function(filterFunction, categories, query) {
     mapFunctions.filterAllMarkersAndListItems(mapSearchFunctions.checkQuery, categories, query)
   },
-  searchEvent() {
+  searchEvent: function() {
     var query = $('#mapSearch').val();
     if (query === "") {
       mapFunctions.showAllMarkersAndListItems();
@@ -27,7 +27,7 @@ var mapSearchFunctions = {
       }
     }
   },
-  checkQuery(categoryArray, query) {
+  checkQuery: function(categoryArray, query) {
     return function(idx) {
       return categoryArray.some(function(cat) {
         return query.toString().toLowerCase() === idx.location[cat].toString().toLowerCase();

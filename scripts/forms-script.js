@@ -36,6 +36,7 @@ $(document).ready(function(){
     }
     currentWidth = $(window).width();
   }
+
   checkWidth(true);
   $(window).resize(function() {
     checkWidth(false);
@@ -102,4 +103,39 @@ $(document).ready(function(){
     toggleDisplay(sect);
   }
 
+  //check the users location's coordinates against existing locations to check for duplicates
+  function checkDuplicates () {
+    if ($('#venueAddress').val().length > 0 && $('#venueCity').val().length > 0 && $('#venueState').val().length > 0) {
+      if ($('#formSelector').val() === "Update") {
+      } else {
+        var geocoder = new google.maps.Geocoder();
+        var query = {'address': $('#venueAddress').val() + ' ' + $('#venueCity').val() + ' ' + $('#venueState').val()}
+        geocoder.geocode(query, function(results, status) {
+          if (status == 'OK') {
+            var coords = results[0].geometry.viewport.f.f + ', ' + results[0].geometry.viewport.b.b;
+            for (var loc in allData) {
+              if (allData[loc].coords === coords) {
+                var alreadyExists = $('#alreadyExists');
+                if (alreadyExists) {
+                  alreadyExists.css("display", "block");
+                }
+                return false;
+              }
+            }
+            var alreadyExists = $('#alreadyExists');
+            if (alreadyExists) {
+              alreadyExists.css("display", "none");
+            }
+            $('#venueCoords').val(coords);
+          }
+        });
+      }
+    }
+  }
+  $('#venueAddress, #venueCity, #venueState').on('blur', function() {
+    checkDuplicates();
+  });
+  $('#formSelector').on('change', function () {
+    checkDuplicates();
+  });
 });

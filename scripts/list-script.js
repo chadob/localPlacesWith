@@ -16,10 +16,10 @@ var listFunctions = {
     var adjustedItem = item.substr(0, 12) + 'card card-list ' + item.substr(22);
     $('.list-container').append(adjustedItem);
   },
-  emptyList() {
+  emptyList: function() {
     $('.list-container').empty();
   },
-  generateList() {
+  generateList: function() {
     this.shownListItems = [];
     this.hiddenListItems = [];
     this.currentListItems = mapFunctions.currentMarkers;
@@ -32,7 +32,7 @@ var listFunctions = {
       }
     }
   },
-  loadMoreList() {
+  loadMoreList: function() {
     for (i=0; i<20; i++) {
       if(this.hiddenListItems[i]) {
         this.createListItem(this.hiddenListItems[i].card);

@@ -63,9 +63,6 @@
     <div id="thank-you-message">
       <h4 class="mx-auto text-center"> Thank you for your submission! </h4>
     </div>
-    <div id="alreadyExists">
-      <h4 class="mx-auto text-center"> Thank you for your submission, but your location already exists. </h4>
-    </div>
     <form class="add-form mx-auto" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzHKs35fTSezh5Yd2S3kgpKdg0IY4mxKosL3f_UPNkEQd1Rhuo/exec">
       <h1 class="mx-auto text-center"> Add/Update a Location </h1>
       <p class="mx-auto text-center text-danger"> * is required </p>
@@ -86,17 +83,23 @@
         <label> <font class="text-danger">*</font> Venue Name:</label>
         <input class="form-control" required type="text" name="Venue Name">
         <label> <font class="text-danger">*</font> Venue Address:</label>
-        <input class="form-control" required type="text" name="Street Address">
+        <input id="venueAddress" class="form-control" required type="text" name="Street Address">
         <label> <font class="text-danger">*</font> Venue City:</label>
-        <input class="form-control" required type="text" name="City">
+        <input id="venueCity" class="form-control" required type="text" name="City">
         <label> <font class="text-danger">*</font> Venue State:</label>
-        <input class="form-control" required type="text" name="State">
+        <input id="venueState" class="form-control" required type="text" name="State">
         <label> <font class="text-danger">*</font> Venue Zip:</label>
-        <input class="form-control" required type="text" name="Zip">
+        <input id="venueZip" class="form-control" required type="text" name="Zip">
         <label> Venue Website: </label>
+        <input id="venueCoords" class="form-control" style="display:none" type="text" name="Coords">
         <input class="form-control" type="text" name="Website" value="">
       </div>
-
+      <div id="alreadyExists" class="alert alert-danger" role="alert">
+        Thank you, but your location already exists. If you meant to edit an existing location change the "Adding or Updating" dropdown to "Update a location"
+      </div>
+      <!-- <div id="alreadyExists">
+        <h6 class="mx-auto text-danger text-center"> Thank you for your submission, but your location already exists. </h6>
+      </div> -->
       <h6> <font class="text-danger">*</font> Activities: </h6>
       <div class="activities form-check form-check-inline">
         <input class="form-check-input category-checkbox" required type="checkbox" id="bar-sports" name="Bar Sports">
