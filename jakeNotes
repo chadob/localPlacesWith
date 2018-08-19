@@ -3,3 +3,14 @@
 3. maps.css .gmap-card line 38
 or maps-script setUpCard line 200-231
 4.
+
+Stuff to change:
+  Seattle html:
+  1. line 118 to City
+  2. line 514 to correct page
+  3. line 516-517 Center and zoom to desired values
+  4. line 518 to correct city
+
+  Maps.css:
+  .gmap-card line 38 (for edits)
+  Maps-script line 246-252 (for edits)
