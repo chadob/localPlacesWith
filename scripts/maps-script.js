@@ -107,6 +107,7 @@ var mapFunctions = {
     listFunctions.filteredListItems = mapFunctions.hiddenMarkers;
     var endOfString;
     //hide/show markers
+    mapFunctions.closeAllInfoWindows();
     for (var i=0;i<mapFunctions.currentMarkers.length;i++) {
       if (typeof color === "number") {
         mapFunctions.currentMarkers[i].icon = {
@@ -179,6 +180,7 @@ var mapFunctions = {
     for (var i=0;i<this.infoWindows.length;i++) {
        this.infoWindows[i].close();
     }
+    mapFunctions.infoWindows = [];
   },
   //Create marker based on the data in location
   createMarker: function(location, section, id, numSections) {
@@ -204,7 +206,6 @@ var mapFunctions = {
     });
     marker.addListener('click', function() {
       mapFunctions.closeAllInfoWindows();
-      mapFunctions.infoWindows = [];
       mapFunctions.infoWindows.push(infoWindow);
       infoWindow.open(map, marker);
       if (mapFunctions.currentMarker) {
