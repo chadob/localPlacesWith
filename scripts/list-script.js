@@ -12,23 +12,31 @@ var listFunctions = {
   showListItem: function(id) {
     $('.' + id).show();
   },
-  createListItem: function(item) {
+  createListItem: function(item, id) {
     var adjustedItem = item.substr(0, 12) + 'card card-list ' + item.substr(22);
+    var adjustedItem = adjustedItem.substr(0, 4) + ' id="card'+ id + '" ' + adjustedItem.substr(4);
     $('.list-container').append(adjustedItem);
   },
   emptyList: function() {
     $('.list-container').empty();
   },
-  generateList: function() {
+  generateList: function(city) {
     this.shownListItems = [];
     this.hiddenListItems = [];
     this.currentListItems = mapFunctions.currentMarkers;
-    for (i=0; i<this.currentListItems.length; i++) {
-      if (i<20) {
-        this.createListItem(this.currentListItems[i].card);
+    if (city) {
+      for (i=0; i<this.currentListItems.length; i++) {
+        this.createListItem(this.currentListItems[i].card, this.currentListItems[i].id);
         this.shownListItems.push(this.currentListItems[i]);
-      } else {
-        this.hiddenListItems.push(this.currentListItems[i]);
+      }
+    } else {
+      for (i=0; i<this.currentListItems.length; i++) {
+        if (i<20) {
+          this.createListItem(this.currentListItems[i].card, this.currentListItems[i].id);
+          this.shownListItems.push(this.currentListItems[i]);
+        } else {
+          this.hiddenListItems.push(this.currentListItems[i]);
+        }
       }
     }
   },

@@ -1,8 +1,12 @@
+var initialSearchValue;
+$(document).ready(function() {
+      initialSearchValue = $('#mapSearch').val();
+});
 $('.map-nav-item').on('click', function(e) {
   var catArray = [];
   var cat;
   var color;
-  var colorsObject = {
+  colorsObject = {
     "Bar Sports": {
       "pool": 0,
       "pingPong": 1,
@@ -27,7 +31,7 @@ $('.map-nav-item').on('click', function(e) {
       "videoGames": 4,
       "arcades": 5
     }
-  }
+  };
   e.preventDefault();
   $(this).toggleClass('active');
   $('#mapNav').find('.active').each(function() {
@@ -40,25 +44,39 @@ $('.map-nav-item').on('click', function(e) {
   if ($(this).hasClass('active')) {
     if (catArray.length > 1) {
       color = Object.keys(colorsObject[page]).length;
-      mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, "", color);
+      mapFunctions.filterAllMarkersAndListItems(catArray, color);
       $('#multiSelect').show();
       setTimeout(function() {
         $('#multiSelect').hide();
       }, 5000);
     } else {
-      mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, "", color);
+      mapFunctions.filterAllMarkersAndListItems(catArray, color);
     }
     $(this).css('color', '#fff');
   } else {
     if ($('#mapNav').children('.active')[0]) {
-      mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray, "", color);
+      mapFunctions.filterAllMarkersAndListItems(catArray, color);
       $(this).css('color', 'rgba(255,255,255,.5)');
     } else {
-      mapFunctions.filterAllMarkersAndListItems(mapFunctions.everyFunction, catArray);
+      mapFunctions.filterAllMarkersAndListItems();
       $(this).css('color', 'rgba(255,255,255,.5)');
     }
   }
 });
+
+
+$('#resetButton').click(function() {
+  $('#mapSearch').val('');
+  $('#mapNav').find('.active').each(function() {
+    $(this).toggleClass('active');
+    $(this).css('color', 'rgba(255,255,255,.5)');
+  });
+  mapFunctions.showAllMarkersAndListItems();
+  mapFunctions.closeAllInfoWindows();
+  mapFunctions.zoomOut();
+});
+
+
 
 //overwrites above code on hovering
 $('.map-nav-item').on('mouseenter', function() {
@@ -75,7 +93,7 @@ $('#mapSearch').on('keypress', function(e) {
   if(e.which == 13) {
     mapSearchFunctions.searchEvent();
   }
-})
+});
 
 $('.list-container').scroll(function () {
     if (!listFunctions.timeout) {
@@ -85,4 +103,14 @@ $('.list-container').scroll(function () {
             listFunctions.loadMoreList();
         }, 1000);
     }
+});
+
+$(document).on("click", '.gmap-card-title', function(e) {
+  var id = $(this).parent().attr('id');
+  var index = id.substring(4, id.length);
+  var marker = mapFunctions.allMarkers[index];
+  if (mapFunctions.currentMarker) {
+    mapFunctions.shrinkMarker(mapFunctions.currentMarker);
+  }
+  mapFunctions.panToMarker(marker);
 });

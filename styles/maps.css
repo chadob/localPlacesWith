@@ -2,7 +2,7 @@
   display: none;
 }
 #map {
-  height: 650px;
+  height: 450px;
   width: 100%;
 }
 .mapNav {
@@ -37,6 +37,25 @@
 }
 .gmap-card {
   max-height: 300px;
+}
+.gmap-card-title {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.card-list .gmap-card-title {
+  font-size: 1.25rem;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-decoration: underline;
+  text-decoration-color: #17A2B8;
+}
+.card-list .gmap-card-title:hover {
+  background: #17A2B8;
+  color: white;
+  cursor: pointer;
 }
 .multi-select {
   display: none;

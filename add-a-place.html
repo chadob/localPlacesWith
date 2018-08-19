@@ -12,6 +12,15 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./styles/add-your-place.css">
   <link href="vendor/bootstrap/css/custom.css" rel="stylesheet">
+  
+  <!--GOOGLE ADSENSE TAG-->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1744357799793776",
+    enable_page_level_ads: true
+  });
+</script>
 
   <!-- Custom styles for this template -->
   <style>
@@ -26,103 +35,198 @@
 
   </style>
 
-<link rel="shortcut icon" href="images/map-pin5-blue.png"></head>
+</head>
+<link rel="shortcut icon" href="images/balloonsLOGO.png"/>
+  <body>
 
-<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a title="Local Places With" class="navbar-brand" href="http://www.localplaceswith.com"><img width="85%"  src="images/LPW_Logo_SMALL.png"></a>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="http://www.localplaceswith.com"><img width="65%" height="65%" src="images/LPW_LOGO_Test3.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+    <!--NAVBAR COLLAPSABLE LINKS-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a title="Places with pool tables, darts, ping-pong, and more." class="nav-link" href="http://www.localplaceswith.com">Bar Sports</a>
-          </li>
-          <li class="nav-item">
-            <a title="Places with karaoke, live music, open mics, and more." class="nav-link" href="live-entertainment.html">Live Entertainment</a>
-          </li>
-          <li class="nav-item">
-            <a title="Places with trivia nights, arcades, board games, and more." class="nav-link" href="games.html">Games</a>
-          </li>
-          <li class="nav-item active"><!--ACTIVE TAG HERE-->
-            <a title="Add a place!" class="nav-link" href="add-a-place.html">+
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-        </ul>
+       
+       <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a title="Places with pool tables, darts, ping-pong, and more." class="btn btn-outline-light navbar-btn" role="button" href="http://www.localplaceswith.com">BAR SPORTS</a>&nbsp;&nbsp;
+            </li>
+            <li class="nav-item">
+                <a title="Places with karaoke, live music, open mics, and more." class="btn btn-outline-light navbar-btn" role="button" href="live-entertainment.html">LIVE ENTERTAINMENT</a>&nbsp;&nbsp;
+              </li>
+              <li class="nav-item">
+                <a title="Places with trivia nights, arcades, board games, and more." class="btn btn-outline-light navbar-btn" role="button" href="games.html">GAMES</a>&nbsp;&nbsp;
+              </li>
+             
+          </ul><!--ACTIVE BUTTON COLOR-->
+          	<a title="Add a place!" class="btn btn-danger navbar-btn" role="button" href="add-a-place.html">+</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
   <!-- Page CONTENT -->
-  <div class="mt-5 container">
+  <div class="mt-4 container">
+    
+    
     <div id="thank-you-message">
       <h4 class="mx-auto text-center"> Thank you for your submission! </h4>
+      	<center>
+      		<a class="btn btn-primary" href="add-a-place.html" role="button">Submit another</a>
+      	</center>
     </div>
     <form class="add-form mx-auto" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzHKs35fTSezh5Yd2S3kgpKdg0IY4mxKosL3f_UPNkEQd1Rhuo/exec">
-      <h1 class="mx-auto text-center"> Add/Update a Location </h1>
-      <p class="mx-auto text-center text-danger"> * is required </p>
+    
 
-      <div class="form-group">
-        <label for="inputState"><font class="text-danger">*</font> Adding or Updating?</label>
-        <select id="formSelector" class="form-control" name="whichForm">
-          <option value="Add" selected>Add a location</option>
-          <option value="Update">Update a location</option>
+      <center><font size="3"><strong>Add or Update a Place</strong></font><br>
+          <h6><font class="lead">Add or update local places with fun amenities.</font></h6></center>
+    
+
+    <div class="bg-info p-4"><!-- BLUE BACKGROUND -->
+        <center><h3><font class="text-white">What would you like to do?</font></h3></center><br>
+        <div class="form-group">
+
+        <select id="formSelector" class="form-control form-control-lg" name="whichForm">
+          <option value="Add" selected>I want to ADD a location</option>
+          <option value="Update">I want to UPDATE a location</option>
         </select>
+      <center><font class="text-white"><small>takes <b>30 - 60 seconds</b></small></font></center>
       </div>
-      <Br>
-      <div class="form-group">
-        <label> <font class="text-danger">*</font> Your Email: </label>
-        <input class="form-control" required type="text" name="Email">
-        <label> <font class="text-danger">*</font> Your Name:</label>
-        <input class="form-control" required type="text" name="Name">
-        <label> <font class="text-danger">*</font> Venue Name:</label>
-        <input class="form-control" required type="text" name="Venue Name">
-        <label> <font class="text-danger">*</font> Venue Address:</label>
-        <input id="venueAddress" class="form-control" required type="text" name="Street Address">
-        <label> <font class="text-danger">*</font> Venue City:</label>
-        <input id="venueCity" class="form-control" required type="text" name="City">
-        <label> <font class="text-danger">*</font> Venue State:</label>
-        <input id="venueState" class="form-control" required type="text" name="State">
-        <label> <font class="text-danger">*</font> Venue Zip:</label>
-        <input id="venueZip" class="form-control" required type="text" name="Zip">
-        <label> Venue Website: </label>
-        <input id="venueCoords" class="form-control" style="display:none" type="text" name="Coords">
-        <input class="form-control" type="text" name="Website" value="">
+     
+      <div class="form-row"> <!-- Form ROW for TWO or MORE FIELDS in one row -->
+          <div class="form-group col-md-6"> <!-- FORM GROUP with COLUMN SIZE -->
+              <label><font class="text-danger" size="5">*</font> <font class="text-white">Email:</font></label>
+            <input class="form-control" required type="email" placeholder="John.Doe@hotmail.com" name="Email">
+          </div>
+          <div class="form-group col-md-6">
+              <label><font class="text-danger" size="5">*</font> <font class="text-white">Display Name:</font></label>
+              <input class="form-control" required type="text" placeholder="John_Doe_Boy" name="Name">
+          </div>
+          
+        </div>
+        <center><font class="text-white">We&rsquo;ll only show your <b>Display Name</b> on the Leaderboard.<br>
+            <small>nothing TOO inappropriate, please</small> &#x1F62C</font></center>
+        
+    </div><!-- END of BLUE BACKGROUND -->
+
+    <br>
+
+<div class="bg-primary p-4">
+        <center><h3><font class="text-white">The BASICS</font></h3></center>
+      
+      <div class="form-group"> <!-- Form GROUP for ONE FIELD in a row -->
+        <label><font class="text-danger" size="5">*</font> <font class="text-white">Venue Name:</font></label>
+        <input class="form-control mb-2" required type="text" name="Venue Name" autocomplete="nope">
+
+        <label><font class="text-white">Street Address:</font></label>
+        <input id="venueAddress" class="form-control mb-2" type="text" name="Street Address" placeholder="Don't know it? Leave this blank!" autocomplete="nope">
+              <center><font class="text-white"><small><b>Optional</b>: Full and accurate addresses are worth an extra <b>10 points</b>!</small></font></center>
       </div>
-      <div id="alreadyExists" class="alert alert-danger" role="alert">
-        Thank you, but your location already exists. If you meant to edit an existing location change the "Adding or Updating" dropdown to "Update a location"
+
+      <div class="form-row">
+          <div class="form-group col-md-6">
+              <label><font class="text-danger" size="5">*</font> <font class="text-white">City:</font></label>
+              <input id="venueCity" class="form-control" required type="text" name="City" autocomplete="nope">
+          </div>
+          <div class="form-group col-md-3">
+              <label><font class="text-danger" size="5">*</font> <font class="text-white">State:</font></label>
+              <select id="venueState" class="form-control" required type="text" name="State" autocomplete="nope">
+                  <option style="display:none">
+                  <option value="AL">AL</option>
+                  <option value="AK">AK</option>
+                  <option value="AR">AR</option>	
+                  <option value="AZ">AZ</option>
+                  <option value="CA">CA</option>
+                  <option value="CO">CO</option>
+                  <option value="CT">CT</option>
+                  <option value="DC">DC</option>
+                  <option value="DE">DE</option>
+                  <option value="FL">FL</option>
+                  <option value="GA">GA</option>
+                  <option value="HI">HI</option>
+                  <option value="IA">IA</option>	
+                  <option value="ID">ID</option>
+                  <option value="IL">IL</option>
+                  <option value="IN">IN</option>
+                  <option value="KS">KS</option>
+                  <option value="KY">KY</option>
+                  <option value="LA">LA</option>
+                  <option value="MA">MA</option>
+                  <option value="MD">MD</option>
+                  <option value="ME">ME</option>
+                  <option value="MI">MI</option>
+                  <option value="MN">MN</option>
+                  <option value="MO">MO</option>	
+                  <option value="MS">MS</option>
+                  <option value="MT">MT</option>
+                  <option value="NC">NC</option>	
+                  <option value="NE">NE</option>
+                  <option value="NH">NH</option>
+                  <option value="NJ">NJ</option>
+                  <option value="NM">NM</option>			
+                  <option value="NV">NV</option>
+                  <option value="NY">NY</option>
+                  <option value="ND">ND</option>
+                  <option value="OH">OH</option>
+                  <option value="OK">OK</option>
+                  <option value="OR">OR</option>
+                  <option value="PA">PA</option>
+                  <option value="RI">RI</option>
+                  <option value="SC">SC</option>
+                  <option value="SD">SD</option>
+                  <option value="TN">TN</option>
+                  <option value="TX">TX</option>
+                  <option value="UT">UT</option>
+                  <option value="VT">VT</option>
+                  <option value="VA">VA</option>
+                  <option value="WA">WA</option>
+                  <option value="WI">WI</option>	
+                  <option value="WV">WV</option>
+                  <option value="WY">WY</option>
+                </select>		
+          </div>
+          <div class="form-group col-md-3">
+              <label><font class="text-white">Zip:</font><font class="text-primary" size="5">*</font></label>
+              <input id="venueZip" class="form-control" type="text" name="Zip" placeholder="If known" autocomplete="nope">
+          </div>
       </div>
-      <!-- <div id="alreadyExists">
-        <h6 class="mx-auto text-danger text-center"> Thank you for your submission, but your location already exists. </h6>
-      </div> -->
-      <h6> <font class="text-danger">*</font> Activities: </h6>
+      <center><font class="text-white">Each new place is <b>10 points</b>!</font></center>
+    </div>
+    
+    <div id="alreadyExists" class="alert alert-danger" role="alert">
+        <center> <font size="4"><b>We like this location too and it&rsquo;s already on the map!</b></font>
+         <br>If you meant to <b>edit</b> or <b>update</b> an existing location, change "Add a Location" to "Update a location" at the top!</center>
+       </div>
+
+<br>
+
+<div class="bg-warning p-4">
+        <center><h3>The FUN PART</h3></center>
+      <h6> <font class="text-danger" size="5">*</font> Activities: </h6>
       <div class="activities form-check form-check-inline">
         <input class="form-check-input category-checkbox" required type="checkbox" id="bar-sports" name="Bar Sports">
         <label class="form-check-label text-center" for="bar-sports"> Bar Sports </label>
+        
         <input class="form-check-input category-checkbox ml-3" required type="checkbox" id="live-entertainment" name="Live Entertainment">
         <label class="form-check-label text-center" for="live-entertainment"> Live Entertainment </label>
+        
         <input class="form-check-input category-checkbox ml-3" required type="checkbox" id="games" name="Games">
         <label class="form-check-label text-center" for="games"> Games </label>
+        
       </div>
       <br>
+      <br>
+      <center>Each ACTIVITY CATEGORY is <b>5 points</b>!</center>
 
       <!-- Bar sports section of form -->
       <div class="bar-sports mt-4">
-        <h4 class="mt-5 mb-4"> Bar Sports</h4>
-        <h6 class="">Sports on TV: </h6>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="Sports TV" value="Yes">
-          <label class="form-check-label"> Yes </label>
-          <input class="form-check-input ml-3" checked type="radio" name="Sports TV" value="">
-          <label class="form-check-label"> No </label>
-        </div>
-
-        <h6 class="mt-3"> <font class="text-danger">*</font> What types of Bar Sports? </h6>
+        <h4 class="mt-2 mb-4"> Bar Sports</h4>
+        
+        <h6 class="mt-3"> <font class="text-danger" size="5">*</font> What types of Bar Sports? </h6>
         <div class="types ">
           <input class="type bar-type" id="pool-checkbox" type="checkbox" name="Pool">
           <label class=""> Pool </label> <br>
@@ -136,7 +240,7 @@
           <label class=""> Foosball </label> <br>
           <input class="type bar-type" id="shuffleboard-checkbox" type="checkbox" name="Shuffleboard">
           <label class=""> Shuffleboard </label> <br>
-          Other: <input class="type bar-type" type="text" name="Bar Sports Other">
+          Other: <input class="type bar-type" placeholder="Bocce Ball, Mini Golf, etc." type="text" name="Bar Sports Other">
         </div>
 
         <div class="bar-sports-type-section pool">
@@ -153,6 +257,7 @@
             <label class="form-check-label"> 8+ </label>
           </div>
 
+<!--
           <h6 class="mt-2"> Pool Priced by? </h6>
           <div class="pool-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Pool Cost" value="Per Hour">
@@ -164,6 +269,7 @@
             <input class="form-check-input ml-3" type="radio" name="Pool Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          -->
         </div>
 
         <div class="bar-sports-type-section ping-pong">
@@ -179,6 +285,7 @@
             <input class="form-check-input ml-3" type="radio" name="Ping Pong Tables" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          <!--
           <h6 class="mt-2"> Ping Pong Priced by? </h6>
           <div class="ping-pong-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Ping Pong Cost" value="Per Hour">
@@ -190,6 +297,7 @@
             <input class="form-check-input ml-3" type="radio" name="Ping Pong Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+                    -->
         </div>
 
         <div class="bar-sports-type-section darts">
@@ -205,6 +313,7 @@
             <input class="form-check-input ml-3" type="radio" name="Darts Boards" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          <!--
           <h6 class="mt-2"> Darts Priced by? </h6>
           <div class="darts-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Darts Cost" value="Per Hour">
@@ -216,6 +325,7 @@
             <input class="form-check-input ml-3" type="radio" name="Darts Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+                    -->
         </div>
         <div class="bar-sports-type-section cornhole">
           <h5 class="mt-4 mb-3"> Cornhole </h5>
@@ -230,6 +340,7 @@
             <input class="form-check-input ml-3" type="radio" name="Cornhole Setups" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          <!--
           <h6 class="mt-2"> Cornhole Priced by? </h6>
           <div class="cornhole-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Cornhole Cost" value="Per Hour">
@@ -241,6 +352,7 @@
             <input class="form-check-input ml-3" type="radio" name="Cornhole Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+                    -->
         </div>
         <div class="bar-sports-type-section foosball">
           <h5 class="mt-4 mb-3"> Foosball</h5>
@@ -255,6 +367,7 @@
             <input class="form-check-input ml-3" type="radio" name="Foosball Tables" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          <!--
           <h6 class="mt-2"> Foosball Priced by? </h6>
           <div class="foosball-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Foosball Cost" value="Per Hour">
@@ -266,6 +379,7 @@
             <input class="form-check-input ml-3" type="radio" name="Foosball Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+                    -->
         </div>
         <div class="bar-sports-type-section shuffleboard">
           <h5 class="mt-4 mb-3"> Shuffleboard</h5>
@@ -280,6 +394,7 @@
             <input class="form-check-input ml-3" type="radio" name="Shuffleboard Tables" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          <!--
           <h6 class="mt-2"> Shuffleboard Priced by? </h6>
           <div class="shuffleboard-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Shuffleboard Cost" value="Per Hour">
@@ -291,41 +406,51 @@
             <input class="form-check-input ml-3" type="radio" name="Shuffleboard Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+                    -->
         </div>
       </div>
 
 
-      <div class="live-entertainment">
-        <h4 class="mt-5 mb-4"> Live Entertainment </h4>
-        <div class="form-group">
-          <label>Cost: </label>
-          <input class="form-control" type="text" name="Live Cost">
-          <label>Attire: </label>
-          <input class="form-control" type="text" name="Live Attire">
-        </div>
-        <h6> <font class="text-danger">*</font> What types of live entertainment? </h6>
+      <div class="live-entertainment mt-4">
+        <h4 class="mt-2 mb-4"> Live Entertainment </h4>
+        
+        <h6> <font class="text-danger" size="5">*</font> What types of entertainment? </h6>
         <div class="types ">
-          <input class="type" type="checkbox" name="Live Music">
-          <label class=""> Live Music </label> <br>
-          <input class="type" type="checkbox" name="Karaoke">
-          <label class=""> Karaoke </label> <br>
-          <input class="type" type="checkbox" name="Dancing">
-          <label class=""> Dancing </label> <br>
-          <input class="type" type="checkbox" name="Piano">
-          <label class=""> Piano </label> <br>
-          <input class="type" type="checkbox" name="Open Mic">
-          <label class=""> Open Mic </label> <br>
           <input class="type" type="checkbox" name="Comedy">
-          <label class=""> Comedy </label> <br>
+         	 <label class=""> Comedy </label> <br>
+          
+          <input class="type" type="checkbox" name="Dancing">
+          	<label class=""> Dancing </label> <br>
+          
+          <input class="type" type="checkbox" name="Karaoke">
+          	<label class=""> Karaoke </label> <br>
+          	
+          <input class="type" type="checkbox" name="Live Music">
+          	<label class=""> Live Music </label> <br>
+         
+          <input class="type" type="checkbox" name="Open Mic">
+         	 <label class=""> Open Mic </label> <br>
+          
+          <input class="type" type="checkbox" name="Piano">
+          	<label class=""> Piano </label> <br>
+          
           <label class=""> Other: </label>
-          <input class="type" type="text" name="Live Entertainment Other">
+          	<input class="type" placeholder="Circus, Rave, etc." type="text" name="Live Entertainment Other">
         </div>
+        
+        <div class="form-group mt-2">
+          <!-- <label>Cost: </label>
+          <input class="form-control" type="text" name="Live Cost"> -->
+          <label>Venue Style:</label>
+          <input class="form-control" placeholder="Nightclub, Country Bar, etc." type="text" name="Live Attire">
+        </div>  
+        
       </div>
 
 
-      <div class="games">
-        <h4 class="mt-5 mb-4"> Games </h4>
-        <h6> <font class="text-danger">*</font> What types of games? </h6>
+      <div class="games mt-4">
+        <h4 class="mt-2 mb-4"> Games </h4>
+        <h6> <font class="text-danger" size="5">*</font> What types of games? </h6>
         <div class="types">
           <input class="type" type="checkbox" name="Skeeball">
           <label class=""> Skeeball </label> <br>
@@ -340,21 +465,23 @@
           <input class="type" type="checkbox" name="Arcades">
           <label class=""> Arcades </label> <br>
           <label class="">Other: </label>
-          <input class="type" type="text" name="Games Other">
+          <input class="type" type="text" placeholder="Card Games, Air Hockey" name="Games Other">
         </div>
         <div class="games-type-section skeeball">
           <h5 class="mt-4 mb-3"> Skeeball</h5>
-          <h6> How many </h6>
+          <h6> How many? </h6>
           <div class="skeeball-number-tables number-tables form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="Skeeball Tables" value="1">
-            <label class="form-check-label"> 1 </label>
-            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="2 to 3">
-            <label class="form-check-label"> 2 to 3 </label>
-            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="4 to 7">
-            <label class="form-check-label"> 4 to 7 </label>
-            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="8+">
-            <label class="form-check-label"> 8+ </label>
+            <input class="form-check-input" type="radio" name="Skeeball Tables" value="1 to 2">
+            <label class="form-check-label"> 1 to 2</label>
+            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="3 to 4">
+            <label class="form-check-label"> 3 to 4 </label>
+            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="5 to 6">
+            <label class="form-check-label"> 5 to 6 </label>
+            <input class="form-check-input ml-3" type="radio" name="Skeeball Tables" value="7+">
+            <label class="form-check-label"> 7+ </label>
           </div>
+         
+          <!--
           <h6 class="mt-2"> Priced by? </h6>
           <div class="skeeball-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Skeeball Cost" value="Per Hour">
@@ -366,10 +493,13 @@
             <input class="form-check-input ml-3" type="radio" name="Skeeball Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          -->
+          
         </div>
+        
         <div class="games-type-section jenga">
           <h5 class="mt-4 mb-3"> Jenga </h5>
-          <h6> How many </h6>
+          <h6> How many? </h6>
           <div class="jenga-boxes number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Jenga Boxes" value="1">
             <label class="form-check-label"> 1 </label>
@@ -380,6 +510,8 @@
             <input class="form-check-input ml-3" type="radio" name="Jenga Boxes" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          
+                    <!--
           <h6 class="mt-2"> Priced by? </h6>
           <div class="jenga-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Jenga Cost" value="Per Hour">
@@ -391,20 +523,32 @@
             <input class="form-check-input ml-3" type="radio" name="Jenga Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          -->
+          
         </div>
         <div class="games-type-section trivia">
           <h5 class="mt-4 mb-3"> Trivia Nights</h5>
-          <h6> How many a week </h6>
+          <h6> Which night(s)? </h6>
           <div class="trivia-number-tables number-tables form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="Trivia Tables" value="1">
-            <label class="form-check-label"> 1 </label>
-            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="2 to 3">
-            <label class="form-check-label"> 2 to 3 </label>
-            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="4 to 7">
-            <label class="form-check-label"> 4 to 7 </label>
-            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="8+">
-            <label class="form-check-label"> 8+ </label>
+            <input class="form-check-input" type="radio" name="Trivia Tables" value="Sunday">
+            <label class="form-check-label"> Sunday </label>
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Monday">
+            <label class="form-check-label"> Monday </label>
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Tuesday">
+            <label class="form-check-label"> Tuesday </label>
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Wednesday">
+            <label class="form-check-label"> Wednesday </label>
+            </div>
+          <div class="trivia-number-tables number-tables form-check form-check-inline"> 
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Thursday">
+            <label class="form-check-label"> Thursday </label>
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Friday">
+            <label class="form-check-label"> Friday </label>
+            <input class="form-check-input ml-3" type="radio" name="Trivia Tables" value="Saturday">
+            <label class="form-check-label"> Saturday </label>
           </div>
+          
+          <!--
           <h6 class="mt-2"> Priced by? </h6>
           <div class="trivia-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Trivia Cost" value="Per Hour">
@@ -416,10 +560,13 @@
             <input class="form-check-input ml-3" type="radio" name="Trivia Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          
+          -->
+          
         </div>
         <div class="games-type-section board-games">
           <h5 class="mt-4 mb-3"> Board Games </h5>
-          <h6> How many Games </h6>
+          <h6> How many Games? </h6>
           <div class="board-games-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Board Games Boards" value="1">
             <label class="form-check-label"> 1 </label>
@@ -430,6 +577,8 @@
             <input class="form-check-input ml-3" type="radio" name="Board Games Boards" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          
+          <!--
           <h6 class="mt-2"> Priced by? </h6>
           <div class="board-games-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Board Games Cost" value="Per Hour">
@@ -441,10 +590,13 @@
             <input class="form-check-input ml-3" type="radio" name="Board Games Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          
+          -->
+          
         </div>
         <div class="games-type-section video-games">
           <h5 class="mt-4 mb-3"> Video Games</h5>
-          <h6> How many can play </h6>
+          <h6> How many Video Game Consoles? </h6>
           <div class="video-games-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Video Games Consoles" value="1">
             <label class="form-check-label"> 1 </label>
@@ -455,6 +607,9 @@
             <input class="form-check-input ml-3" type="radio" name="Video Games Consoles" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          
+          <!--
+          
           <h6 class="mt-2"> Priced by? </h6>
           <div class="video-games-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Video Games Cost" value="Per Hour">
@@ -466,10 +621,13 @@
             <input class="form-check-input ml-3" type="radio" name="Video Games Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          
+          -->
+          
         </div>
         <div class="games-type-section arcades">
           <h5 class="mt-4 mb-3"> Arcades</h5>
-          <h6> How many </h6>
+          <h6> How many? </h6>
           <div class="arcades-number-tables number-tables form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Arcade Machines" value="1">
             <label class="form-check-label"> 1 </label>
@@ -480,6 +638,9 @@
             <input class="form-check-input ml-3" type="radio" name="Arcade Machines" value="8+">
             <label class="form-check-label"> 8+ </label>
           </div>
+          
+          <!--
+          
           <h6 class="mt-2"> Priced by? </h6>
           <div class="arcades-cost cost form-check form-check-inline">
             <input class="form-check-input" type="radio" name="Arcades Cost" value="Per Hour">
@@ -491,21 +652,70 @@
             <input class="form-check-input ml-3" type="radio" name="Arcades Cost" value="Varies">
             <label class="form-check-label"> Varies </label>
           </div>
+          
+          -->
+          
         </div>
       </div>
+
+</div>
+
+<br>
+
+    <div class="bg-secondary p-4">
+    <center><h3><font class="text-white">The EXTRA Mile</font></h3>
+    <font class="text-white"><small>All of these are totally <b>OPTIONAL</b></small></font></center>
+      <h6 class="text-white mt-2">Website: </h6>  
+      	<div class="form-group"> <!-- Form GROUP for ONE FIELD in a row -->
+      	  <input id="venueCoords" class="form-control" style="display:none" type="text" name="Coords">
+       	  <input class="form-control form-control-sm" type="text" name="Website" value="">
+        </div>
+      <center><font class="text-white">Each WEBSITE is <b>1 point</b>!</font></center>
+      
+      <h6 class="text-white mt-3">Sports on TV: </h6>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="Sports TV" value="Yes">
+          <label class="form-check-label text-white"> Yes </label>
+          <input class="form-check-input ml-3" checked type="radio" name="Sports TV" value="">
+          <label class="form-check-label text-white"> No </label>
+        </div>
+
+    </div>
+
+
+
+
       <input class="btn btn-primary mt-3" type="submit">
     </form>
 
 
 
-  </div>
-
-<!--FOOTER CONTENT -->
-<br>
-<center><p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="69" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+  </div>  
   <br>
-  <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="credits.html" class="customlink1">Credits</a> - <font class="text-muted">Donate</font></font></p></center>
-
+  <br>
+  <center>
+          <!--1ST AD-->
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- UNDER Map -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1744357799793776"
+     data-ad-slot="2599711056"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
+  <br>
+  
+  <!--FOOTER CONTENT -->
+<br>
+<center><p><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.localplaceswith.com&layout=button_count&size=small&mobile_iframe=true&width=69&height=20&appId" width="75" height="20" style="padding:1px;border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe><br>
+  <br>
+  <font size="2"><a href="sitemap.html" class="customlink1">Sitemap</a> - <a href="contact-us.html" class="customlink1">Contact Us</a> - <a href="credits.html" class="customlink1">Credits</a><br><a href="terms-and-conditions.html" class="customlink1">Terms and Conditions</a> - <a href="privacy-policy.html" class="customlink1">Privacy Policy</a></font></p>
+      
+  
+  
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -27,7 +27,7 @@
     <link href="/vendor/bootstrap/css/custom.css" type="text/css" rel="stylesheet">
 
     <!-- Chads Map CSS -->
-    <link rel="stylesheet" type="text/css" href="./styles/maps.css">
+    <link rel="stylesheet" type="text/css" href="/styles/maps.css">
 
     <!--GOOGLE HREFLANG TAG-->
     <link rel="alternate" href="http://localplaceswith.com" hreflang="en-us" />
@@ -115,7 +115,7 @@
             <div class="input-group-prepend">
               <button class="btn btn-secondary btn-lg" id="resetButton" alt="Reset button"> RESET</button>
             </div>
-            <input class="form-control input-lg" id="mapSearch" placeholder="City or State" type="text" autocomplete="nope" name="Email" value="">
+            <input class="form-control input-lg" id="mapSearch" placeholder="City or State" type="text" autocomplete="nope" name="Email" value="Seattle">
             <div class="input-group-append">
               <button class="btn btn-warning btn-lg" id="searchButton" alt="Search button"> SEARCH</button>
             </div>
@@ -161,7 +161,7 @@
               <span>Shuffleboard</span>
             </a>
               <!-- <a class="map-nav-item" href="#">
-                <img class="map-nav-img ml-3" src="/images/marker6.png">
+                <img class="map-nav-img ml-3" src="./images/marker6.png">
                 <span>Bar Sports Other</span>
               </a> -->
           </nav>
@@ -176,7 +176,7 @@
             <button class="btn btn-primary my-3" data-toggle="collapse" data-target=".list-container" aria-expanded="true" aria-controls="list-container">
               <span class="">List of Selected Places</span>
             </button>
-            <div class="collapse list-container">
+            <div class="collapse list-container show">
             </div>
           </div>
 
@@ -507,7 +507,7 @@
     <script src="/data/bar-sports-data.js"></script>
 
     <script src="/scripts/list-script.js"></script>
-    <script src="/scripts/maps-script.js"></script>
+    <script src="/scripts/maps-script-test4.js"></script>
     <script src="/scripts/search-script.js"></script>
     <script src="/scripts/maps-events.js"></script>
     <script>
@@ -515,7 +515,7 @@
       function initMapWrapper() {
         var center = {lat: 45, lng: -110};
         var zoom = 3;
-        initMap('Bar Sports', center, zoom);
+        initMap(page, center, zoom, 'Seattle');
       }
     </script>
     <script async defer

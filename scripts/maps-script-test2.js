@@ -46,6 +46,7 @@ var mapFunctions = {
     this.adjustedSection = adjustedCurrentSection;
   },
   everyFunction: function(categoryArray){
+    console.log(categoryArray);
     return function(idx) {
       return categoryArray.every(function(cat) {
         return cat in idx.location;
@@ -86,6 +87,7 @@ var mapFunctions = {
     }
   },
   filterByCat: function(catArray) {
+    console.log(catArray);
     if (catArray.length > 0) {
       return mapFunctions.currentMarkers.partition(mapFunctions.everyFunction(catArray))
     } else {
@@ -130,14 +132,14 @@ var mapFunctions = {
   },
 
   shrinkMarker: function(marker) {
-    marker.icon.url = '/images/marker' + marker.icon.url.slice(14, 15) +'.png';
+    marker.icon.url = '/images/marker' + marker.icon.url.slice(15, 16) +'.png';
     marker.icon.size= new google.maps.Size(20, 24);
     marker.setZIndex(1000);
     marker.setIcon(marker.icon);
   },
 
   growMarker: function(marker) {
-    marker.icon.url = marker.icon.url.substr(0, 15) + 'big' + marker.icon.url.substr(15);
+    marker.icon.url = marker.icon.url.substr(0, 16) + 'big' + marker.icon.url.substr(16);
     marker.icon.size = new google.maps.Size(30, 36);
     marker.setZIndex(10000000);
     mapFunctions.currentMarker = marker;
@@ -223,7 +225,7 @@ var mapFunctions = {
   setUpCard: function(location, section, id, adjustedSection) {
     var adjusted;
     var basicProps = "";
-    var checkAgainstCategories = ["dateSubmitted","name", "email", "coords","venueName","streetAddress","city","state","zip", adjustedSection + "Other", adjustedSection + "Color", adjustedSection + "Plus"];
+    var checkAgainstCategories = ["dateSubmitted","name","coords","venueName","streetAddress","city","state","zip", adjustedSection + "Other", adjustedSection + "Color", adjustedSection + "Plus"];
     for (var prop in location) {
       if (checkAgainstCategories.indexOf(prop) < 0) {
         adjusted = prop.replace(/([A-Z])/g, ' $1').trim();

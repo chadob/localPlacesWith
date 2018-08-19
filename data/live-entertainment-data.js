@@ -1,4 +1,4 @@
-var liveEntertainementData =
+var liveEntertainmentData =
 [
     {
         "coords": "33.5119296302915, -86.79081458029151",

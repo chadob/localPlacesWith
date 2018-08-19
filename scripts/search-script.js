@@ -1,17 +1,11 @@
 var mapSearchFunctions = {
-
-  searchProps: ["zip", "state", "city"],
-
-  search: function(filterFunction, categories, query) {
-    mapFunctions.filterAllMarkersAndListItems(mapSearchFunctions.checkQuery, categories, query)
-  },
   searchEvent: function() {
     var query = $('#mapSearch').val();
     if (query === "") {
       mapFunctions.showAllMarkersAndListItems();
       $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
     } else {
-      mapSearchFunctions.search(mapSearchFunctions.checkQuery, mapSearchFunctions.searchProps, query);
+      mapFunctions.filterAllMarkersAndListItems()
       if (mapFunctions.currentMarkers.length > 0) {
         $('.map-nav-item').removeClass('active').css('color', 'rgba(255,255,255,.5)');
         mapFunctions.panToMarker(mapFunctions.currentMarkers[0]);
